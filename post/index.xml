@@ -17,7 +17,39 @@
       <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/note/</guid>
-      <description>some</description>
+      <description>k代数：
+一个环结构
+一个 交换环到 环的中心 的结构态射
+一个 K代数上的模
+通过 代数同态 给出：
+K代数 -&amp;gt; K代数上的模 的K自同态群
+一个表示是
+一个抽象群的
+通过一个RealWorldObject上的作用
+的具体实现
+群的一个表示是
+从群 到 可逆矩阵群
+的一个群同态
+群在域上的一个n阶表示是
+群到 域的n维一般线性群
+的群同态。
+k上n维一般线性群是
+k上n维方阵环 (这个代数)
+的单位群
+用 相同形状的可逆矩阵的 线形组合
+形成 方阵；
+用 群元的 k-线形组合
+形成 k代数。
+群环：
+交换环与
+对交换环 identity作用 的群元
+的乘积
+的直和
+当群为无限群
+群环作为直和，
+一个元的线形组合形式中
+只有有限个非零坐标
+群环的单位群 含群为子群</description>
     </item>
     
   </channel>

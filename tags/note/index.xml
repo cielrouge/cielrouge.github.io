@@ -25,7 +25,7 @@ an abelian group and a mapping $\mu: A\times M\to M$)
 (K: 交换环, A: K-代数, M: K-模)
 - M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
 - 给定K-代数同态$\nu: A\to End_K(M)$ =&amp;gt; M上有唯一A-模结构，使K-代数同态是$\nu$.
-- 对each $a\in A$, 定义$\lambda:M\to M$, $\lambda (a):m\mapsto \mu (a,m) =: a\cdot m$. （由A是K代数，$K\to Z(A)$，证得$\lambda$的K-线性.）
+- 对each $a\in A$, 定义$\underline{\lambda:M\to M}$, $\lambda (a):m\mapsto \mu (a,m) =: a\cdot m$. （由A是K代数，$K\to Z(A)$，证得$\lambda$的K-线性.）
 - 对$\nu: A\to End_K(M)$, 定义$\mu: A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$
 K-代数A上的模 (given by)
 K-代数A -&amp;gt; $End_K(M)$</description>

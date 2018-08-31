@@ -15,11 +15,11 @@
 
     
       
-      <meta property="description" content="K代数：
+      <meta property="description" content="K-代数：
 一个环结构(A)
 一个 交换环(K)到 (结构)环的中心 的结构态射
-K代数A上的 模 (given by)
-K代数A -&amp;gt; $End_K(M)$
+K-代数A上的 模 (given by)
+K-代数A -&amp;gt; $End_K(M)$
 一个表示是
 一个抽象群的
 通过一个RealWorldObject上的作用
@@ -29,13 +29,12 @@ K代数A -&amp;gt; $End_K(M)$
 的一个群同态;
 群在域上的一个n阶表示:
 $G \to GL_n(K)$
-用 相同形状的可逆矩阵的 线性组合
-形 &amp;hellip;">
-      <meta property="og:description" content="K代数：
+用 相同形状的可逆矩阵的 线性组 &amp;hellip;">
+      <meta property="og:description" content="K-代数：
 一个环结构(A)
 一个 交换环(K)到 (结构)环的中心 的结构态射
-K代数A上的 模 (given by)
-K代数A -&amp;gt; $End_K(M)$
+K-代数A上的 模 (given by)
+K-代数A -&amp;gt; $End_K(M)$
 一个表示是
 一个抽象群的
 通过一个RealWorldObject上的作用
@@ -45,8 +44,7 @@ K代数A -&amp;gt; $End_K(M)$
 的一个群同态;
 群在域上的一个n阶表示:
 $G \to GL_n(K)$
-用 相同形状的可逆矩阵的 线性组合
-形 &amp;hellip;">
+用 相同形状的可逆矩阵的 线性组 &amp;hellip;">
       
     
 
@@ -134,12 +132,12 @@ code.has-jax {
       </header>
 
 
-<p>K代数：<br />
+<p>K-代数：<br />
 一个环结构(A)<br />
 一个 交换环(K)到 (结构)环的中心 的结构态射</p>
 
-<p>K代数A上的 模 (given by)<br />
-K代数A -&gt; $End_K(M)$</p>
+<p>K-代数A上的 模 (given by)<br />
+K-代数A -&gt; $End_K(M)$</p>
 
 <p>一个表示是<br />
 一个抽象群的<br />
@@ -154,8 +152,8 @@ $G \to GL_n(K)$</p>
 
 <p>用 相同形状的可逆矩阵的 线性组合<br />
 形成 方阵；<br />
-用 群元的 k-线性组合<br />
-形成 k代数。<br />
+用 群元的 K-线性组合<br />
+形成 K-代数。<br />
 (=&gt; 群环的概念)</p>
 
 <p>群环RG 作为R-模<br />
@@ -163,18 +161,56 @@ $G \to GL_n(K)$</p>
 
 <p>（群环的单位群 含群为子群）</p>
 
-<p>R是交换环，A是R代数<br />
-每个 群G -&gt; A的单位群<br />
-可唯一延拓到 群环RG -&gt; R代数A</p>
+<p>R是交换环，<br />
+每个 群G -&gt; R-代数的单位群<br />
+可唯一延拓到 群环RG -&gt; R-代数</p>
 
-<p>每个 $G \to GL_n( R)$<br />
+<p>每个 $\phi: G \to GL_n( R)$<br />
 可唯一延拓到<br />
-(n维R空间上) RG-模 结构(态射)</p>
+$R^n$上 RG-模结构$\widehat{\phi}$</p>
 
 <p>(当K是域)<br />
 $\widehat{\phi}: KG \to End_K(M)$<br />
 诱导<br />
-G在K上的一个表示</p>
+群G的K-表示</p>
+
+<p>群环上的模 (等同)
+群的K-表示</p>
+
+<p>构造 $R^n$上的 模结构：<br />
+群同态：群 &amp;rarr 一般线性群<br />
+R-代数同态：群环 &amp;rarr $R^n$自同态群</p>
+
+<p>若\phi是G的R-表示<br />
+则RG-模$\widehat{\phi}$称为<br />
+module <u>afforded</u> by \phi</p>
+
+<p>\phi,\psi是<br />
+域K上同维的<br />
+两个 群G的表示，<br />
+若有可逆矩阵T, $T\cdot \phi (g)=\psi (g)\cdot T$,<br />
+则两个表示\phi,\psi诱导的<br />
+两个模$M<em>{\phi}$,$M</em>{\psi}$ 同构。<br />
+若模$M<em>{\phi}$,$M</em>{\psi}$<br />
+afforded by \phi,\psi<br />
+作为KG-模 同构，<br />
+则存在可逆矩阵T, $T\cdot \phi (g)=\psi (g)\cdot T$</p>
+
+<p>（若域上同维的两个群表示 相似，则诱导的两个模 同构；<br />
+若域上同维的两个群表示 afford两个模 作为KG-模 同构，则两个群表示 相似。）</p>
+
+<p>（模is有限生成：
+模有 有限子集，使模是
+模中含此有限子集的
+最小子模）</p>
+
+<p>(K:交换环，A:K-代数，M:A-模)
+<ul>
+    <li>M is simple &amp;lArr M的任意非零子模等于M</li>
+    <li>M is semisimple &amp;lArr (M有限生成) $M\simeq S_1\oplus S_2\oplus \cdots \oplus S_n$ (S_i is simple)</li>
+    <li>A is semisimple &amp;hArr (K是域) 所有有限维A-模is semisimple.</li>
+</ul>
+(模是simple子模的直和)</p>
 
 <p><br/>
 <br/>
@@ -182,10 +218,16 @@ G在K上的一个表示</p>
 
 <div>
     $$RG := \bigoplus_{g\in G} R\cdot e_g \mid R \cdot e_g = R , \forall g \in G$$
-    $$(\sum_{h_1\in G} r_{h_1}e_{h_1})\cdot (\sum_{h_2\in G} s_{h_2}e_{h_2}) := \sum_{g\in G}(\sum_{h\in G} r_h s_{h^{-1} g})e_g$$
-
+    $$(\sum_{h_1\in G} r_{h_1}e_{h_1})\cdot (\sum_{h_2\in G} s_{h_2}e_{h_2}) := \sum_{g\in G}(\sum_{h\in G} r_h s_{h^{-1} g})e_g$$   
+    <br>
     $$\alpha : G \to A^{\times}, \beta : RG \to A, \alpha = \beta\mid_{G}$$
     $$\beta(\sum_{g\in G} r_ge_g):=\sum_{g\in G}r_g\alpha (g)$$
+    <br>
+    $$G \to GL_n(R)\ (= Mat_{n\times n}(R)^{\times}$$  
+    $$RG \to Mat_{n\times n}(R)$$
+    <br>
+    $$\phi: G\to GL_n(R)$$
+    $$\widehat{\phi}:RG\ni \sum_{g\in G} r_g e_g\mapsto \sum_{g\in G} r_g\phi (g)\in End_R(R^n)$$
 </div>
 
 

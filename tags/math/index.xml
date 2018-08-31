@@ -18,37 +18,23 @@
       
       <guid>https://cielrouge.github.io/post/note/</guid>
       <description>K-代数：
-一个环结构(A)
+一个 环结构(A)
 一个 交换环(K)到 (结构)环的中心 的结构态射
-K-代数A上的 模 (given by)
-K-代数A -&amp;gt; $End_K(M)$
+(left A-module M:
+an abelian group and a mapping $\mu: A\times M\to M$)
+(K: 交换环, A: K-代数, M: K-模)
+若M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
+若有K-代数同态$\nu: A\to End_K(M)$ =&amp;gt; M上有唯一A-模结构，使同态是$\nu$.
+(对each $a\in A$, 定义$\lambda:M\to M$
+$\lambda (a):m\mapsto \mu (a,m) =: a\cdot m$)
+(对$\nu: A\to End_K(M)$, 定义$\mu: A\times M\to M$:
+$\mu (a,m):=\nu (a)(m)$)
+(K-代数A上的模M (given by)
+K-代数A -&amp;gt; $End_K(M)$)
 一个表示是
 一个抽象群的
 通过一个RealWorldObject上的作用
-的具体实现
-群的一个表示是
-从群 到 可逆矩阵群
-的一个群同态;
-群在域上的一个n阶表示:
-$G \to GL_n(K)$
-用 相同形状的可逆矩阵的 线性组合
-形成 方阵；
-用 群元的 K-线性组合
-形成 K-代数。
-(=&amp;gt; 群环的概念)
-群环RG 作为R-模
-(环与$e_g$ 线性组合) 的直和
-（群环的单位群 含群为子群）
-R是交换环，
-每个 群G -&amp;gt; R-代数的单位群
-可唯一延拓到 群环RG -&amp;gt; R-代数
-每个 $\phi: G \to GL_n( R)$
-可唯一延拓到
-$R^n$上 RG-模结构$\widehat{\phi}$
-(当K是域)
-$\widehat{\phi}: KG \to End_K(M)$
-诱导
-群G的K-表示</description>
+的具体实现</description>
     </item>
     
   </channel>

@@ -7,3 +7,10 @@ code {
 pre code {
   font-family: Consolas, "Lucida Console", Monaco, 'STKaiti', 'KaiTi', 'SimKai', monospace;
 }
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #000000;
+}

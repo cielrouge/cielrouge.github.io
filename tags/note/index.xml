@@ -17,38 +17,38 @@
       <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/note/</guid>
-      <description>k代数：
-一个环结构
+      <description>K代数：
+一个环结构(A)
 一个 交换环(K)到 (结构)环的中心 的结构态射
-一个 K代数上的模
-通过 代数同态 给出：
-K代数 -&amp;gt; K代数上的模 的K自同态群
+K代数A上的 模 (given by)
+K代数A -&amp;gt; $End_K(M)$
 一个表示是
 一个抽象群的
 通过一个RealWorldObject上的作用
 的具体实现
 群的一个表示是
 从群 到 可逆矩阵群
-的一个群同态
-群在域上的一个n阶表示是
-群到 域的n阶一般线性群
-的群同态。
-k上n阶一般线性群是
-k上n阶方阵环 (这个代数)
-的单位群
+的一个群同态;
+群在域上的一个n阶表示:
+$G \to GL_n(K)$
 用 相同形状的可逆矩阵的 线性组合
 形成 方阵；
 用 群元的 k-线性组合
 形成 k代数。
 (=&amp;gt; 群环的概念)
-群环RG 作为R-模 (环与$e_g$ 线性组合) 的直和
+群环RG 作为R-模
+(环与$e_g$ 线性组合) 的直和
 （群环的单位群 含群为子群）
 R是交换环，A是R代数
 每个 群G -&amp;gt; A的单位群
 可唯一延拓到 群环RG -&amp;gt; R代数A
-r与群e元的线性组合 :=
-r与 （群元在 A的单位群中的像） 的线性组合
-每个 $G \to GL_n(R)$</description>
+每个 $G \to GL_n( R)$
+可唯一延拓到
+(n维R空间上) RG-模 结构(态射)
+(当K是域)
+$\widehat{\phi}: KG \to End_K(M)$
+诱导
+G在K上的一个表示</description>
     </item>
     
   </channel>

@@ -21,16 +21,16 @@
 (left A-module M:
 an abelian group and a mapping $\mu: A\times M\to M$)
 (K: 交换环, A: K-代数, M: K-模)
-M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
-有K-代数同态$\nu: &amp;hellip;">
+- M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
+- 给定K-代数同 &amp;hellip;">
       <meta property="og:description" content="K-代数：
 一个 环结构(A)
 一个 交换环(K)到 (结构)环的中心 的结构态射
 (left A-module M:
 an abelian group and a mapping $\mu: A\times M\to M$)
 (K: 交换环, A: K-代数, M: K-模)
-M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
-有K-代数同态$\nu: &amp;hellip;">
+- M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
+- 给定K-代数同 &amp;hellip;">
       
     
 
@@ -126,15 +126,13 @@ code.has-jax {
 an abelian group and a mapping $\mu: A\times M\to M$)</p>
 
 <p>(K: 交换环, A: K-代数, M: K-模)<br />
-M是A-模 =&gt; 有K-代数同态 $\lambda :A\to End_K (M)$.<br />
-有K-代数同态$\nu: A\to End_K(M)$ =&gt; M上有唯一A-模结构，使同态是$\nu$.<br />
-(对each $a\in A$, 定义$\lambda:M\to M$<br />
-$\lambda (a):m\mapsto \mu (a,m) := a\cdot m$)<br />
-(对$\nu: A\to End_K(M)$, 定义$\mu: A\times M\to M$:<br />
-$\mu (a,m):=\underline{\nu (a)(m)}$)</p>
+- M是A-模 =&gt; 有K-代数同态 $\lambda :A\to End_K (M)$.<br />
+- 给定K-代数同态$\nu: A\to End_K(M)$ =&gt; M上有唯一A-模结构，使K-代数同态是$\nu$.<br />
+- 对each $a\in A$, 定义$\lambda:M\to M$, $\lambda (a):m\mapsto \mu (a,m) =: a\cdot m$. （由A是K代数，$K\to Z(A)$，证得$\lambda$的K-线性.）<br />
+- 对$\nu: A\to End_K(M)$, 定义$\mu: A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$</p>
 
-<p>(K-代数A上的模M (given by)<br />
-K-代数A -&gt; $End_K(M)$)</p>
+<p>K-代数A上的模 (given by)<br />
+K-代数A -&gt; $End_K(M)$</p>
 
 <p>一个表示是<br />
 一个抽象群的<br />
@@ -164,14 +162,14 @@ $G \to GL_n(K)$</p>
 
 <p>每个 $\phi: G \to GL_n( R)$<br />
 可唯一延拓到<br />
-$R^n$上 RG-模结构$\widehat{\phi}$</p>
+$R^n$上 RG-模结构$\widehat{\phi}: RG \to End_R(R^n)$</p>
 
-<p>(当K是域)<br />
+<p>(K是域, M是KG-模)<br />
 $\widehat{\phi}: KG \to End_K(M)$<br />
-诱导<br />
+的限制 诱导<br />
 群G的K-表示</p>
 
-<p>群环上的模 (等同)
+<p>群环上的模 (等同)<br />
 群的K-表示</p>
 
 <p>构造 $R^n$上的 模结构：<br />
@@ -180,17 +178,17 @@ R-代数同态：群环 -&gt; $R^n$自同态群</p>
 
 <p>若$\phi$是G的R-表示<br />
 则RG-模$\widehat{\phi}$称为<br />
-module <u>afforded</u> by $\phi$</p>
+module afforded by $\phi$</p>
 
 <p>$\phi$,$\psi$是<br />
 域K上同维的<br />
 两个 群G的表示，<br />
-若有可逆矩阵T, $T\cdot \phi (g)=\psi (g)\cdot T$,<br />
+若有可逆矩阵$T$, $T\cdot \phi (g)=\psi (g)\cdot T$,<br />
 则两个表示$\phi$,$\psi$诱导的<br />
 两个模<code>$M_{\phi}$</code>, <code>$M_{\psi}$</code>同构。<br />
 若模<code>$M_{\phi}$</code>,<code>$M_{\psi}$</code> afforded by $\phi$,$\psi$<br />
 作为KG-模 同构，<br />
-则存在可逆矩阵T, $T\cdot \phi (g)=\psi (g)\cdot T$</p>
+则存在可逆矩阵$T$, $T\cdot \phi (g)=\psi (g)\cdot T$</p>
 
 <p>（若域上同维的两个群表示 相似，则诱导的两个模 同构；<br />
 若域上同维的两个群表示 afford两个模 作为KG-模 同构，则两个群表示 相似。）</p>
@@ -218,8 +216,8 @@ module <u>afforded</u> by $\phi$</p>
     $$\alpha : G \to A^{\times}, \beta : RG \to A, \alpha = \beta\mid_{G}$$
     $$\beta(\sum_{g\in G} r_ge_g):=\sum_{g\in G}r_g\alpha (g)$$
     <br>
-    $$G \to GL_n(R)\ (= Mat_{n\times n}(R)^{\times}$$  
-    $$RG \to Mat_{n\times n}(R)$$
+    $$G \to GL_n(R)\quad (= Mat_{n\times n}(R)^{\times})$$  
+    $$RG \to End_R(R^n)\quad (=Mat_{n\times n}(R))$$
     <br>
     $$\phi: G\to GL_n(R)$$
     $$\widehat{\phi}:RG\ni \sum_{g\in G} r_g e_g\mapsto \sum_{g\in G} r_g\phi (g)\in End_R(R^n)$$

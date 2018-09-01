@@ -3,8 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cielrouge.github.io/post/note/</loc>
+    <loc>https://cielrouge.github.io/post/note180901/</loc>
+    <lastmod>2018-09-01T11:40:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cielrouge.github.io/post/note180830/</loc>
     <lastmod>2018-08-30T10:47:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cielrouge.github.io/tags/acica/</loc>
+    <lastmod>2018-09-01T11:40:28+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -14,31 +25,43 @@
   
   <url>
     <loc>https://cielrouge.github.io/</loc>
-    <lastmod>2018-08-30T10:47:24+08:00</lastmod>
+    <lastmod>2018-09-01T11:40:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cielrouge.github.io/tags/math/</loc>
+    <lastmod>2018-09-01T11:40:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cielrouge.github.io/categories/math/</loc>
     <lastmod>2018-08-30T10:47:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cielrouge.github.io/tags/note/</loc>
-    <lastmod>2018-08-30T10:47:24+08:00</lastmod>
+    <lastmod>2018-09-01T11:40:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cielrouge.github.io/post/</loc>
+    <lastmod>2018-09-01T11:40:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cielrouge.github.io/tags/rt-ahapov/</loc>
     <lastmod>2018-08-30T10:47:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cielrouge.github.io/tags/</loc>
-    <lastmod>2018-08-30T10:47:24+08:00</lastmod>
+    <lastmod>2018-09-01T11:40:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Note180901 - CielRouge</title>
+    <meta property="og:title" content="Note180901 - CielRouge">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="(以下环均指交换幺环)
+Hibert&amp;rsquo;s Nullstellensatz:
+一一对应:
+(几何对象)仿射簇之间;
+(代数对象)一个多项式环的根理想之间.
+坐标环:
+被assign到一个仿射簇的仿射代数
+代数 有限生成 iff
+同构于$R[x_1,\cdots ,x_n]/I$.
+仿射K_代数:
+域K上的有限生成代数
+(A是域K上的一个代数)
+A是整环，且在域K上algebraic &amp;hellip;">
+      <meta property="og:description" content="(以下环均指交换幺环)
+Hibert&amp;rsquo;s Nullstellensatz:
+一一对应:
+(几何对象)仿射簇之间;
+(代数对象)一个多项式环的根理想之间.
+坐标环:
+被assign到一个仿射簇的仿射代数
+代数 有限生成 iff
+同构于$R[x_1,\cdots ,x_n]/I$.
+仿射K_代数:
+域K上的有限生成代数
+(A是域K上的一个代数)
+A是整环，且在域K上algebraic &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+    <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">CielRouge</a></h1>
+
+
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Note180901</h1>
+
+<h3>
+  2018-09-01</h3>
+<hr>
+
+
+      </header>
+
+
+<p>(以下环均指交换幺环)</p>
+
+<p>Hibert&rsquo;s Nullstellensatz:<br />
+一一对应:<br />
+(几何对象)仿射簇之间;<br />
+(代数对象)一个多项式环的根理想之间.</p>
+
+<p>坐标环:<br />
+被assign到一个仿射簇的仿射代数</p>
+
+<p>代数 有限生成 iff<br />
+同构于$R[x_1,\cdots ,x_n]/I$.</p>
+
+<p>仿射K_代数:<br />
+域K上的有限生成代数</p>
+
+<p>(A是域K上的一个代数)<br />
+A是整环，且在域K上algebraic  =&gt; A是域.<br />
+A是域，且在一个仿射K-整环中 =&gt; A is algebraic.</p>
+
+<blockquote>
+<p>$A\cong K[x]/I$<br />
+$A$是整域 =&gt; $I$是素理想, $A$在$K$上algebraic =&gt; $I$非零.<br />
+$k[x]$是主理想整环, $I=(f)$ ($f\in K[x]$不可约), $I$是最大理想.</p>
+
+<p>$a_1$ not algebraic.<br />
+$A$含于仿射$K$-整环: $B=K[a_1,&hellip;,a_n]$.<br />
+分式域$Quot(B)$是子域$L:=K(a_1,&hellip;,a_r)$的一个有限扩张.<br />
+对$b\in Quot(B)$, 与$B$乘法 给出一个 $Quot(B)$的 $L$-线性自同态.<br />
+选择Quot(B)的L-基, 得到$\phi: Quot(B)\to L^{m\times m}$<br />
+令$g\in K[a_1,&hellip;,a_r]\0$是 所有$\phi(a_1)$的所有(矩阵的)元的 公分母<br />
+$\phi(a_i)\in K[a_1,&hellip;,a_r,g^{-1}], \forall i$<br />
+\phi(B)\subseteq K[a_1,&hellip;,a_r,g^{-1}]^{m\times m}<br />
+令$p_1,&hellip;,p_k$是$g$的 恰在$K[a_1]$中的 不可约因子.</p>
+</blockquote>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

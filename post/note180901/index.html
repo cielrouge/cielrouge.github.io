@@ -150,7 +150,7 @@ A是域，且在一个仿射K-整环中 =&gt; A is algebraic.</p>
 
 <blockquote>
 <p>$A\cong K[x]/I$<br />
-$A$是整域 =&gt; $I$是素理想, $A$在$K$上algebraic =&gt; $I$非零.<br />
+$A$是整环 =&gt; $I$是素理想, $A$在$K$上algebraic =&gt; $I$非零.<br />
 $k[x]$是主理想整环, $I=(f)$ ($f\in K[x]$不可约), $I$是最大理想.</p>
 </blockquote>
 
@@ -170,9 +170,8 @@ $\mathfrak{m}_P$是$\phi:K[x_1,&hellip;,x_n]\to K, f\mapsto f(\xi_1,&hellip;,\xi
 $K[x_1,&hellip;,x_n]/\mathfrak{m}_P\cong K$.</p>
 </blockquote>
 
-<p><br></p>
-
-<p>(一个代数闭域上的 一个多项式环的 所有最大理想:)<br />
+<p><br>
+(一个代数闭域上的 一个多项式环的 所有最大理想:)<br />
 若$\mathfrak{m}\subseteq K[x_1,&hellip;,x_n]$是代数闭域$K$上一个多项式环的一个最大理想，<br />
 则存在点$P=(\xi_1,&hellip;,\xi_n)\in K^n$, s.t.<br />
 $\mathfrak{m}=(x_1 -\xi_1,&hellip;,x_n-\xi_n)$</p>
@@ -190,16 +189,24 @@ $\mathfrak{m}_P\subseteq \mathfrak{m}$, $\mathfrak{m}_P$是最大理想 =&gt;<br
 $\mathfrak{m}=\mathfrak{m}_P$</p>
 </blockquote>
 
-<p><br></p>
+<p><br>
+<code>$S\subseteq K[x_1,...,x_n]$</code>是多项式的集合. $S$给出仿射簇:<br />
+$\mathcal{V}=\mathcal{V}_{K^n}(S)$:=$\lbrace (\xi_1,&hellip;,\xi_n)\in K^n\mid f(\xi_1,&hellip;,\xi_n)=0,\forall f\in S\rbrace $</p>
 
-<p>$S\subseteq K[x_1,&hellip;,x<em>n]$是多项式的集合. $S$给出仿射簇:<br />
-$\mathcal{V}=\mathcal{V}</em>{K^n}(S):={(\xi_1,&hellip;,\xi_n)\in K^n\mid f(\xi_1,&hellip;,\xi_n)=0\forall f\in S}$</p>
-
-<p>($K$是代数闭域,$S\subseteq K[x_1,&hellip;,x_n]$是多项式的集合)<br />
-$\mathcal{M}_S$是满足:<br />
-$\mathfrak{m}\subset K[x_1,&hellip;,x_n], S\subseteq \mathfrak{m}$<br />
+<p>(多项式集合给出的仿射簇的)点 $\leftrightarrow$ (含此多项式集合,多项式环的)最大理想:<br />
+($K$是代数闭域, $S\subseteq K[x_1,&hellip;,x_n]$是多项式的集合)<br />
+$\mathcal{M}_S$是满足: $S\subseteq\mathfrak{m}\subset K[x_1,&hellip;,x_n]$<br />
 的所有最大理想 的集合.<br />
 则 $\Phi:\mathcal{V}\to \mathcal{M}_S, (\xi_1,&hellip;,\xi_n)\mapsto (x_1-\xi_1,&hellip;,x_n-\xi_n)$ 是双射.</p>
+
+<p>Hilbert&rsquo;s Nullstellensatz (1)<br />
+(K是代数闭域, I是多项式环的真理想)<br />
+$\mathcal{V}(I)\neq \emptyset$</p>
+
+<p>若不存在<code>$g_1,...,g_n\in K[x_1,...,x_n]$</code> s.t.<br />
+<code>$\sum_{i=1}^m g_i f_i =1$</code>,<br />
+且K代数闭, 则以下方程组有解:<br />
+$f_i (\xi_1,&hellip;,\xi_n)=0$ for $i=1..m$.</p>
 
 
   <footer>

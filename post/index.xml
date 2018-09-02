@@ -33,7 +33,7 @@ A是整环，且在域K上algebraic =&amp;gt; A是域.
 A是域，且在一个仿射K-整环中 =&amp;gt; A is algebraic.
  $A\cong K[x]/I$
 $A$是整环 =&amp;gt; $I$是素理想, $A$在$K$上algebraic =&amp;gt; $I$非零.
-$k[x]$是主理想整环, $I=(f)$ ($f\in K[x]$不可约), $I$是最大理想.
+$K[x]$是主理想整环, $I=(f)$ ($f\in K[x]$不可约), $I$是最大理想.
  
 (A-&amp;gt;B是域K上的代数同态)
 若B 有限生成,

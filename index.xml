@@ -6,10 +6,20 @@
     <description>Recent content on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 01 Sep 2018 11:40:28 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 02 Sep 2018 22:53:51 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note180902</title>
+      <link>https://cielrouge.github.io/post/note180902/</link>
+      <pubDate>Sun, 02 Sep 2018 22:53:51 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note180902/</guid>
+      <description>(G是n阶有限群, K是域, 若$n\cdot K=K$, 则KG的任意模semisimple):
+若有限群的order在域K中可逆, 则KG semisimple.</description>
+    </item>
     
     <item>
       <title>Note180901</title>

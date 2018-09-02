@@ -20,14 +20,14 @@
 一个 交换环(K)到 环结构的中心 的环同态
 两个K-代数的 环结构之间的环同态: A -&amp;gt; B
 是代数同态，if
-是两个K-代数的 结构态射之间的态射: K(K -&amp;gt; A) -&amp;gt; (K -&amp;gt; B)
+是两个K-代数的 结构态射之间的态射: (K -&amp;gt; A) -&amp;gt; (K -&amp;gt; B)
 ($\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot &amp;hellip;">
       <meta property="og:description" content="K-代数：
 一个 环结构(A)
 一个 交换环(K)到 环结构的中心 的环同态
 两个K-代数的 环结构之间的环同态: A -&amp;gt; B
 是代数同态，if
-是两个K-代数的 结构态射之间的态射: K(K -&amp;gt; A) -&amp;gt; (K -&amp;gt; B)
+是两个K-代数的 结构态射之间的态射: (K -&amp;gt; A) -&amp;gt; (K -&amp;gt; B)
 ($\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot &amp;hellip;">
       
     
@@ -122,25 +122,25 @@ code.has-jax {
 
 <p>两个K-代数的 环结构之间的环同态: A -&gt; B<br />
 是代数同态，if<br />
-是两个K-代数的 结构态射之间的态射: K(K -&gt; A) -&gt; (K -&gt; B)<br />
+是两个K-代数的 结构态射之间的态射: (K -&gt; A) -&gt; (K -&gt; B)<br />
 ($\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (a)$)</p>
 
 <p>(left A-module M:<br />
-an abelian group and a mapping $\mu: A\times M\to M$)</p>
+an abelian group with a mapping $\mu: A\times M\to M$)</p>
 
 <p>(K: 交换环, A: K-代数, M: K-模)<br />
-- M是A-模 =&gt; 有K-代数同态 $\lambda :A\to End_K (M)$.<br />
-- 给定K-代数同态$\nu: A\to End_K(M)$ =&gt; M上有唯一A-模结构，使K-代数同态是$\nu$.<br />
-- 对each $a\in A$, 定义$\underline{\lambda:M\to M}$, $\lambda (a):m\mapsto \mu (a,m) =: a\cdot m$. （由A是K代数，$K\to Z(A)$，证得$\lambda$的K-线性.）<br />
-- 对$\nu: A\to End_K(M)$, 定义$\mu: A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$</p>
+M是A-模 =&gt; 有K-代数同态 $\lambda :A\to End_K (M)$.<br />
+给定K-代数同态$\nu: A\to End_K(M)$ =&gt; <u>M上有唯一A-模结构</u>，使$A\to End_K(M)$是$\nu$.</p>
 
-<p>K-代数A上的模 (given by)<br />
-K-代数A -&gt; $End_K(M)$</p>
+<blockquote>
+<p>对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由A是$K$-代数，$K\to Z(A)$，证得$\lambda$的K-线性.）<br />
+对$\nu: A\to End_K(M)$, <em>定义</em>$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$</p>
+</blockquote>
 
-<p>一个表示是<br />
-一个抽象群的<br />
+<p><br>
+一个表示是<br />
 通过一个RealWorldObject上的作用<br />
-的具体实现</p>
+一个抽象群的 具体实现</p>
 
 <p>群的一个表示是<br />
 从群 到 可逆矩阵群<br />
@@ -159,12 +159,11 @@ $G \to GL_n(K)$</p>
 
 <p>（群环的单位群 含群为子群）</p>
 
-<p>R是交换环，<br />
+<p>(R是交换环)<br />
 每个 群G -&gt; R-代数的单位群<br />
-可唯一延拓到 群环RG -&gt; R-代数</p>
-
-<p>每个 $\phi: G \to GL_n( R)$<br />
-可唯一延拓到<br />
+可唯一开拓到 群环RG -&gt; R-代数.<br />
+每个 $\phi: G \to GL_n( R)$<br />
+可唯一开拓到<br />
 $R^n$上 RG-模结构$\widehat{\phi}: RG \to End_R(R^n)$</p>
 
 <p>(K是域, M是KG-模)<br />
@@ -172,8 +171,9 @@ $\widehat{\phi}: KG \to End_K(M)$<br />
 的限制 诱导<br />
 群G的K-表示</p>
 
-<p>群环上的模 (等同)<br />
-群的K-表示</p>
+<p>&ndash; 群环上的模 (等同) 群的K-表示:<br />
+&ndash; 群的表示 开拓到 代数同态<br />
+&ndash; 代数同态 uncurry到 模的结构(态射)</p>
 
 <p>构造 $R^n$上的 模结构：<br />
 群同态：群 -&gt; 一般线性群<br />
@@ -183,23 +183,18 @@ R-代数同态：群环 -&gt; $R^n$自同态群</p>
 则RG-模$\widehat{\phi}$称为<br />
 module afforded by $\phi$</p>
 
-<p>$\phi$,$\psi$是<br />
-域K上同维的<br />
-两个 群G的表示，<br />
+<p>(若域上同维的两个群表示 相似，则诱导的两个模 同构;<br />
+若域上同维的两个群表示 afford两个模 作为KG-模 同构，则两个群表示 相似.)<br />
+$\phi$,$\psi$是 域K上同维的 两个 群G的表示，<br />
 若有可逆矩阵$T$, $T\cdot \phi (g)=\psi (g)\cdot T$,<br />
-则两个表示$\phi$,$\psi$诱导的<br />
-两个模<code>$M_{\phi}$</code>, <code>$M_{\psi}$</code>同构。<br />
-若模<code>$M_{\phi}$</code>,<code>$M_{\psi}$</code> afforded by $\phi$,$\psi$<br />
-作为KG-模 同构，<br />
-则存在可逆矩阵$T$, $T\cdot \phi (g)=\psi (g)\cdot T$</p>
+则两个表示$\phi$,$\psi$诱导的 两个模<code>$M_{\phi}$</code>, <code>$M_{\psi}$</code>同构.<br />
+若模<code>$M_{\phi}$</code>,<code>$M_{\psi}$</code> afforded by $\phi$,$\psi$ 作为KG-模 同构，<br />
+则存在可逆矩阵$T$, $T\cdot \phi (g)=\psi (g)\cdot T$.</p>
 
-<p>（若域上同维的两个群表示 相似，则诱导的两个模 同构；<br />
-若域上同维的两个群表示 afford两个模 作为KG-模 同构，则两个群表示 相似。）</p>
-
-<p>（模is有限生成：<br />
+<p>(模is有限生成：<br />
 模有 有限子集，使模是<br />
 模中含此有限子集的<br />
-最小子模）</p>
+最小子模)</p>
 
 <ul>(K: 交换环, A: K-代数, M: K-模)   
     <li>M is simple <= M的任意非零子模等于M</li>

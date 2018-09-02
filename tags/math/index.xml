@@ -57,14 +57,14 @@ $K[x_1,&amp;hellip;,x_n]/\mathfrak{m}_P\cong K$.
 一个 交换环(K)到 环结构的中心 的环同态
 两个K-代数的 环结构之间的环同态: A -&amp;gt; B
 是代数同态，if
-是两个K-代数的 结构态射之间的态射: K(K -&amp;gt; A) -&amp;gt; (K -&amp;gt; B)
+是两个K-代数的 结构态射之间的态射: (K -&amp;gt; A) -&amp;gt; (K -&amp;gt; B)
 ($\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (a)$)
 (left A-module M:
-an abelian group and a mapping $\mu: A\times M\to M$)
+an abelian group with a mapping $\mu: A\times M\to M$)
 (K: 交换环, A: K-代数, M: K-模)
-- M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
-- 给定K-代数同态$\nu: A\to End_K(M)$ =&amp;gt; M上有唯一A-模结构，使K-代数同态是$\nu$.
-- 对each $a\in A$, 定义$\underline{\lambda:M\to M}$, $\lambda (a):m\mapsto \mu (a,m) =: a\cdot m$.</description>
+M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
+给定K-代数同态$\nu: A\to End_K(M)$ =&amp;gt; M上有唯一A-模结构，使$A\to End_K(M)$是$\nu$.
+ 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$.</description>
     </item>
     
   </channel>

@@ -19,9 +19,7 @@
       <guid>https://cielrouge.github.io/post/note180901/</guid>
       <description>(以下环均指交换幺环)
 Hibert&amp;rsquo;s Nullstellensatz:
-一一对应:
-(几何对象)仿射簇之间;
-(代数对象)一个多项式环的根理想之间.
+(几何对象)仿射簇 $\leftrightarrow$ (代数对象)一个多项式环的根理想
 坐标环:
 被assign到一个仿射簇的仿射代数
 代数 有限生成 iff

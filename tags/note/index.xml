@@ -38,8 +38,9 @@ $k[x]$是主理想整环, $I=(f)$ ($f\in K[x]$不可约), $I$是最大理想.
 (A-&amp;gt;B是域K上的代数同态)
 若B 有限生成,
 则B中最大理想在A中的 原像也是最大理想.
-$K$是域, $P=(\xi_1,&amp;hellip;,\xi_n)\in K^n$,
-$\mathfrak{m}_P:=(x_1 -\xi_1,&amp;hellip;,x_n-\xi_n)$ 是$K[x_1,&amp;hellip;,x_n]$的一个最大理想.
+($K$是域, $P=(\xi_1,&amp;hellip;,\xi_n)\in K^n$)
+$\mathfrak{m}_P:=(x_1 -\xi_1,&amp;hellip;,x_n-\xi_n)$
+是$K[x_1,&amp;hellip;,x_n]$的一个最大理想.
  $\forall f\in K[x_1,&amp;hellip;,x_n]$ 同余$f(\xi_1,&amp;hellip;,\xi_n)$ modulo $\mathfrak{m}_P$ =&amp;gt;
 $\mathfrak{m}_P$是$\phi:K[x_1,&amp;hellip;,x_n]\to K, f\mapsto f(\xi_1,&amp;hellip;,\xi_n)$的核 =&amp;gt;
 $K[x_1,&amp;hellip;,x_n]/\mathfrak{m}_P\cong K$.

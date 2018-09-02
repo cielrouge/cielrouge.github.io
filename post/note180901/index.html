@@ -160,8 +160,9 @@ $k[x]$是主理想整环, $I=(f)$ ($f\in K[x]$不可约), $I$是最大理想.</p
 若B 有限生成,<br />
 则B中最大理想在A中的 原像也是最大理想.</p>
 
-<p>$K$是域, $P=(\xi_1,&hellip;,\xi_n)\in K^n$,<br />
-$\mathfrak{m}_P:=(x_1 -\xi_1,&hellip;,x_n-\xi_n)$ 是$K[x_1,&hellip;,x_n]$的一个最大理想.</p>
+<p>($K$是域, $P=(\xi_1,&hellip;,\xi_n)\in K^n$)<br />
+$\mathfrak{m}_P:=(x_1 -\xi_1,&hellip;,x_n-\xi_n)$<br />
+是$K[x_1,&hellip;,x_n]$的一个最大理想.</p>
 
 <blockquote>
 <p>$\forall f\in K[x_1,&hellip;,x_n]$ 同余$f(\xi_1,&hellip;,\xi_n)$ modulo $\mathfrak{m}_P$ =&gt;<br />
@@ -172,22 +173,33 @@ $K[x_1,&hellip;,x_n]/\mathfrak{m}_P\cong K$.</p>
 <p><br></p>
 
 <p>(一个代数闭域上的 一个多项式环的 所有最大理想:)<br />
-$\mathfrak{m}\subseteq K[x_1,&hellip;,x_n]$<br />
-是代数闭域$K$上一个多项式环的一个最大理想，<br />
+若$\mathfrak{m}\subseteq K[x_1,&hellip;,x_n]$是代数闭域$K$上一个多项式环的一个最大理想，<br />
 则存在点$P=(\xi_1,&hellip;,\xi_n)\in K^n$, s.t.<br />
 $\mathfrak{m}=(x_1 -\xi_1,&hellip;,x_n-\xi_n)$</p>
 
 <blockquote>
 <p>for each $i=1..n, K[x_i]\cap \mathfrak{m}$是$K[x_i]$的一个最大理想.<br />
-$K$是主理想整环 =&gt;<br />
-$K[x_i]\cap \mathfrak{m}$有形式:<br />
-$(p<em>i)</em>{K[x_i]}$, $p_i$是不可约多项式.<br />
+$K[x_i]$是主理想整环 =&gt;<br />
+<code>$K[x_i]\cap \mathfrak{m}$</code>有形式: <code>$(p_i)_{K[x_i]}$</code><br />
+($p_i$是不可约多项式)<br />
 (set of all $K[x_i]$-linear combinations of $p_i$)<br />
 $K$代数闭 =&gt;<br />
-$(p<em>i)</em>{K[x_i]}=(x_i-\xi<em>i)</em>{K[x_i]}$, $\xi_i\in K$.<br />
+<code>$(p_i)_{K[x_i]}=(x_i-\xi_i)_{K[x_i]}$</code>, $\xi_i\in K$.<br />
 $\exists \xi_1,&hellip;,\xi_n\in K$, with $x_i-\xi_i\in\mathfrak{m}$<br />
-\mathfrak{m}_P\subseteq \mathfrak{m} =&gt; \mathfrak{m}=\mathfrak{m}_P</p>
+$\mathfrak{m}_P\subseteq \mathfrak{m}$, $\mathfrak{m}_P$是最大理想 =&gt;<br />
+$\mathfrak{m}=\mathfrak{m}_P$</p>
 </blockquote>
+
+<p><br></p>
+
+<p>$S\subseteq K[x_1,&hellip;,x<em>n]$是多项式的集合. $S$给出仿射簇:<br />
+$\mathcal{V}=\mathcal{V}</em>{K^n}(S):={(\xi_1,&hellip;,\xi_n)\in K^n\mid f(\xi_1,&hellip;,\xi_n)=0\forall f\in S}$</p>
+
+<p>($K$是代数闭域,$S\subseteq K[x_1,&hellip;,x_n]$是多项式的集合)<br />
+$\mathcal{M}_S$是满足:<br />
+$\mathfrak{m}\subset K[x_1,&hellip;,x_n], S\subseteq \mathfrak{m}$<br />
+的所有最大理想 的集合.<br />
+则 $\Phi:\mathcal{V}\to \mathcal{M}_S, (\xi_1,&hellip;,\xi_n)\mapsto (x_1-\xi_1,&hellip;,x_n-\xi_n)$ 是双射.</p>
 
 
   <footer>

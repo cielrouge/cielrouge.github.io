@@ -35,14 +35,16 @@ A是域，且在一个仿射K-整环中 =&amp;gt; A is algebraic.
 $A$是整域 =&amp;gt; $I$是素理想, $A$在$K$上algebraic =&amp;gt; $I$非零.
 $k[x]$是主理想整环, $I=(f)$ ($f\in K[x]$不可约), $I$是最大理想.
  
- 取 $a_1$ not algebraic.
-$A$含于仿射$K$-整环: $B=K[a_1,&amp;hellip;,a_r]$.
-分式域$Quot(B)$是子域$L:=K(a_1,&amp;hellip;,a_r)$的一个有限扩张.
-对$b\in Quot(B)$, 与$b$乘法 给出一个 $Quot(B)$的 $L$-线性自同态.
-选择$Quot(B)$的$L$-基, 得到$\phi: Quot(B)\to L^{m\times m}$
-令$g\in K[a_1,&amp;hellip;,a_r]\setminus 0$是 所有$\phi(a_1)$的所有(矩阵的)元的 公分母
-$\phi(a_i)\in K[a_1,&amp;hellip;,a_r,g^{-1}], \forall i$
-$\phi(B)\subseteq K[a_1,&amp;hellip;,a_r,g^{-1}]^{m\times m}$</description>
+(A-&amp;gt;B是域K上的代数同态)
+若B 有限生成,
+则B中最大理想在A中的 原像也是最大理想.
+$K$是域, $P=(\xi_1,&amp;hellip;,\xi_n)\in K^n$,
+$\mathfrak{m}_P:=(x_1 -\xi_1,&amp;hellip;,x_n-\xi_n)$ 是$K[x_1,&amp;hellip;,x_n]$的一个最大理想.
+ $\forall f\in K[x_1,&amp;hellip;,x_n]$ 同余$f(\xi_1,&amp;hellip;,\xi_n)$ modulo $\mathfrak{m}_P$ =&amp;gt;
+$\mathfrak{m}_P$是$\phi:K[x_1,&amp;hellip;,x_n]\to K, f\mapsto f(\xi_1,&amp;hellip;,\xi_n)$的核 =&amp;gt;
+$K[x_1,&amp;hellip;,x_n]/\mathfrak{m}_P\cong K$.
+ 
+(一个代数闭域上的 一个多项式环的 所有最大理想:)</description>
     </item>
     
     <item>

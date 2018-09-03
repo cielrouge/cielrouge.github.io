@@ -19,7 +19,7 @@
       <guid>https://cielrouge.github.io/post/note180902/</guid>
       <description>(G是n阶有限群, K是域, 若$n\cdot K=K$, 则KG的任意模is semisimple):
 若有限群G的order在域K中可逆, 则KG is semisimple.
- N是M非零子模, $\tilde{L}:=M/N$,
+ 任意$KG$-模$M$, 任意$M$子模$N$, 存在$M$子模$L$ s.t. $M\simeq N\oplus L$ N是M非零子模, $\tilde{L}:=M/N$:
 $\pi:M\to\tilde{L},m\mapsto m+N$,
 N的K-基: $\mathcal{N}$, M的K-基: $\mathcal{M}=\mathcal{N}\cup \mathcal{L}$.
 $\tilde{L}$的K-基: $\lbrace l+N\mid l\in\mathcal{L}\rbrace$
@@ -28,9 +28,7 @@ $\pi \circ \tilde{\rho}=id_{\tilde{L}}$, $\pi$是$KG$-模同态, $\tilde{\rho}$�
 定义: $\rho: \tilde{L}\to M, l+N\mapsto \frac{1}{\vert G\vert}\sum_{g\in G}e_g^{-1} \tilde{\rho}(e_g\cdot (l+N))$
 $\because \vert G\vert$在K中可逆, $\therefore \frac{1}{\vert G\vert}\in K$
 $\pi \circ \rho=id_{\tilde{L}}$
-$\forall l+N\in \tilde{L}, \forall h\in G, \rho(e_h \cdot (l+N))=e_h\cdot \rho(l+N)$ =&amp;gt; $\rho$是$KG$-模的同态.
-$L:=im(\rho)$是$M$的$KG$-子模
- ($R$是交换环, $A$是$R$-代数, $M$是$A$-模)</description>
+$\forall l+N\in \tilde{L}, \forall h\in G, \rho(e_h \cdot (l+N))=e_h\cdot \rho(l+N)$ =&amp;gt; $\rho$是$KG$-模的同态.</description>
     </item>
     
     <item>

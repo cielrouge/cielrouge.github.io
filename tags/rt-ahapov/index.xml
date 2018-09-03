@@ -6,10 +6,21 @@
     <description>Recent content in Rt Ahapov on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 02 Sep 2018 22:53:51 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 04 Sep 2018 00:27:29 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/tags/rt-ahapov/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note180903</title>
+      <link>https://cielrouge.github.io/post/note180903/</link>
+      <pubDate>Tue, 04 Sep 2018 00:27:29 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note180903/</guid>
+      <description>($K$:交换环, $A$:$K$-代数 $M$:$A$-模)
+$M$ is Noetherian:
+$\exists $M_1\subeq M_2\subeq &amp;hellip; \subeq M$$ =&amp;gt; $\exists n_0\in \mathbb{N}$ s.t. $M_n=M_n_0 \forall n \geqslant n_0$</description>
+    </item>
     
     <item>
       <title>Note180902</title>
@@ -17,18 +28,19 @@
       <pubDate>Sun, 02 Sep 2018 22:53:51 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/note180902/</guid>
-      <description>(G是n阶有限群, K是域, 若$n\cdot K=K$, 则KG的任意模is semisimple):
-若有限群G的order在域K中可逆, 则KG is semisimple.
- 任意$KG$-模$M$, 任意$M$子模$N$, 存在$M$子模$L$ s.t. $M\simeq N\oplus L$ N是M非零子模, $\tilde{L}:=M/N$:
+      <description>($G$是$n$阶有限群, $K$是域, 若$n\cdot K=K$, 则$KG$的任意模is semisimple):
+(Maschke) 若有限群$G$的阶数$\vert G\vert$在域$K$中可逆, 则$KG$ is semisimple.
+ 任意$KG$-模$M$, 任意$M$子模$N$, 存在$M$子模$L$ s.t. $M\simeq N\oplus L$:
+设$N$是$M$非零子模, $\tilde{L}:=M/N$,
 $\pi:M\to\tilde{L},m\mapsto m+N$,
-N的K-基: $\mathcal{N}$, M的K-基: $\mathcal{M}=\mathcal{N}\cup \mathcal{L}$.
-$\tilde{L}$的K-基: $\lbrace l+N\mid l\in\mathcal{L}\rbrace$
-K-线性映射:$\tilde{\rho}:\tilde{L}\to M, l+N\mapsto l,\forall l\in \mathcal{L}$.
+$K$-线性映射:$\tilde{\rho}:\tilde{L}\to M, l+N\mapsto l,\forall l\in \mathcal{L}$.
 $\pi \circ \tilde{\rho}=id_{\tilde{L}}$, $\pi$是$KG$-模同态, $\tilde{\rho}$未必
 定义: $\rho: \tilde{L}\to M, l+N\mapsto \frac{1}{\vert G\vert}\sum_{g\in G}e_g^{-1} \tilde{\rho}(e_g\cdot (l+N))$
-$\because \vert G\vert$在K中可逆, $\therefore \frac{1}{\vert G\vert}\in K$
+$\because \vert G\vert$在$K$中可逆, $\therefore \frac{1}{\vert G\vert}\in K$
 $\pi \circ \rho=id_{\tilde{L}}$
-$\forall l+N\in \tilde{L}, \forall h\in G, \rho(e_h \cdot (l+N))=e_h\cdot \rho(l+N)$ =&amp;gt; $\rho$是$KG$-模的同态.</description>
+$\forall l+N\in \tilde{L}, \forall h\in G, \rho(e_h \cdot (l+N))=e_h\cdot \rho(l+N)$ =&amp;gt;
+$\rho$是$KG$-模同态, $L:=im(\rho)$是$M$的$KG$-子模.
+ ($R$是交换环, $A$是$R$-代数, $M$是$A$-模)</description>
     </item>
     
     <item>

@@ -15,12 +15,16 @@
 
     
       
-      <meta property="description" content="(G是n阶有限群, K是域, 若$n\cdot K=K$, 则KG的任意模semisimple):
-若有限群的order在域K中可逆, 则KG semisimple.
-">
-      <meta property="og:description" content="(G是n阶有限群, K是域, 若$n\cdot K=K$, 则KG的任意模semisimple):
-若有限群的order在域K中可逆, 则KG semisimple.
-">
+      <meta property="description" content="(G是n阶有限群, K是域, 若$n\cdot K=K$, 则KG的任意模is semisimple):
+若有限群G的order在域K中可逆, 则KG is semisimple.
+[&amp;hellip;] N是M非零子模, $\tilde{L}:=M/N$,
+$\pi:M\to\tilde{L},m\mapsto m&#43;N$,
+N的K-基: $\mathcal{N}$, M的K-基: &amp;hellip;">
+      <meta property="og:description" content="(G是n阶有限群, K是域, 若$n\cdot K=K$, 则KG的任意模is semisimple):
+若有限群G的order在域K中可逆, 则KG is semisimple.
+[&amp;hellip;] N是M非零子模, $\tilde{L}:=M/N$,
+$\pi:M\to\tilde{L},m\mapsto m&#43;N$,
+N的K-基: $\mathcal{N}$, M的K-基: &amp;hellip;">
       
     
 
@@ -108,8 +112,39 @@ code.has-jax {
       </header>
 
 
-<p>(G是n阶有限群, K是域, 若$n\cdot K=K$, 则KG的任意模semisimple):<br />
-若有限群的order在域K中可逆, 则KG semisimple.</p>
+<p>(G是n阶有限群, K是域, 若$n\cdot K=K$, 则KG的任意模is semisimple):<br />
+若有限群G的order在域K中可逆, 则KG is semisimple.</p>
+
+<blockquote>
+<p>N是M非零子模, $\tilde{L}:=M/N$,<br />
+$\pi:M\to\tilde{L},m\mapsto m+N$,<br />
+N的K-基: $\mathcal{N}$, M的K-基: $\mathcal{M}=\mathcal{N}\cup \mathcal{L}$.<br />
+$\tilde{L}$的K-基: $\lbrace l+N\mid l\in\mathcal{L}\rbrace$<br />
+K-线性映射:$\tilde{\rho}:\tilde{L}\to M, l+N\mapsto l,\forall l\in \mathcal{L}$.<br />
+<code>$\pi \circ \tilde{\rho}=id_{\tilde{L}}$</code>, $\pi$是$KG$-模同态, $\tilde{\rho}$未必<br />
+定义: $\rho: \tilde{L}\to M,
+l+N\mapsto \frac{1}{\vert G\vert}\sum_{g\in G}e_g^{-1} \tilde{\rho}(e_g\cdot (l+N))$<br />
+$\because \vert G\vert$在K中可逆, $\therefore \frac{1}{\vert G\vert}\in K$<br />
+<code>$\pi \circ \rho=id_{\tilde{L}}$</code><br />
+$\forall l+N\in \tilde{L}, \forall h\in G, \rho(e_h \cdot (l+N))=e_h\cdot \rho(l+N)$ =&gt;
+$\rho$是$KG$-模的同态.<br />
+$L:=im(\rho)$是$M$的$KG$-子模</p>
+
+<blockquote>
+<p>($R$是交换环, $A$是$R$-代数, $M$是$A$-模)<br />
+假设有$M$的$A$-模自同态, s.t. $\phi \circ \phi =\phi$ (idempotent)<br />
+则 $M\simeq im(\phi)\oplus ker(\phi)$.</p>
+</blockquote>
+
+<p><code>$(\rho \circ \pi) \circ (\rho \circ \pi) = 
+\rho \circ (\pi \circ \rho) \circ \pi =
+\rho \circ id_{ \tilde{L} } \circ \pi =
+\rho \circ \pi$</code> $\quad$ (idempotent)<br />
+$\because \pi \circ \rho = id_{ \tilde{L} }\quad \therefore \rho$ 单射<br />
+$ker(\rho \circ \pi) = ker (\pi) = N$<br />
+$im(\rho \circ \pi) \simeq im(\pi) = \tilde{L}$<br />
+$M\simeq N\oplus M/N$</p>
+</blockquote>
 
 
   <footer>

@@ -12,14 +12,23 @@
     
     
     <item>
-      <title>Note180903</title>
-      <link>https://cielrouge.github.io/post/note180903/</link>
+      <title>Note180904</title>
+      <link>https://cielrouge.github.io/post/note180904/</link>
       <pubDate>Tue, 04 Sep 2018 00:27:29 +0800</pubDate>
       
-      <guid>https://cielrouge.github.io/post/note180903/</guid>
+      <guid>https://cielrouge.github.io/post/note180904/</guid>
       <description>($K$:交换环, $A$:$K$-代数 $M$:$A$-模)
 $M$ is Noetherian:
-$\exists $M_1\subeq M_2\subeq &amp;hellip; \subeq M$$ =&amp;gt; $\exists n_0\in \mathbb{N}$ s.t. $M_n=M_n_0 \forall n \geqslant n_0$</description>
+$\exists M_1\subseteq M_2\subseteq &amp;hellip; \subseteq M$ $\quad$ =&amp;gt;
+$\exists n_0\in \mathbb{N}$ s.t. $M_n=M_{n_0}, \forall n \geq n_0$
+$M$ is artinian:
+$\exists M\supseteq M_1 \supseteq M_2 \supseteq &amp;hellip;$ $\quad$ =&amp;gt;
+$\exists n_0\in \mathbb{N}$ s.t. $M_n=M_{n_0}, \forall n \geq n_0$
+若$A$是域$K$上代数, 则任意有限维$A$-模作为$K$-向量空间, is Noetherian and artinian.
+($A$:环, $M$: $A$上左模)
+$M$ is Noetherian &amp;lt;=&amp;gt;
+$M$的所有子模都是有限生成的 &amp;lt;=&amp;gt;
+对$M$的任意子模$N$, $N$与$M/N$ are Noetherian</description>
     </item>
     
     <item>

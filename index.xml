@@ -26,9 +26,11 @@ $\exists M\supseteq M_1 \supseteq M_2 \supseteq &amp;hellip;$ $\quad$ =&amp;gt;
 $\exists n_0\in \mathbb{N}$ s.t. $M_n=M_{n_0}, \forall n \geq n_0$
 若$A$是域$K$上代数, 则任意有限维$A$-模作为$K$-向量空间, is Noetherian and artinian.
 ($A$:环, $M$: $A$上左模)
-$M$ is Noetherian &amp;lt;=&amp;gt;
-$M$的所有子模都是有限生成的 &amp;lt;=&amp;gt;
-对$M$的任意子模$N$, $N$与$M/N$ are Noetherian</description>
+等价命题： 1. $M$ is Noetherian
+2. $M$的所有子模都是有限生成的
+3. 对$M$的任意子模$N$, $N$与$M/N$ are Noetherian
+ 1=&amp;gt;2:
+设$N$是$M$的子模, $N$的生成集: $\lbrace m_i \vert i\in I\rbrace$ ($I$ is not finite)</description>
     </item>
     
     <item>

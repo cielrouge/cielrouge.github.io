@@ -123,9 +123,46 @@ $\exists n_0\in \mathbb{N}$ s.t. <code>$M_n=M_{n_0}, \forall n \geq n_0$</code><
 <p>若$A$是域$K$上代数, 则任意有限维$A$-模作为$K$-向量空间, is Noetherian and artinian.</p>
 
 <p>($A$:环, $M$: $A$上左模)<br />
-$M$ is Noetherian &lt;=&gt;<br />
-$M$的所有子模都是有限生成的 &lt;=&gt;<br />
-对$M$的任意子模$N$, $N$与$M/N$ are Noetherian</p>
+等价命题：
+1. $M$ is Noetherian<br />
+2. $M$的所有子模都是有限生成的<br />
+3. 对$M$的任意子模$N$, $N$与$M/N$ are Noetherian</p>
+
+<blockquote>
+<p>1=&gt;2:<br />
+设$N$是$M$的子模, $N$的生成集: <code>$\lbrace m_i \vert i\in I\rbrace$</code> ($I$ is not finite)<br />
+对每一个$n\in N$, 找到<code>$m(n)\in \lbrace m_i \vert i\in I\rbrace$</code> (inductively)<br />
+s.t. <code>$m(n)\notin \sum_{j=1}^{n-1} A\cdot m(j)$</code><br />
+由此构造了$M$的$A$-子模: $M(n):=\sum_{j=1}^{n} A\cdot m(j)$<br />
+$M(n-1) \subsetneqq M(n), \forall n\in \mathbb{N}$,<br />
+与$M$ is Noetherian相悖.</p>
+</blockquote>
+
+<p><br>
+等价命题:<br />
+1. $M$ is artinian<br />
+2. 对$M$的任意子模$N$, $N$与$M/N$ are artinian</p>
+
+<p>($A$: 代数, $M$: $A$-模)<br />
+$M$ Noetherian iff.<br />
+每个非空的 $M$的子模 的集合, 都有最大元.<br />
+$M$ artinian iff.<br />
+每个非空的 $M$的子模 的集合, 都有最小元.</p>
+
+<p>Noetherian模: 满的自同态是单的</p>
+
+<blockquote>
+<p>$\phi ^n := \phi \circ \phi^{n-1}$<br />
+M的递增子模序列: $(ker(\phi ^n))_{n\in \mathbb{N}}$<br />
+Noetherian =&gt; becomes stationary<br />
+$n_0 : ker(\phi ^n)=ker(\phi ^{n_0}),\forall n\geq n_0$<br />
+<font style="color:purple">
+$m: m\in ker(\phi)$<br />
+$\phi ^k$ surjective  =&gt;
+$\exists x\in M$ s.t. $\phi ^{n_0}(x)=m$,</font><br />
+$0=\phi(m)=\phi^{n_0 +1}(x)$, $x\in ker(\phi^{n_0 +1})=ker(\phi^{n_0})$,<br />
+$m=\phi^{n_0}(x)=0$, $\phi$ injective.</p>
+</blockquote>
 
 
   <footer>

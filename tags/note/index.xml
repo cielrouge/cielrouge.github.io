@@ -6,22 +6,32 @@
     <description>Recent content in Note on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Sep 2018 21:44:08 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>整理</title>
-      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86/</link>
+      <title>整理: State</title>
+      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86state/</link>
+      <pubDate>Mon, 10 Sep 2018 21:44:08 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86state/</guid>
+      <description>newtype State s a = State {runState :: s -&amp;gt; (a , s)} newtype (State s) a = State {runState :: s -&amp;gt; (a , s)} -- runState :: State s a -&amp;gt; s -&amp;gt; (a , s)  instance Functor (State s) where fmap f m = State $ \s -&amp;gt; case runState m s of (r , s) -&amp;gt; (f r , s)  类型推导 f :: a -&amp;gt; b m :: (State s) a runState :: State s a -&amp;gt; s -&amp;gt; (a , s) runState :: (State s) a -&amp;gt; (s -&amp;gt; (a , s)) runState m s = runState ((State s) a) s = (a , s) = (r , s) \s -&amp;gt; (f r , s) :: \s -&amp;gt; ((a -&amp;gt; b) a , s) :: \s -&amp;gt; (b , s) State $ s -&amp;gt; (b , s)  instance Applicative (State s) where pure x = State $ \s -&amp;gt; (x , s) m &amp;lt;*&amp;gt; n = State $ \s -&amp;gt; case runState m s of (f , s&#39;) -&amp;gt; case runState n s&#39; of (x , s‘’) -&amp;gt; (f x , s&#39;&#39;)  类型推导 pure x :: (State s) x State $ \s -&amp;gt; (x , s) :: (State s) x &amp;lt;*&amp;gt; :: f (a -&amp;gt; b) -&amp;gt; f a -&amp;gt; f b &amp;lt;*&amp;gt; :: (State s) (a -&amp;gt; b) -&amp;gt; (State s) a -&amp;gt; (State s) b m :: (State s) (a -&amp;gt; b) :: (State s) a -&amp;gt; (State s) b n :: (State s) a runState n s&#39; = (x , s&#39;&#39;) :: (State s) a -&amp;gt; s -&amp;gt; (a , s) runState m s = (f , s&#39;) -&amp;gt; (f x , s&#39;&#39;) :: (State s) (a -&amp;gt; b) -&amp;gt; s -&amp;gt; (a , s) -&amp;gt; (b , s)  </description>
+    </item>
+    
+    <item>
+      <title>整理: map,action,application</title>
+      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</link>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86/</guid>
+      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</guid>
       <description>Functor Functors: uniform action over a parameterized type
 在「参数化的type」上的「一致action」
 在「列表」上的「map函数」的一般化
 Functor: 可被map-over的types的class
 “对type 可被action做map 的形容”
+fmap (f . g) == fmap f . fmap g
 (&amp;lt;$&amp;gt;) -- fmap
 (&amp;lt;&amp;amp;&amp;gt;) -- flip fmap
 Applicative a functor with application
@@ -29,8 +39,7 @@ Applicative a functor with application
 fmap f x = pure f &amp;lt;*&amp;gt; x
 fmap f x = &amp;lt;*&amp;gt; (pure f) x
 -- f :: a -&amp;gt; b
--- pure f :: Applicative (a -&amp;gt; b)
--- x :: (Functor =&amp;gt;) Applicative a</description>
+-- pure f :: Applicative (a -&amp;gt; b)</description>
     </item>
     
     <item>

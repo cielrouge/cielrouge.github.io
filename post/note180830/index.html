@@ -318,7 +318,7 @@ $m=\phi^{n_0}(x)=0$, $\phi$ injective.</p>
 则 $\exists \sigma \in \mathfrak{S}_n$, s.t. $M_j \simeq N_{\sigma(j)}$</p>
 
 <p>(Fitting)<br />
-对每一个自同态，存在一个模的分解，使这个自同态限制在一部分上是幂零自同态，限制在在另一部份上是自同构.($M$是Noetherian且artinian的$A$-模.)<br />
+($M$是Noetherian且artinian的$A$-模.)  对每一个自同态，存在一个模的分解，使这个自同态限制在一部分上是幂零自同态，限制在在另一部份上是自同构.<br />
 $\forall u$ (endomorphism of M), $\exists M\simeq N\oplus S$ s.t.<br />
 $u\vert N$ is nilpotent endomorphism of N.<br />
 $u\vert S$ is automorphism of S.<br />
@@ -343,8 +343,8 @@ $\varphi \circ \tau: V\to Y$也是同构.</p>
 <p><br>
 <br></p>
 
-<p>引理1.4.9 Schur<br />
-简单A-模的A-自同态环是含K的skew-field.</p>
+<p>lemma 1.4.9 (Schur)<br />
+简单A-模的自同态环是含K的skew-field.</p>
 
 <blockquote>
 <p>V是简单模，所以V的子模只有0和V. 所以im(u), ker(u)只能取0或V,<br />
@@ -361,6 +361,40 @@ skew-field的中心是域</p>
 
 <p>lemma 1.4.13<br />
 V，W是两个不同构的简单A-模，则$Hom_A(V,W)=0$.</p>
+
+<p>lemma 1.4.14<br />
+regular A-模的自同态环同构于A的反对代数.<br />
+$\forall \phi \in End_A( _{A}A)$, $\phi(1_A) =: a_{\phi}$,<br />
+$\therefore$ $\forall b\in A$, $\phi(b)=b\cdot a_{\phi}$.<br />
+(自同态 -&gt; 右乘)<br />
+$b a_{\phi \circ \psi} = (\phi \circ \psi)(b) = \phi(\psi(b)) = (b a_{\psi})a_{\phi} = b(a_{\psi} a_{\phi})$<br />
+$a_{\psi}a_{\phi} = a_{\phi \circ \psi}$<br />
+$\therefore$ $End_A ( _{A}A)\simeq A^{op}$</p>
+
+<p>notation: $Mat_{n\times n}&reg;$: matrix ring of square matrices with coefficients in R.</p>
+
+<p>theorem 1.4.16 (Wedderburn)<br />
+A be a finite dimensional semisimple K-algebra.<br />
+$\exists$D_i: skew-fields with centres containing K.<br />
+$A \simeq \prod_{i=1}^m Mat_{n_i\times n_i}(D_i)$<br />
+($D_i$, $n_i$: completely determined by A)<br />
+proof. by lemma 1.4.14, $A \simeq (End_A( _{A}A))^{op},<br />
+$\because$ A semisimple, $\therefore$ $ _{A}A$ isomorphic to diret sum of simple modules,<br />
+$ _{A}A \simeq \oplus _{i=1}^m \oplus _{j=1}^{n_i} S_i$<br />
+$A\simeq (End_A(\oplus _{i=1}^m \oplus _{j=1}^{n_i} S_i))^{op}$<br />
+by lemma 1.4.13, $Hom_A{(S_i, S<em>j) = 0$,<br />
+$\therefore$ $A\simeq \prod</em>{i=1}^m (End_A (\prod_{j=1}^{n_i} S_i))^{op}$<br />
+for A-modules X,Y,V,W,<br />
+$$Hom_A(X\oplus Y, V\oplus W) \simeq \begin{matrix} Hom_A(X,V) &amp; Hom_A(Y,V)\\ Hom_A(X,W) &amp; Hom_A(Y,W) \end{matrix}$$,<br />
+$\therefore, End<em>A(\oplus</em>{j=1}^{n_i} S_i)\simeq Mat_{n_i\times n_i}(End_A(S_i))$<br />
+by Schur&rsquo;s lemma, $End_A(S_i)=D_i^{&lsquo;}$ is skew-field containing K.<br />
+if D is skew-field centre containing K, then D^{op} either.
+for algebras A and B, since A, B commute in direct product, $(A\times B)^{op} \simeq A^{op} \times B^{op}$.<br />
+$\forall B$ $(Mat_{n\times n} (B))^{op} \simeq Mat_{n\times n} (B^{op})$, $M\mapsto M^T$.<br />
+$D_i := D_i^{&lsquo;op}$.<br />
+unicity is consequence of: skew-fields are endomorphism algebras of the simple modules,<br />
+krull-schmidt theorem implies: the unicity of decomposition of regular module into a sum of simple submodules.<br />
+n_i: simple modules 作为direct factor of the regular representation 同构等价类 的重数.</p>
 
 
   <footer>

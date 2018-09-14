@@ -17,8 +17,7 @@
       <pubDate>Tue, 04 Sep 2018 00:27:29 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/note180904/</guid>
-      <description>($K$:交换环, $A$:$K$-代数 $M$:$A$-模)
-$M$ is Noetherian:
+      <description>$M$ is Noetherian:
 $\exists M_1\subseteq M_2\subseteq &amp;hellip; \subseteq M$ $\quad$ =&amp;gt;
 $\exists n_0\in \mathbb{N}$ s.t. $M_n=M_{n_0}, \forall n \geq n_0$
 $M$ is artinian:

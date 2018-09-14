@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Note180830</title>
+      <title>RT-AHAPoV-Ch1</title>
       <link>https://cielrouge.github.io/post/note180830/</link>
       <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
       
@@ -27,8 +27,7 @@ $\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (
 an abelian group with a mapping $\mu: A\times M\to M$)
 M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
 给定K-代数同态$\nu: A\to End_K(M)$ =&amp;gt; M上有唯一A-模结构，使$A\to End_K(M)$是$\nu$.
- 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由A是$K$-代数，$K\to Z(A)$，证得$\lambda$的K-线性.）
-对$\nu: A\to End_K(M)$, 定义$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$</description>
+ 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由A是$K$-代数，$K\to Z(A)$，证得$\lambda$的K-线性.）</description>
     </item>
     
   </channel>

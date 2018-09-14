@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Note180830 - CielRouge</title>
-    <meta property="og:title" content="Note180830 - CielRouge">
+    <title>RT-AHAPoV-Ch1 - CielRouge</title>
+    <meta property="og:title" content="RT-AHAPoV-Ch1 - CielRouge">
     
     <meta name="twitter:card" content="summary">
 
@@ -108,7 +108,7 @@ code.has-jax {
     <article class="main">
       <header class="title">
       
-<h1>Note180830</h1>
+<h1>RT-AHAPoV-Ch1</h1>
 
 <h3>
   2018-08-30</h3>
@@ -116,6 +116,8 @@ code.has-jax {
 
 
       </header>
+
+
 
 
 <p>K-代数：<br />
@@ -295,18 +297,19 @@ may take $N=ker(u^m), S=im(u^m)$ (for m large enough)</p>
 <p>local: 环的不可逆元的集合是一个双边理想.</p>
 
 <p>$M$是非零不可分$A$模(Fitting&rsquo;s lemma) =&gt;<br />
-$End_A(M)$是一个局部环.<br />
-$M$的每个自同态either幂零or双射.</p>
+$M$的每个自同态幂零or双射.<br />
+$End_A(M)$是一个局部环. (if $u\in End_A(M)$ not invertible, then $\forall v \in End_A(M)$, $u\circ v$ and $v\circ u$ not invertible; if $u_1,u_2$ not invertible, then $u_1+u_2$ not invertilble)</p>
 
-<p>(M -&gt; N -&gt; M)是同构, 且N不可分, 则(M -&gt; N), (N -&gt; M)都是同构.<br />
-$M,N$是两个非零$A$-模, $N$不可分, $u\in Hom_A (M,N)$, $v\in Hom_A(N,M)$,<br />
-$v\circ u\in Aut_A(M)$ =&gt; $u$, $v$ 是同构</p>
+<p>$M,N$是两个非零$A$-模, $N$不可分, $u\in Hom_A (M,N)$, $v\in Hom_A(N,M)$,<br />
+若$v\circ u\in Aut_A(M)$, 则$u$, $v$ 是同构</p>
 
 <p>$\varphi: U\oplus V\to X\oplus Y$<br />
 $$ \varphi =\begin{pmatrix} \varphi_{U,X} &amp; \varphi_{V,X} \\ \varphi_{U,Y} &amp; \varphi_{V,Y} \end{pmatrix} $$<br />
 若$\varphi_{U,X}$是同构，则<br />
 $$ \tau =\begin{pmatrix} id_U &amp; -\varphi_{U,X}^{-1}\circ \varphi_{V,X} \\ 0 &amp; id_V \end{pmatrix} \in Aut_A(U\oplus V)$$<br />
-$\varphi \circ \tau: V\to Y$也是同构.</p>
+$\varphi \circ \tau: V\to Y$也是同构.<br />
+得到同构:$$\oplus_{j=2}^n M_i \simeq M/M_1 \to M/N_{j_0} \simeq \oplus_{j\neq j_0} N_j$$<br />
+Krull-Schmidt theorem得证.</p>
 
 <p><br></p>
 
@@ -322,17 +325,17 @@ $End_A(V)$是一个所有非零元都可逆的K-代数.</p>
 
 <p><br>
 remark 1.4.12<br />
-brauer群：以$K$为中心的有限维$K$-代数 这样的skew-field的等价类<br />
-brauer群的schur子群：是简单的群环-模的 自同态 的skew-field<br />
-skew-field的中心是域</p>
+brauer群：以$K$为中心的有限维$K$-代数的skew-field<br />
+brauer群的schur子群：是简单KG-模的自同态的skew-field<br />
+skew-field以域为中心</p>
 
 <p>lemma 1.4.13<br />
 V，W是两个不同构的简单A-模，则$Hom_A(V,W)=0$.</p>
 
 <p>lemma 1.4.14<br />
 regular A-模的自同态环同构于A的反对代数.<br />
-$\forall \phi \in End_A( _{A}A)$, $\phi(1_A) =: a_{\phi}$,<br />
-$\therefore$ $\forall b\in A$, $\phi(b)=b\cdot a_{\phi}$.<br />
+proof. $\forall \phi \in End_A( _{A}A)$, 令$\phi(1_A) =: a_{\phi}$,<br />
+则 $\forall b\in A$, $\phi(b)=b\cdot a_{\phi}$.<br />
 (自同态 -&gt; 右乘)<br />
 $b a_{\phi \circ \psi} = (\phi \circ \psi)(b) = \phi(\psi(b)) = (b a_{\psi})a_{\phi} = b(a_{\psi} a_{\phi})$<br />
 $a_{\psi}a_{\phi} = a_{\phi \circ \psi}$<br />
@@ -340,26 +343,28 @@ $\therefore$ $End_A ( _{A}A)\simeq A^{op}$</p>
 
 <p>notation: $Mat_{n\times n}(R)$: matrix ring of square matrices with coefficients in R.</p>
 
-<p>theorem 1.4.16 (Wedderburn)<br />
-A be a finite dimensional semisimple K-algebra.<br />
-$\exists$D_i: skew-fields with centres containing K.<br />
-$A \simeq \prod_{i=1}^m Mat_{n_i\times n_i}(D_i)$<br />
-($D_i$, $n_i$: completely determined by A)</p>
+<h3 id="theorem-1-4-16-wedderburn">theorem 1.4.16 (Wedderburn)</h3>
 
-<p>proof. by lemma 1.4.14, $A \simeq (End_A( _{A}A))^{op}$,<br />
+<p>A be a finite dimensional semisimple K-algebra.<br />
+$\exists D_i$: skew-fields with centres containing K.
+($D_i$, $n_i$: completely determined by A)<br />
+$$A \simeq \prod_{i=1}^m Mat_{n_i\times n_i}(D_i)$$</p>
+
+<p>Proof.<br />
+by lemma 1.4.14, $A \simeq (End_A( _{A}A))^{op}$,<br />
 $\because$ A semisimple, $\therefore$ $ _{A}A$ isomorphic to diret sum of simple modules,<br />
-$ _{A}A \simeq \oplus_{i=1}^m \oplus_{j=1}^{n_i} S_i$<br />
-$A\simeq (End_A(\oplus _{i=1}^m \oplus _{j=1}^{n_i} S_i))^{op}$<br />
+$$ _{A}A \simeq \bigoplus_{i=1}^m \bigoplus_{j=1}^{n_i} S_i$$<br />
+$$A\simeq (End_A(\bigoplus _{i=1}^m \bigoplus _{j=1}^{n_i} S_i))^{op}$$<br />
 by lemma 1.4.13, $Hom_A (S_i, S_j) = 0$,<br />
-$\therefore$ $A\simeq \prod_{i=1}^m (End_A (\prod_{j=1}^{n_i} S_i))^{op}$<br />
+$$A\simeq \prod_{i=1}^m (End_A (\prod_{j=1}^{n_i} S_i))^{op}$$<br />
 for A-modules X,Y,V,W,<br />
 $$Hom_A(X\oplus Y, V\oplus W) \simeq \begin{pmatrix} Hom_A(X,V) &amp; Hom_A(Y,V)\\ Hom_A(X,W) &amp; Hom_A(Y,W) \end{pmatrix}$$<br />
-$\therefore End_A(\oplus_{j=1}^{n_i} S_i)\simeq Mat_{n_i\times n_i}(End_A(S_i))$<br />
-by Schur&rsquo;s lemma, $End_A(S_i)=D_i^{&lsquo;}$ is skew-field containing K.<br />
-if D is skew-field centre containing K, then D^{op} either.
+$$\therefore End_A(\bigoplus_{j=1}^{n_i} S_i)\simeq Mat_{n_i\times n_i}(End_A(S_i))$$<br />
+by Schur&rsquo;s lemma, $End_A(S_i)=D_i&rsquo;$ is skew-field containing K.<br />
+if D is skew-field centre containing K, then $D^{op}$ either.
 for algebras A and B, since A, B commute in direct product, $(A\times B)^{op} \simeq A^{op} \times B^{op}$.<br />
 $\forall B$ $(Mat_{n\times n} (B))^{op} \simeq Mat_{n\times n} (B^{op})$, $M\mapsto M^T$.<br />
-$D_i := D_i^{&lsquo;op}$.<br />
+$D_i := D_i&rsquo;^{op}$.<br />
 unicity is consequence of: skew-fields are endomorphism algebras of the simple modules,<br />
 krull-schmidt theorem implies: the unicity of decomposition of regular module into a sum of simple submodules.<br />
 $n_i$: simple modules(同构等价类) 作为direct factor of the regular representation的重数.</p>

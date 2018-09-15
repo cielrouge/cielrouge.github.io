@@ -152,6 +152,22 @@ proof. in $Mat_{n\times n}(D)$ a simple direct factor corresponds to a column.</
 <p>definition 1.4.24<br />
 $K$-代数$A$ is simple, if for each 双边理想 $I$, $I=0$ or $I=A$.</p>
 
+<p>proposition 1.4.27<br />
+域上有限维简单$K$-代数is semisimple.<br />
+proof.<br />
+$S$ be a simple left $A$-submodule of $ _{A}A$ i.e. a minimal left ideal of $A$.<br />
+left ideal $J:=\sum_{a\in A} S\cdot a$, by definition $J$ is a non-zero two-sided ideal of $A$,<br />
+$\because$ $A$ simple, $\therefore$ $J=A$.<br />
+show $J$ is semisimple:<br />
+let $B_1 \subseteq A$ s.t. $L_1:=\sum_{b\in B_1} S\cdot b \neq A$<br />
+but so that: $\forall a\in A$, either $S\cdot a\subseteq L_1$ or $L_1 + S\cdot a = A$. then either $S\cdot a=0$ or $S\cdot a \simeq S$. (right multiplication gives $S\to S\cdot a$, since S is simple, ker = S or 0.)<br />
+let $a\in A$ s.t. $L_1 + S\cdot a = A$. then $S\cdot a \neq 0$, $L_1\cap S\cdot a\leq S\cdot a$, since $S\cdot a$ is simple, $L_1\cap S\cdot a=0$. $\therefore$ $A=L_1 \oplus S\cdot a$.<br />
+let $b\in B_1$ s.t. $S\cdot b\neq 0$, let $B_2\subseteq B_1$ s.t. $L_2 := \sum_{b\in B_2} S\cdot b$ satisfies: $\forall b_2 \in B_1\backslash B_2$, $S\cdot b=0$ or $L_2 \oplus S\cdot b_2 = L_1$.<br />
+recursively construct submodules $L_i$ s.t. $L_i \oplus S\cdot b_i = L_{i-1}$, by induction on dimension of $L_i$, $A=J=\bigoplus_{j=1}^m S\cdot b_j$ for certain $b_j\in A$. hence, regular $A$-module is semisimple.<br />
+show all finitely generated modules are semisimple:<br />
+let $M$ be a finitely generated $A$-module, $m_1,&hellip;,m_t$ be generating set of $M$.<br />
+$$( _{A}A)^t \to M$$ $$(a_1,&hellip;,a_t) \mapsto \sum_{j=1}^t a_j m_j $$</p>
+
 
   <footer>
   

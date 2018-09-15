@@ -6,10 +6,35 @@
     <description>Recent content on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Sep 2018 13:07:50 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Sep 2018 20:26:45 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Newscript</title>
+      <link>https://cielrouge.github.io/post/newscript/</link>
+      <pubDate>Sat, 15 Sep 2018 20:26:45 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/newscript/</guid>
+      <description>corollary 1.4.17
+这样的skew-field是交换的：代数闭域上的有限维向量空间.
+若$A$是有限维半简单$K$-代数，且$K$是代数闭域，则存在$n_i$ s.t.
+$$A\simeq \prod_{j=1}^m Mat_{n_j\times n_j} (K)$$
+proof.
+使$D$是$K$上的有限维skew-field，$d\in D$.
+因为$D$是有限维$K$-向量空间，由cayley-hamilton定理，d有最小多项式$P_d(X)\in K[X]$
+因为$K$是代数闭域，所以$P$的次数是1，所以$d\in K$，所以$D=K$.
+corollary 1.4.18
+$G$是有限群，则$\exists m, n_i \in \mathbb{N}$ s.t. $\vert G \vert = n_1^2 + n_2^2 + &amp;hellip; + n_m^2$. $n_i$是simple $KG$-module的维数，$K$是$\vert G \vert$在其中可逆的任意代数闭域.
+corollary 1.4.19
+若$A$在$K$上: 半简单，交换，有限维，则存在$K$上有限维扩张$K_i$, s.t. $A \simeq \prod_{j=1}^m K_i$.
+corollary 1.4.20
+若$A$是半简单有限维$K$-代数，$S$是简单$A$-模，则$\exists i$ s.t.
+$$ S\simeq S_i \simeq \begin{pmatrix} D_i \\ \vdots\\ D_i\end{pmatrix}_{n_i} $$
+proof.
+take $s\in S\backslash \lbrace 0 \rbrace$, $A\cdot s$是$S$非零子模， $\because$ $S$ simple, $\therefore$ $S=As$, $\therefore$ $S$是$ _{A}A$商模.</description>
+    </item>
     
     <item>
       <title>整理: fold,traverse</title>

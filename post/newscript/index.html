@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Newscript - CielRouge</title>
+    <meta property="og:title" content="Newscript - CielRouge">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="corollary 1.4.17
+这样的skew-field是交换的：代数闭域上的有限维向量空间.
+若$A$是有限维半简单$K$-代数，且$K$是代数闭域，则存在$n_i$ s.t.
+$$A\simeq \prod_{j=1}^m Mat_{n_j\times n_j} (K)$$
+proof.
+使$D$是$K$上的有限维skew-field，$d\in D$.
+因为$D$是有限维$K$-向量空 &amp;hellip;">
+      <meta property="og:description" content="corollary 1.4.17
+这样的skew-field是交换的：代数闭域上的有限维向量空间.
+若$A$是有限维半简单$K$-代数，且$K$是代数闭域，则存在$n_i$ s.t.
+$$A\simeq \prod_{j=1}^m Mat_{n_j\times n_j} (K)$$
+proof.
+使$D$是$K$上的有限维skew-field，$d\in D$.
+因为$D$是有限维$K$-向量空 &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+    <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">CielRouge</a></h1>
+
+
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Newscript</h1>
+
+<h3>
+  2018-09-15</h3>
+<hr>
+
+
+      </header>
+
+
+<p>corollary 1.4.17<br />
+这样的skew-field是交换的：代数闭域上的有限维向量空间.<br />
+若$A$是有限维半简单$K$-代数，且$K$是代数闭域，则存在$n_i$ s.t.<br />
+$$A\simeq \prod_{j=1}^m Mat_{n_j\times n_j} (K)$$<br />
+proof.<br />
+使$D$是$K$上的有限维skew-field，$d\in D$.<br />
+因为$D$是有限维$K$-向量空间，由cayley-hamilton定理，d有最小多项式$P_d(X)\in K[X]$<br />
+因为$K$是代数闭域，所以$P$的次数是1，所以$d\in K$，所以$D=K$.</p>
+
+<p>corollary 1.4.18<br />
+$G$是有限群，则$\exists m, n_i \in \mathbb{N}$ s.t. $\vert G \vert = n_1^2 + n_2^2 + &hellip; + n_m^2$. $n_i$是simple $KG$-module的维数，$K$是$\vert G \vert$在其中可逆的任意代数闭域.</p>
+
+<p>corollary 1.4.19<br />
+若$A$在$K$上: 半简单，交换，有限维，则存在$K$上有限维扩张$K_i$, s.t. $A \simeq \prod_{j=1}^m K_i$.</p>
+
+<p>corollary 1.4.20<br />
+若$A$是半简单有限维$K$-代数，$S$是简单$A$-模，则$\exists i$ s.t.<br />
+$$ S\simeq S_i \simeq \begin{pmatrix} D_i \\ \vdots\\ D_i\end{pmatrix}_{n_i} $$<br />
+proof.<br />
+take $s\in S\backslash \lbrace 0 \rbrace$, $A\cdot s$是$S$非零子模，
+$\because$ $S$ simple, $\therefore$ $S=As$, $\therefore$ $S$是$ _{A}A$商模.<br />
+$\because$ $ _{A}A$ semisimple, $\therefore$ $\exists i$ s.t. $S\simeq S_i$.<br />
+$$S_i \simeq Hom_A( _{A}A, S_i) \simeq Hom_A(\bigoplus_{l=1}^m \bigoplus_{j=1}^{n_i} S_l,S_i) \simeq \begin{pmatrix} D_i \\ \vdots \\D_i\end{pmatrix}_{n_i}$$</p>
+
+<p>by remark 1.4.12, every simple A-module S is a vector space over the skew field $End_A(S)$.</p>
+
+<p>corollary 1.4.21<br />
+$A$是有限维$K$-代数，$S$是简单$A$-模，则excatly $dim_{End_A(S)}(S)$ copies of $S$ are dirct factors of $ _{A}A$.<br />
+proof. in $Mat_{n\times n}(D)$ a simple direct factor corresponds to a column.</p>
+
+<p>corollary 1.4.23<br />
+若$A$是半简单阿廷代数，则$A$同构于skew-fields上的矩阵环的一个有限直积.</p>
+
+<p>definition 1.4.24<br />
+$K$-代数$A$ is simple, if for each 双边理想 $I$, $I=0$ or $I=A$.</p>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

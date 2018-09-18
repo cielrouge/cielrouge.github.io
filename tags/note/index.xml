@@ -6,19 +6,10 @@
     <description>Recent content in Note on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 10 Sep 2018 21:44:08 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>整理: State</title>
-      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86state/</link>
-      <pubDate>Mon, 10 Sep 2018 21:44:08 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86state/</guid>
-      <description>newtype State s a = State {runState :: s -&amp;gt; (a , s)} newtype (State s) a = State {runState :: s -&amp;gt; (a , s)} -- runState :: State s a -&amp;gt; s -&amp;gt; (a , s) -- State $ \s -&amp;gt; (a , s) = (State s) ainstance Functor (State s) where fmap f m = State $ \s -&amp;gt; case runState m s of (r , s) -&amp;gt; (f r , s) 类型推导 f :: a -&amp;gt; b m :: (State s) a runState :: State s a -&amp;gt; s -&amp;gt; (a , s) runState :: (State s) a -&amp;gt; (s -&amp;gt; (a , s)) runState m s = runState ((State s) a) s = (a , s) = (r , s) \s -&amp;gt; (f r , s) :: \s -&amp;gt; ((a -&amp;gt; b) a , s) :: \s -&amp;gt; (b , s) State $ s -&amp;gt; (b , s)  instance Applicative (State s) where pure x = State $ \s -&amp;gt; (x , s) m &amp;lt;*&amp;gt; n = State $ \s -&amp;gt; case runState m s of (f , s&amp;#39;) -&amp;gt; case runState n s&amp;#39; of (x , s&amp;#39;&amp;#39;) -&amp;gt; (f x , s&amp;#39;&amp;#39;)  类型推导 pure x :: (State s) x State $ \s -&amp;gt; (x , s) = (State s) x &amp;lt;*&amp;gt; :: f (a -&amp;gt; b) -&amp;gt; f a -&amp;gt; f b &amp;lt;*&amp;gt; :: (State s) (a -&amp;gt; b) -&amp;gt; (State s) a -&amp;gt; (State s) b m :: (State s) (a -&amp;gt; b) :: (State s) a -&amp;gt; (State s) b n :: (State s) a runState n s&#39; = (x , s&#39;&#39;) :: (State s) a -&amp;gt; s -&amp;gt; (a , s) runState m s = (f , s&#39;) -&amp;gt; (f x , s&#39;&#39;) :: (State s) (a -&amp;gt; b) -&amp;gt; s -&amp;gt; (a , s) -&amp;gt; (b , s)  instance Monad (State s) where m &amp;gt;&amp;gt; n = State $ \s -&amp;gt; case runState m s of (r , s&amp;#39;) -&amp;gt; runState (n r) s&amp;#39; 类型推导 (&amp;gt;&amp;gt;=) :: m a -&amp;gt; (a -&amp;gt; m b) -&amp;gt; m b m :: (State s) a n :: (a -&amp;gt; (State s) b) runState (n r) s&#39; :: (State s) b  get :: State s s get = State $ \s -&amp;gt; (# s, s #) gets :: (s -&amp;gt; a) -&amp;gt; State s a gets f = State $ \s -&amp;gt; (# f s, s #) put :: s -&amp;gt; State s () put s&amp;#39; = State $ \_ -&amp;gt; (# (), s&amp;#39; #) modify :: (s -&amp;gt; s) -&amp;gt; State s () modify f = State $ \s -&amp;gt; (# (), f s #) evalState :: State s a -&amp;gt; s -&amp;gt; a evalState s i = case runState&amp;#39; s i of (# a, _ #) -&amp;gt; a execState :: State s a -&amp;gt; s -&amp;gt; s execState s i = case runState&amp;#39; s i of (# _, s&amp;#39; #) -&amp;gt; s&amp;#39; runState :: State s a -&amp;gt; s -&amp;gt; (a, s) runState s i = case runState&amp;#39; s i of (# a, s&amp;#39; #) -&amp;gt; (a, s&amp;#39;) ST examples &amp;gt;&amp;gt;&amp;gt; :{ runST (do ref &amp;lt;- newSTRef &amp;#34;hello&amp;#34; x &amp;lt;- readSTRef ref writeSTRef ref (x ++ &amp;#34;world&amp;#34;) readSTRef ref ) :} &amp;#34;helloworld&amp;#34; &amp;gt;&amp;gt;&amp;gt; :{ runST (do ref &amp;lt;- newSTRef &amp;#34;&amp;#34; modifySTRef ref (const &amp;#34;world&amp;#34;) modifySTRef ref (++ &amp;#34;!</description>
-    </item>
     
     <item>
       <title>整理: Functor</title>
@@ -55,7 +46,7 @@ Hibert&amp;rsquo;s Nullstellensatz:
 被assign到一个仿射簇的仿射代数
 代数 有限生成 iff
 同构于$R[x_1,\cdots ,x_n]/I$.
-仿射K_代数:
+仿射K-代数:
 域K上的有限生成代数
 (A是域K上的一个代数)
 A是整环，且在域K上algebraic =&amp;gt; A是域.

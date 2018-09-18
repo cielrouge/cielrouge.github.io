@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cielrouge.github.io/post/state/</loc>
+    <lastmod>2018-09-18T10:09:19+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cielrouge.github.io/post/newscript/</loc>
     <lastmod>2018-09-15T20:26:45+08:00</lastmod>
   </url>
@@ -10,11 +15,6 @@
   <url>
     <loc>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldtraverse/</loc>
     <lastmod>2018-09-11T13:07:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86state/</loc>
-    <lastmod>2018-09-10T21:44:08+08:00</lastmod>
   </url>
   
   <url>
@@ -45,13 +45,13 @@
   
   <url>
     <loc>https://cielrouge.github.io/</loc>
-    <lastmod>2018-09-15T20:26:45+08:00</lastmod>
+    <lastmod>2018-09-18T10:09:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cielrouge.github.io/tags/hs/</loc>
-    <lastmod>2018-09-10T21:44:08+08:00</lastmod>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -69,13 +69,13 @@
   
   <url>
     <loc>https://cielrouge.github.io/tags/note/</loc>
-    <lastmod>2018-09-10T21:44:08+08:00</lastmod>
+    <lastmod>2018-09-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cielrouge.github.io/post/</loc>
-    <lastmod>2018-09-15T20:26:45+08:00</lastmod>
+    <lastmod>2018-09-18T10:09:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head>
-	<meta name="generator" content="Hugo 0.48" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>CielRouge</title>
-    <meta property="og:title" content="CielRouge">
-    <meta property="og:type" content="website">
+    <title>线性回归 - CielRouge</title>
+    <meta property="og:title" content="线性回归 - CielRouge">
     
     <meta name="twitter:card" content="summary">
 
@@ -16,7 +14,16 @@
     
 
     
-    <meta property="description" content="">
+      
+      <meta property="description" content="$f(\mathbf{x_i}) = \mathbf{w}^{T} \mathbf{x_i} &#43; b$
+$\hat{\mathbf{w}} = (\mathbf{w}; b)$
+$$ \mathbf{X} = \begin{pmatrix} x_{11} &amp;amp; x_{12} &amp;amp; \hdots &amp;amp; x_{1d} &amp;amp; 1 \
+x_{21} &amp;amp; x_{22} &amp;hellip;">
+      <meta property="og:description" content="$f(\mathbf{x_i}) = \mathbf{w}^{T} \mathbf{x_i} &#43; b$
+$\hat{\mathbf{w}} = (\mathbf{w}; b)$
+$$ \mathbf{X} = \begin{pmatrix} x_{11} &amp;amp; x_{12} &amp;amp; \hdots &amp;amp; x_{1d} &amp;amp; 1 \
+x_{21} &amp;amp; x_{22} &amp;hellip;">
+      
     
 
     
@@ -24,8 +31,6 @@
 
     
 
-    
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="CielRouge" />
     
     
 
@@ -70,7 +75,7 @@ code.has-jax {
   </head>
 
   
-  <body class="home">
+  <body class="post">
     <header class="masthead">
       <h1><a href="/">CielRouge</a></h1>
 
@@ -95,44 +100,28 @@ code.has-jax {
     <article class="main">
       <header class="title">
       
+<h1>线性回归</h1>
+
+<h3>
+  2018-09-17</h3>
+<hr>
+
 
       </header>
 
 
+<p>$f(\mathbf{x_i}) = \mathbf{w}^{T} \mathbf{x_i} + b$<br />
+$\hat{\mathbf{w}} = (\mathbf{w}; b)$<br />
+$$ \mathbf{X} =  \begin{pmatrix} x_{11} &amp; x_{12} &amp; \hdots &amp; x_{1d} &amp; 1 \<br />
+                                 x_{21} &amp; x_{22} &amp; \hdots &amp; x_{2d} &amp; 1 \<br />
+                                 \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \<br />
+                                 x_{m1} &amp; x_{m2} &amp; \hdots &amp; x_{md} &amp; 1
+                \end{pmatrix} $$<br />
+$\hat{\mathbf{w}}^* = \underset{\hat{\mathbf{w}}}{arg min} (\mathbf{y} - \mathbf{X} \hat{\mathbf{w}})^T (\mathbf{y} - \mathbf{X} \hat{\mathbf{w}}) $<br />
+$\hat{\mathbf{w}}^* = (\mathbf(X^T X))^{-1} \mathbf{X}^T\mathbf{y}$<br />
+$\hat{\mathbf{x_i}} = (\mathbf{x_i};1)$<br />
+$f (\hat{\mathbf{x_i}}) = \hat{\mathbf{x_i}} \hat{\mathbf{w}}^*$</p>
 
-<ul>
-  
-  <li>
-    <span class="date">2018/09/18</span>
-    <a href="/post/state/">State, Reader</a>
-  </li>
-  
-  <li>
-    <span class="date">2018/09/15</span>
-    <a href="/post/newscript/">Newscript</a>
-  </li>
-  
-  <li>
-    <span class="date">2018/09/11</span>
-    <a href="/post/%E6%95%B4%E7%90%86foldtraverse/">整理: fold,traverse</a>
-  </li>
-  
-  <li>
-    <span class="date">2018/09/10</span>
-    <a href="/post/%E6%95%B4%E7%90%86functor/">整理: Functor</a>
-  </li>
-  
-  <li>
-    <span class="date">2018/09/01</span>
-    <a href="/post/note180901/">Note180901</a>
-  </li>
-  
-  <li>
-    <span class="date">2018/08/30</span>
-    <a href="/post/note180830/">RT-AHAPoV-Ch1</a>
-  </li>
-  
-</ul>
 
   <footer>
   

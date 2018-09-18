@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ml on CielRouge</title>
+    <link>https://cielrouge.github.io/tags/ml/</link>
+    <description>Recent content in Ml on CielRouge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 17 Sep 2018 16:42:04 +0800</lastBuildDate>
+    
+	<atom:link href="https://cielrouge.github.io/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>线性回归</title>
+      <link>https://cielrouge.github.io/post/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</link>
+      <pubDate>Mon, 17 Sep 2018 16:42:04 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</guid>
+      <description>$f(\mathbf{x_i}) = \mathbf{w}^{T} \mathbf{x_i} + b$
+$\hat{\mathbf{w}} = (\mathbf{w}; b)$
+$$ \mathbf{X} = \begin{pmatrix} x_{11} &amp;amp; x_{12} &amp;amp; \hdots &amp;amp; x_{1d} &amp;amp; 1 \
+x_{21} &amp;amp; x_{22} &amp;amp; \hdots &amp;amp; x_{2d} &amp;amp; 1 \
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots &amp;amp; \vdots \
+x_{m1} &amp;amp; x_{m2} &amp;amp; \hdots &amp;amp; x_{md} &amp;amp; 1 \end{pmatrix} $$
+$\hat{\mathbf{w}}^* = \underset{\hat{\mathbf{w}}}{arg min} (\mathbf{y} - \mathbf{X} \hat{\mathbf{w}})^T (\mathbf{y} - \mathbf{X} \hat{\mathbf{w}}) $
+$\hat{\mathbf{w}}^* = (\mathbf(X^T X))^{-1} \mathbf{X}^T\mathbf{y}$</description>
+    </item>
+    
+  </channel>
+</rss>

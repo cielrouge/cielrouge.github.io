@@ -24,7 +24,7 @@ Hibert&amp;rsquo;s Nullstellensatz:
 被assign到一个仿射簇的仿射代数
 代数 有限生成 iff
 同构于$R[x_1,\cdots ,x_n]/I$.
-仿射K_代数:
+仿射K-代数:
 域K上的有限生成代数
 (A是域K上的一个代数)
 A是整环，且在域K上algebraic =&amp;gt; A是域.

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>整理: State - CielRouge</title>
-    <meta property="og:title" content="整理: State - CielRouge">
+    <title>State, Reader - CielRouge</title>
+    <meta property="og:title" content="State, Reader - CielRouge">
     
     <meta name="twitter:card" content="summary">
 
@@ -14,6 +14,9 @@
     
 
     
+      
+      <meta property="description" content="newtype State s a = State {runState :: s -&amp;gt; (a , s)} newtype (State s) a = State {runState :: s -&amp;gt; (a , s)} -- runState :: State s a -&amp;gt; s -&amp;gt; (a , s) -- State $ \s -&amp;gt; (a , s) = (State s) &amp;hellip;">
+      <meta property="og:description" content="newtype State s a = State {runState :: s -&amp;gt; (a , s)} newtype (State s) a = State {runState :: s -&amp;gt; (a , s)} -- runState :: State s a -&amp;gt; s -&amp;gt; (a , s) -- State $ \s -&amp;gt; (a , s) = (State s) &amp;hellip;">
       
     
 
@@ -94,7 +97,7 @@ code.has-jax {
     <article class="main">
       <header class="title">
       
-<h1>整理: State</h1>
+<h1>State, Reader</h1>
 
 <h3>
   2018-09-10</h3>
@@ -106,101 +109,44 @@ code.has-jax {
 
 
 
+<h3 id="state">State</h3>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#080;font-weight:bold">newtype</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">a</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> {<span style="color:#06b;font-weight:bold">runState</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">a</span> , <span style="color:#06b;font-weight:bold">s</span>)}
 <span style="color:#080;font-weight:bold">newtype</span> (<span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span>) <span style="color:#06b;font-weight:bold">a</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> {<span style="color:#06b;font-weight:bold">runState</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">a</span> , <span style="color:#06b;font-weight:bold">s</span>)}
 <span style="color:#888">-- runState :: State s a -&gt; s -&gt; (a , s)</span>
 <span style="color:#888">-- State $ \s -&gt; (a , s) = (State s) a</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#080;font-weight:bold">instance</span> <span style="color:#339;font-weight:bold">Functor</span> (<span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span>) <span style="color:#080;font-weight:bold">where</span>
 	<span style="color:#06b;font-weight:bold">fmap</span> <span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#333">$</span> <span style="color:#06b;font-weight:bold">\s</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#080;font-weight:bold">case</span> <span style="color:#06b;font-weight:bold">runState</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#080;font-weight:bold">of</span>
-					(<span style="color:#06b;font-weight:bold">r</span> , <span style="color:#06b;font-weight:bold">s</span>) <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">r</span> , <span style="color:#06b;font-weight:bold">s</span>)</code></pre></div>
-<pre><code>类型推导  
-f :: a -&gt; b
-m :: (State s) a
-runState :: State s a -&gt; s -&gt; (a , s)
-runState :: (State s) a -&gt; (s -&gt; (a , s))
-runState m s = runState ((State s) a) s = (a , s) = (r , s)
-\s -&gt; (f r , s) :: \s -&gt; ((a -&gt; b) a , s) :: \s -&gt; (b , s)
-State $ s -&gt; (b , s)
-</code></pre>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#080;font-weight:bold">instance</span> <span style="color:#339;font-weight:bold">Applicative</span> (<span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span>) <span style="color:#080;font-weight:bold">where</span>
+					(<span style="color:#06b;font-weight:bold">r</span> , <span style="color:#06b;font-weight:bold">s</span>) <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">r</span> , <span style="color:#06b;font-weight:bold">s</span>)</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#080;font-weight:bold">instance</span> <span style="color:#339;font-weight:bold">Applicative</span> (<span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span>) <span style="color:#080;font-weight:bold">where</span>
 	<span style="color:#06b;font-weight:bold">pure</span> <span style="color:#06b;font-weight:bold">x</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#333">$</span> <span style="color:#06b;font-weight:bold">\s</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">x</span> , <span style="color:#06b;font-weight:bold">s</span>)
 	<span style="color:#06b;font-weight:bold">m</span> <span style="color:#333">&lt;*&gt;</span> <span style="color:#06b;font-weight:bold">n</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#333">$</span> <span style="color:#06b;font-weight:bold">\s</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#080;font-weight:bold">case</span> <span style="color:#06b;font-weight:bold">runState</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#080;font-weight:bold">of</span> 
 				(<span style="color:#06b;font-weight:bold">f</span> , <span style="color:#06b;font-weight:bold">s&#39;</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#080;font-weight:bold">case</span> <span style="color:#06b;font-weight:bold">runState</span> <span style="color:#06b;font-weight:bold">n</span> <span style="color:#06b;font-weight:bold">s&#39;</span> <span style="color:#080;font-weight:bold">of</span>
-						(<span style="color:#06b;font-weight:bold">x</span> , <span style="color:#06b;font-weight:bold">s&#39;&#39;</span>) <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">x</span> , <span style="color:#06b;font-weight:bold">s&#39;&#39;</span>)  </code></pre></div>
-<pre><code>类型推导  
-pure x :: (State s) x 
-State $ \s -&gt; (x , s) = (State s) x
-&lt;*&gt; :: f (a -&gt; b) -&gt; f a -&gt; f b
-&lt;*&gt; :: (State s) (a -&gt; b) -&gt; (State s) a -&gt; (State s) b
-m :: (State s) (a -&gt; b) :: (State s) a -&gt; (State s) b  
-n :: (State s) a 
-runState n s' = (x , s'')
-	:: (State s) a -&gt; s -&gt; (a , s)
-runState m s = (f , s') -&gt; (f x , s'') 
-	:: (State s) (a -&gt; b) -&gt; s -&gt; (a , s) -&gt; (b , s)
-</code></pre>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#080;font-weight:bold">instance</span> <span style="color:#339;font-weight:bold">Monad</span> (<span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span>) <span style="color:#080;font-weight:bold">where</span>
+							(<span style="color:#06b;font-weight:bold">x</span> , <span style="color:#06b;font-weight:bold">s&#39;&#39;</span>) <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">x</span> , <span style="color:#06b;font-weight:bold">s&#39;&#39;</span>)  </code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#080;font-weight:bold">instance</span> <span style="color:#339;font-weight:bold">Monad</span> (<span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span>) <span style="color:#080;font-weight:bold">where</span>
 	<span style="color:#06b;font-weight:bold">m</span> <span style="color:#333">&gt;&gt;</span> <span style="color:#06b;font-weight:bold">n</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#333">$</span> <span style="color:#06b;font-weight:bold">\s</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#080;font-weight:bold">case</span> <span style="color:#06b;font-weight:bold">runState</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#080;font-weight:bold">of</span> 
 					(<span style="color:#06b;font-weight:bold">r</span> , <span style="color:#06b;font-weight:bold">s&#39;</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">runState</span> (<span style="color:#06b;font-weight:bold">n</span> <span style="color:#06b;font-weight:bold">r</span>) <span style="color:#06b;font-weight:bold">s&#39;</span></code></pre></div>
-<pre><code>类型推导  
-(&gt;&gt;=) :: m a -&gt; (a -&gt; m b) -&gt; m b
-m :: (State s) a 
-n :: (a -&gt; (State s) b)
-runState (n r) s' :: (State s) b
-</code></pre>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#06b;font-weight:bold">get</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">s</span>
-<span style="color:#06b;font-weight:bold">get</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#333">$</span> <span style="color:#06b;font-weight:bold">\s</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#333">#</span> <span style="color:#06b;font-weight:bold">s</span>, <span style="color:#06b;font-weight:bold">s</span> <span style="color:#333">#</span>)
+<p>minimal complete definition:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#06b;font-weight:bold">get</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">s</span>  
+<span style="color:#06b;font-weight:bold">put</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#007020">()</span>   
+<span style="color:#06b;font-weight:bold">state</span> <span style="color:#000;font-weight:bold">::</span> (<span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">a</span>,<span style="color:#06b;font-weight:bold">s</span>)) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">a</span>  </code></pre></div>
+<p>example:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#06b;font-weight:bold">tick</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#339;font-weight:bold">Int</span> <span style="color:#339;font-weight:bold">Int</span>
+<span style="color:#06b;font-weight:bold">tick</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#080;font-weight:bold">do</span> <span style="color:#06b;font-weight:bold">n</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">get</span>
+          <span style="color:#06b;font-weight:bold">put</span> (<span style="color:#06b;font-weight:bold">n</span><span style="color:#333">+</span><span style="color:#00d;font-weight:bold">1</span>)
+          <span style="color:#06b;font-weight:bold">return</span> <span style="color:#06b;font-weight:bold">n</span>
 
-<span style="color:#06b;font-weight:bold">gets</span> <span style="color:#000;font-weight:bold">::</span> (<span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">a</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">a</span>
-<span style="color:#06b;font-weight:bold">gets</span> <span style="color:#06b;font-weight:bold">f</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#333">$</span> <span style="color:#06b;font-weight:bold">\s</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#333">#</span> <span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">s</span>, <span style="color:#06b;font-weight:bold">s</span> <span style="color:#333">#</span>)
+<span style="color:#06b;font-weight:bold">plusOne</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#339;font-weight:bold">Int</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#339;font-weight:bold">Int</span>
+<span style="color:#06b;font-weight:bold">plusOne</span> <span style="color:#06b;font-weight:bold">n</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#06b;font-weight:bold">execState</span> <span style="color:#06b;font-weight:bold">tick</span> <span style="color:#06b;font-weight:bold">n</span></code></pre></div>
+<h3 id="reader">Reader</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#080;font-weight:bold">newtype</span> <span style="color:#339;font-weight:bold">ReaderT</span> <span style="color:#06b;font-weight:bold">r</span> (<span style="color:#06b;font-weight:bold">m</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#06b;font-weight:bold">k</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#333">*</span>) (<span style="color:#06b;font-weight:bold">a</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#06b;font-weight:bold">k</span>) <span style="color:#000;font-weight:bold">::</span> <span style="color:#333">*</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">k</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#333">*</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">k</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#333">*</span>
+<span style="color:#339;font-weight:bold">ReaderT</span> (<span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">a</span>)
 
-<span style="color:#06b;font-weight:bold">put</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#007020">()</span>
-<span style="color:#06b;font-weight:bold">put</span> <span style="color:#06b;font-weight:bold">s&#39;</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#333">$</span> <span style="color:#06b;font-weight:bold">\</span><span style="color:#080;font-weight:bold">_</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#333">#</span> <span style="color:#007020">()</span>, <span style="color:#06b;font-weight:bold">s&#39;</span> <span style="color:#333">#</span>)
-
-<span style="color:#06b;font-weight:bold">modify</span> <span style="color:#000;font-weight:bold">::</span> (<span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">s</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#007020">()</span>
-<span style="color:#06b;font-weight:bold">modify</span> <span style="color:#06b;font-weight:bold">f</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#333">$</span> <span style="color:#06b;font-weight:bold">\s</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#333">#</span> <span style="color:#007020">()</span>, <span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#333">#</span>)
-
-
-<span style="color:#06b;font-weight:bold">evalState</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">a</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">a</span>
-<span style="color:#06b;font-weight:bold">evalState</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">i</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#080;font-weight:bold">case</span> <span style="color:#06b;font-weight:bold">runState&#39;</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">i</span> <span style="color:#080;font-weight:bold">of</span>
-                (<span style="color:#333">#</span> <span style="color:#06b;font-weight:bold">a</span>, <span style="color:#080;font-weight:bold">_</span> <span style="color:#333">#</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">a</span>
-
-
-<span style="color:#06b;font-weight:bold">execState</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">a</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">s</span>
-<span style="color:#06b;font-weight:bold">execState</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">i</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#080;font-weight:bold">case</span> <span style="color:#06b;font-weight:bold">runState&#39;</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">i</span> <span style="color:#080;font-weight:bold">of</span>
-                (<span style="color:#333">#</span> <span style="color:#080;font-weight:bold">_</span>, <span style="color:#06b;font-weight:bold">s&#39;</span> <span style="color:#333">#</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">s&#39;</span>
-
-
-<span style="color:#06b;font-weight:bold">runState</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#339;font-weight:bold">State</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">a</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">a</span>, <span style="color:#06b;font-weight:bold">s</span>)
-<span style="color:#06b;font-weight:bold">runState</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">i</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#080;font-weight:bold">case</span> <span style="color:#06b;font-weight:bold">runState&#39;</span> <span style="color:#06b;font-weight:bold">s</span> <span style="color:#06b;font-weight:bold">i</span> <span style="color:#080;font-weight:bold">of</span>
-               (<span style="color:#333">#</span> <span style="color:#06b;font-weight:bold">a</span>, <span style="color:#06b;font-weight:bold">s&#39;</span> <span style="color:#333">#</span>) <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">a</span>, <span style="color:#06b;font-weight:bold">s&#39;</span>)</code></pre></div>
-<h3 id="st-examples">ST examples</h3>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#333">&gt;&gt;&gt;</span> <span style="color:#339;font-weight:bold">:</span>{
-<span style="color:#06b;font-weight:bold">runST</span> (<span style="color:#080;font-weight:bold">do</span>
-    <span style="color:#06b;font-weight:bold">ref</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">newSTRef</span> <span style="background-color:#fff0f0">&#34;hello&#34;</span>
-    <span style="color:#06b;font-weight:bold">x</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">readSTRef</span> <span style="color:#06b;font-weight:bold">ref</span>
-    <span style="color:#06b;font-weight:bold">writeSTRef</span> <span style="color:#06b;font-weight:bold">ref</span> (<span style="color:#06b;font-weight:bold">x</span> <span style="color:#333">++</span> <span style="background-color:#fff0f0">&#34;world&#34;</span>)
-    <span style="color:#06b;font-weight:bold">readSTRef</span> <span style="color:#06b;font-weight:bold">ref</span> )
-<span style="color:#339;font-weight:bold">:</span>}
-<span style="background-color:#fff0f0">&#34;helloworld&#34;</span>
-
-<span style="color:#333">&gt;&gt;&gt;</span> <span style="color:#339;font-weight:bold">:</span>{
-<span style="color:#06b;font-weight:bold">runST</span> (<span style="color:#080;font-weight:bold">do</span>
-    <span style="color:#06b;font-weight:bold">ref</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">newSTRef</span> <span style="background-color:#fff0f0">&#34;&#34;</span>
-    <span style="color:#06b;font-weight:bold">modifySTRef</span> <span style="color:#06b;font-weight:bold">ref</span> (<span style="color:#06b;font-weight:bold">const</span> <span style="background-color:#fff0f0">&#34;world&#34;</span>)
-    <span style="color:#06b;font-weight:bold">modifySTRef</span> <span style="color:#06b;font-weight:bold">ref</span> (<span style="color:#333">++</span> <span style="background-color:#fff0f0">&#34;!&#34;</span>)
-    <span style="color:#06b;font-weight:bold">modifySTRef</span> <span style="color:#06b;font-weight:bold">ref</span> (<span style="background-color:#fff0f0">&#34;Hello, &#34;</span> <span style="color:#333">++</span>)
-    <span style="color:#06b;font-weight:bold">readSTRef</span> <span style="color:#06b;font-weight:bold">ref</span> )
-<span style="color:#339;font-weight:bold">:</span>}
-<span style="background-color:#fff0f0">&#34;Hello, world!&#34;</span>
-
-<span style="color:#333">&gt;&gt;&gt;</span> <span style="color:#080;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">Control.Monad</span> (<span style="color:#06b;font-weight:bold">replicateM_</span>)
-<span style="color:#333">&gt;&gt;&gt;</span> <span style="color:#339;font-weight:bold">:</span>{
-<span style="color:#06b;font-weight:bold">print</span> (<span style="color:#06b;font-weight:bold">runST</span> (<span style="color:#080;font-weight:bold">do</span>
-    <span style="color:#06b;font-weight:bold">ref</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">newSTRef</span> <span style="color:#00d;font-weight:bold">0</span>
-    <span style="color:#06b;font-weight:bold">replicateM_</span> <span style="color:#00d;font-weight:bold">1000</span> <span style="color:#333">$</span> <span style="color:#06b;font-weight:bold">modifySTRef</span> <span style="color:#06b;font-weight:bold">ref</span> (<span style="color:#333">+</span><span style="color:#00d;font-weight:bold">1</span>)
-    <span style="color:#06b;font-weight:bold">readSTRef</span> <span style="color:#06b;font-weight:bold">ref</span> ))
-<span style="color:#339;font-weight:bold">:</span>}
-<span style="color:#00d;font-weight:bold">1000</span></code></pre></div>
+<span style="color:#080;font-weight:bold">type</span> <span style="color:#339;font-weight:bold">Reader</span> <span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#339;font-weight:bold">ReaderT</span> <span style="color:#06b;font-weight:bold">r</span> <span style="color:#339;font-weight:bold">Identity</span>
+<span style="color:#06b;font-weight:bold">runReader</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#339;font-weight:bold">Reader</span> <span style="color:#06b;font-weight:bold">r</span> <span style="color:#06b;font-weight:bold">a</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">a</span>  </code></pre></div>
+<p>minimal complete definition:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#06b;font-weight:bold">ask</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">r</span>
+<span style="color:#06b;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">::</span> (<span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">r</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">a</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">a</span>
+<span style="color:#06b;font-weight:bold">reader</span> <span style="color:#000;font-weight:bold">::</span> (<span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">a</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">m</span> <span style="color:#06b;font-weight:bold">a</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#339;font-weight:bold">MonadReader</span> <span style="color:#06b;font-weight:bold">r</span> ((<span style="color:#000;font-weight:bold">-&gt;</span>) <span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#333">*</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#333">*</span>)
+<span style="color:#06b;font-weight:bold">ask</span> <span style="color:#000;font-weight:bold">::</span> <span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">r</span>
+<span style="color:#06b;font-weight:bold">local</span> <span style="color:#000;font-weight:bold">::</span> (<span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">r</span>) <span style="color:#000;font-weight:bold">-&gt;</span> (<span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">a</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">a</span>
+<span style="color:#06b;font-weight:bold">reader</span> <span style="color:#000;font-weight:bold">::</span> (<span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">a</span>) <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">r</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">a</span></code></pre></div>
 
   <footer>
   

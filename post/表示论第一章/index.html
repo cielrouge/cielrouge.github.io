@@ -369,6 +369,120 @@ unicity is consequence of: skew-fields are endomorphism algebras of the simple m
 krull-schmidt theorem implies: the unicity of decomposition of regular module into a sum of simple submodules.<br />
 $n_i$: simple modules(同构等价类) 作为direct factor of the regular representation的重数.</p>
 
+<p>corollary 1.4.17<br />
+这样的skew-field是交换的：代数闭域上的有限维向量空间.<br />
+若$A$是有限维半简单$K$-代数，且$K$是代数闭域，则存在$n_i$ s.t.<br />
+$$A\simeq \prod_{j=1}^m Mat_{n_j\times n_j} (K)$$<br />
+proof.<br />
+使$D$是$K$上的有限维skew-field，$d\in D$.<br />
+因为$D$是有限维$K$-向量空间，由cayley-hamilton定理，d有最小多项式$P_d(X)\in K[X]$<br />
+因为$K$是代数闭域，所以$P$的次数是1，所以$d\in K$，所以$D=K$.</p>
+
+<p>corollary 1.4.18<br />
+$G$是有限群，则$\exists m, n_i \in \mathbb{N}$ s.t. $\vert G \vert = n_1^2 + n_2^2 + &hellip; + n_m^2$. $n_i$是simple $KG$-module的维数，$K$是$\vert G \vert$在其中可逆的任意代数闭域.</p>
+
+<p>corollary 1.4.19<br />
+若$A$在$K$上: 半简单，交换，有限维，则存在$K$上有限维扩张$K_i$, s.t. $A \simeq \prod_{j=1}^m K_i$.</p>
+
+<p>corollary 1.4.20<br />
+若$A$是半简单有限维$K$-代数，$S$是简单$A$-模，则$\exists i$ s.t.<br />
+$$ S\simeq S_i \simeq \begin{pmatrix} D_i \\ \vdots\\ D_i\end{pmatrix}_{n_i} $$<br />
+proof.<br />
+take $s\in S\backslash \lbrace 0 \rbrace$, $A\cdot s$是$S$非零子模，
+$\because$ $S$ simple, $\therefore$ $S=As$, $\therefore$ $S$是$ _{A}A$商模.<br />
+$\because$ $ _{A}A$ semisimple, $\therefore$ $\exists i$ s.t. $S\simeq S_i$.<br />
+$$S_i \simeq Hom_A( _{A}A, S_i) \simeq Hom_A(\bigoplus_{l=1}^m \bigoplus_{j=1}^{n_i} S_l,S_i) \simeq \begin{pmatrix} D_i \\ \vdots \\D_i\end{pmatrix}_{n_i}$$</p>
+
+<p>by remark 1.4.12, every simple A-module S is a vector space over the skew field $End_A(S)$.</p>
+
+<p>corollary 1.4.21<br />
+$A$是有限维$K$-代数，$S$是简单$A$-模，则excatly $dim_{End_A(S)}(S)$ copies of $S$ are dirct factors of $ _{A}A$.<br />
+proof. in $Mat_{n\times n}(D)$ a simple direct factor corresponds to a column.</p>
+
+<p>corollary 1.4.23<br />
+若$A$是半简单阿廷代数，则$A$同构于skew-fields上的矩阵环的一个有限直积.</p>
+
+<p>definition 1.4.24<br />
+$K$-代数$A$ is simple, if for each 双边理想 $I$, $I=0$ or $I=A$.</p>
+
+<p>proposition 1.4.27<br />
+域上有限维简单$K$-代数is semisimple.<br />
+proof.<br />
+$S$ be a simple left $A$-submodule of $ _{A}A$ i.e. a minimal left ideal of $A$.<br />
+left ideal $J:=\sum_{a\in A} S\cdot a$, by definition $J$ is a non-zero two-sided ideal of $A$,<br />
+$\because$ $A$ simple, $\therefore$ $J=A$.<br />
+show $J$ is semisimple:<br />
+let $B_1 \subseteq A$ s.t. $L_1:=\sum_{b\in B_1} S\cdot b \neq A$<br />
+but so that: $\forall a\in A$, either $S\cdot a\subseteq L_1$ or $L_1 + S\cdot a = A$. then either $S\cdot a=0$ or $S\cdot a \simeq S$. (right multiplication gives $S\to S\cdot a$, since S is simple, ker = S or 0.)<br />
+let $a\in A$ s.t. $L_1 + S\cdot a = A$. then $S\cdot a \neq 0$, $L_1\cap S\cdot a\leq S\cdot a$, since $S\cdot a$ is simple, $L_1\cap S\cdot a=0$. $\therefore$ $A=L_1 \oplus S\cdot a$.<br />
+let $b\in B_1$ s.t. $S\cdot b\neq 0$, let $B_2\subseteq B_1$ s.t. $L_2 := \sum_{b\in B_2} S\cdot b$ satisfies: $\forall b_2 \in B_1\backslash B_2$, $S\cdot b=0$ or $L_2 \oplus S\cdot b_2 = L_1$.<br />
+recursively construct submodules $L_i$ s.t. $L_i \oplus S\cdot b_i = L_{i-1}$, by induction on dimension of $L_i$, $A=J=\bigoplus_{j=1}^m S\cdot b_j$ for certain $b_j\in A$. hence, regular $A$-module is semisimple.<br />
+show all finitely generated modules are semisimple:<br />
+let $M$ be a finitely generated $A$-module, $m_1,&hellip;,m_t$ be generating set of $M$.<br />
+$$( _{A}A)^t \to M$$ $$(a_1,&hellip;,a_t) \mapsto \sum_{j=1}^t a_j m_j $$</p>
+
+<p>lemma 1.4.28<br />
+有限生成半简单$A$-模的每个子模都是一个direct factor.<br />
+有限生成半简单模的子模和商模都是半简单的.</p>
+
+<p>remark 1.4.29<br />
+$D$是skew-field, 则$Mat_{n\times n}(D)$是simple algebra.</p>
+
+<p>definition 1.4.30<br />
+$X$ be a set, $K$ be a commutative ring.<br />
+free $K$-algebra $K\langle X\rangle $ on $X$ is<br />
+the algebra which has a K-basis consisting of words of elements of X.</p>
+
+<p>$(\frac{\partial }{\partial X} X - X \frac{\partial}{\partial X})(X^n) = (n+1)X^n - nX^n = X^n$<br />
+Weyl algebra: $W_1(K):=K\langle X,Y\rangle /(YX-XY-1)$</p>
+
+<p>lemma 1.4.33<br />
+特征为零的域上的weyl代数是简单的.</p>
+
+<p>$\lbrace b_1, &hellip; , b_n \rbrace$ 是$A$的$K$-基:<br />
+$b_i \cdot b_j = \sum_{k=1}^n c_{i,j}^k b_k$<br />
+$c_{i,j}^k \in K$ are <em>structure constants</em> of the algebra.<br />
+$\lbrace m_1, &hellip; , m_s\rbrace$ 是$M$的$K$-基:<br />
+$b_i\cdot m_j = \sum_{k=1}^s u_{i,j}^k m_k$
+$u_{i,j}^k \in K$</p>
+
+<p>definition 1.4.34<br />
+域$K$是有限维$K$-代数$A$的<em>splitting field</em>, 若每个简单$A$-模的自同态环同构于$K$.<br />
+有限维$K$-代数$A$是<em>split semisimple</em>, 若$A$ semisimple且$K$是$A$的splitting fiel.<br />
+$A$-模$M$是<em>absolutely simple</em>, 若模$M_L$对$K$上所有扩域$L$, 是$A_L$-模.</p>
+
+<p>proposition 1.4.36<br />
+$A$是有限维半简单$K$-代数，则有$K$的扩域$L$，s.t. $dim_K(L)&lt;\infty$ and s.t. $A_L$ is split semisimple.</p>
+
+<p>$G$是有限群，$K$是$G$的阶数在其中可逆的域. to determine the data of Wedderburn&rsquo;s theorem entirely in terms of data of the group G and the field K.</p>
+
+<p>lemma 1.5.1<br />
+$Z(Mat_n\times n(A)) = \lbrace z \cdots I_n \vert z \in Z(A)$ for any algebra $A$, where<br />
+$$I_n =
+\begin{pmatrix}
+1 &amp; \dots &amp; 0 \<br />
+\vdots &amp; \ddots \vdots \<br />
+0 &amp; \dots &amp; 1 \<br />
+\end{pmatrix}
+$$</p>
+
+<p>corollary 1.5.2<br />
+$K$是有限维半简单$K$-代数$A$的分裂域，则$dim_K (Z(A))$是简单$A$-模同构类的数目.</p>
+
+<p>$g\inG$, 记$G$共轭类为$C_g:=\lbrace hgh^{-1}\vert h\in G \rbrace$</p>
+
+<p>lemma 1.5.3<br />
+$R$是交换环，$G$是有限群，则$\lbrace \sum_{h\in C_g} e_h \vert g\in G \rbrace$ 是$Z(RG)$的一个$R$-basis.<br />
+proof. $RG$是一个有基$\lbrace e_g \vert g\in G \rbrace$的自由$R$-模.<br />
+$$ x = \sum_{g\in G} x_g e_g \in Z(RG) \Leftrightarrow \forall h\in G : e_h \cdot x \cdot e_h^{-1} = x $$<br />
+$$ e_h \cdot x \cdot e_{h^{-1}} = \sum_{g\in G} x_g e_h e_g e_{h^{-1}} = \sum_{g\in G} x_g e_{hgh^{-1}} = \sum_{g\in G} x_{h^{-1}gh} e_g $$<br />
+$$x\in Z(RG) \Leftrightarrow e_h \cdot x \cdot e_h^{-1} = x \Leftrightarrow x_g = x_{h^{-1}gh}$$</p>
+
+<p>theorem 1.5.4<br />
+设$G$是有限群，$K$是$G$的阶数在其中可逆的域. 假设$K$是$KG$的分裂域. 则简单$KG$-模同构等价类的数目等于$G$共轭类的数目.</p>
+
+<p>特征为零的域上的有限群表示论, 三个基本定理：1. Maschke: 域上有限群的群环是半简单的，当群阶数在域中可逆. 2. Wedderburn: 确定了域上的半简单有限维代数的结构. 3. Krull-Schmidt: 有限维模的不可约直和分解唯一(unique up to permutation and isomorphism of factors).</p>
+
 
   <footer>
   

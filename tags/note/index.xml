@@ -35,10 +35,10 @@ fmap f x = &amp;lt;*&amp;gt; (pure f) x
     
     <item>
       <title>Note180901</title>
-      <link>https://cielrouge.github.io/post/note180901/</link>
+      <link>https://cielrouge.github.io/post/draft/note180901/</link>
       <pubDate>Sat, 01 Sep 2018 11:40:28 +0800</pubDate>
       
-      <guid>https://cielrouge.github.io/post/note180901/</guid>
+      <guid>https://cielrouge.github.io/post/draft/note180901/</guid>
       <description>(以下环均指交换幺环)
 Hibert&amp;rsquo;s Nullstellensatz:
 (几何对象)仿射簇 $\leftrightarrow$ (代数对象)一个多项式环的根理想

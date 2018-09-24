@@ -21,35 +21,16 @@
 过程：1.叶脉向叶片的生长素源的发展. 2.根据与叶脉的近邻程度，调节生长素源分布. 3.根据叶片的生长，调节叶脉模式与源分布.
 代表叶脉节点与生长素源的点集上，迭代几何运算.
 保存一个叶脉连接图，以决定叶脉宽度.
-算法实现效率：空间子划分(Voronoi diagrams), 迭代步之间的时间连贯性.
 生长的特征：growth tensor
 极小曲面区域在各方向展开的量级，可能包含各区域的一个可能的旋转.
 生长张量是 相对初等生长率(RERG) 的一般化.
-RERG: 生长对象上p点处，线l的方向上，测得的，极小距离随时间增长的速率.
-此速率依据极小距离$\delta s$正规化得:
-$RERG_l(p) = (1/\delta s)(d \delta /dt)$
+RERG: 生长对象上$p$点处，线$l$的方向上测得的，极小距离随时间增长的速率.
+此速率依据极小距离$\Delta s$正规化得:
+$RERG_l(p) = (1/\Delta s)(d \Delta /dt)$
 marginal: concentrated on the border
 diffuse: spread throught the surface
-isotropic: diffuse growth, expansion equal in all directions</description>
-    </item>
-    
-    <item>
-      <title>922</title>
-      <link>https://cielrouge.github.io/post/922/</link>
-      <pubDate>Sat, 22 Sep 2018 17:24:45 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/922/</guid>
-      <description>definition 1.6.1 $A$是代数，$M$是$A$-模. $rad(M)$是$M$的所有最大$A$-子模的交.
-lemma 1.6.3 $A$是环，$rad(A)$是$A$的双边理想.
-proof.
-S是任意简单A-模. $\forall s \in S\setminus \lbrace 0 \rbrace$, $S=A\cdot s$, $S\simeq A/ann(s)$,
-$ann(s) := \lbrace a\in A \vert a\cdot s = 0 \rbrace$.
-$ann(S) := \bigcap_{s\in S\setminus {0}} ann(s)$.
-$\bigcap_{simple A-module S} ann(S) = rad(A)$.
-proposition 1.6.4 $A$是代数, $M$是Noetherian $A$-模. 则 $rad(A)M = M$ $\Rightarrow $ $M=0$.
-proposition 1.6.5
-$A$是代数，$M$是Noetherian $A$-模，$N$是$M$的$A$-子模. 则 $$ (N + rad(A)M = M) \Rightarrow (N=M) $$
-lemma 1.</description>
+isotropic: diffuse growth, expansion equal in all directions
+uniform: growth tensor is the same at all points of the surface</description>
     </item>
     
     <item>
@@ -62,7 +43,7 @@ lemma 1.</description>
     </item>
     
     <item>
-      <title>State, Reader</title>
+      <title>整理: State, Reader</title>
       <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86state/</link>
       <pubDate>Mon, 10 Sep 2018 10:09:19 +0800</pubDate>
       

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cielrouge.github.io/post/note-visualizingonemanifold/</loc>
+    <lastmod>2018-09-30T18:27:05+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cielrouge.github.io/post/note-leafvenation/</loc>
     <lastmod>2018-09-24T16:17:02+08:00</lastmod>
   </url>
@@ -45,7 +50,7 @@
   
   <url>
     <loc>https://cielrouge.github.io/</loc>
-    <lastmod>2018-09-24T16:17:02+08:00</lastmod>
+    <lastmod>2018-09-30T18:27:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -75,7 +80,7 @@
   
   <url>
     <loc>https://cielrouge.github.io/post/</loc>
-    <lastmod>2018-09-24T16:17:02+08:00</lastmod>
+    <lastmod>2018-09-30T18:27:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,45 @@
+---
+title: "Note: Visualizing1-Manifolds“
+date: 2018-09-30T18:24:04+08:00
+draft: false
+---
+
+Geometric Topology & Visualizing 1-Manifolds
+
+环境同痕逼近 for 几何对象在$R^3$中的嵌入的表示.
+
+高效可视化算法两个准则：
+1. 逐段线性逼近，保持模型的拓扑
+2. 动态变化中的拓扑保持
+
+对参数1-流形的 曲率适应、拓扑保持的 逼近.
+
+逐段线性(PL)逼近:
+1. 拓扑等价于原来的流形
+2. 最小化线性逼近的数量
+3. 认可用户给定的距离与曲率的误差边界
+
+为动态分子可视化选择的拓扑等价来自ambient isotopy，保持了时间变化中几何模型的嵌入.  
+
+Definition 1. $X$, $Y$是$R^n$的子集. **ambient isotopy** 是一个连续函数 $H: R^n \times [0,1] \to R^n$ s.t.
+1. $H(\cdot,0)$ 是identity函数
+2. $H(X,1)=Y$
+3. $\forall t \in [0,1]$, $H(\cdot, t)$ 是$R^3$上同胚$
+
+### 参数1-流形的曲率和拓扑
+记号: $c: [0,1]\to R^3$是$C^3$曲线，记 $$\mu_c([a,b]) = \int_a^b \parallel c''(t)\parallel dt$$.
+
+Theorem 1. $c: [0,1]\to R^3$是$C^3$曲线. 对each $\epsilon > 0$, $\exists n \in mathbb{N}$, $\exists partition \space X = \brace p_1, ..., p_n \rbrace \subset [0,1]$ s.t. $p_1=0,p_n=1,p_1<p_2<...<p\_{n-1}<p_n$, and $$\int\_{p\_i}^{p\_{i+1}} \parallel c''(z) \parallel dz = \mu\_c ([p_i,p\_{i+1})<\epsilon$$, 有紧致圆柱$\lbrace C_i \rbrace\_{i=1}^n$ s.t. 每个$C_i$的轴都与$c(p_i)$处切线对齐，且有半径$\epsilon$. 依次连接顶点$\lbrace c(p_i): i = 1, ...,n \rbrace$形成的折线和曲线$c$都在$\cup\_{i=1}^n C_i$中.
+
+Proof. 对集合$X$中每个点构造一个圆柱$C_i$. $L_i$是包含向量$c'(p_i)$的线. 考虑对$c'(p\_{i+1})$ normal的平面. 这个平面与$L_i$交于一点，记为$q$. 定义$C_i$为半径为$\epsilon$, 轴是$L_i$中连接$p_i$与$q$的部分, 的圆柱. 由泰勒定理，若$t\in [p_i,p\_{i+1}]$, 则$$\vert c(t) - c(p_i) - (t - p_i) c' (p_i) \vert \leq \int\_{p\_i}^t \parallel c''(z) \parallel (t - z) dz \leq \int\_{p\_i}^{p\_{i+1}} \parallel c''(z) \parallel dz < \epsilon$$.
+$c(t)$距离$c(p_i)+(t-p_i)c'(p_i)$至多$\epsilon$. 故$c(t)$距离$L_i$至多$\epsilon$. 所以$c(t)$在圆柱$C_i$中. 每个圆柱都是凸的, 逼近线段的端点$c(p_i),c(p\_{i+1})$在圆柱$C_i$中.
+
+(定理一可用于创造曲线的PL逼近，但造出的逼近不一定与原曲线拓扑等价. 需要在$\epsilon$的选择上附加更多限制，使生成的逼近与原曲线环境同痕.)
+
+Corollary 1. 记定理一证明中构造的圆柱的数量为$N(\epsilon)$. 若$c$也是$C^3$的, s.t. $\parallel c''(t) \parallel > 0, \forall t$, 则 $$ \lim\_{\epsilon \to 0} \sqrt{\epsilon} \cdot N(\epsilon) = \int_0^1 \sqrt{\parallel c''(u) \parallel } du$$.
+
+Lemma 1. $c: [0,1]\to R^3$是$C^3$曲线, $r,s\in [p_i,p\_{i+1}]$, 则 $\parallel c'(r) - c'(s) \parallel \leq \sqrt{3} \epsilon$. 
+
+Corollary 2. $c: [0,1]\to R^3$是$C^3$曲线, $\epsilon < \sqrt{2/3}$. 则对点$r,s\in [p_i, p_{i+1}]$, $c'(r)$ 与 $c'(s)$ 之间的切向差不超过$\pi/2$.
+
+Lemma 2. $c: [0,1]\to R^3$是$C^3$曲线, $[a,b]\subset [0,1]$. 假设子曲线$c([a,b])$的所有切向量对一个特定切向量$c'(t)$($t\in [a,b]$)的偏离角$\eta < \pi/2$. 若平面$\Pi$有正则$c'(t)$且$\Pi \cap c([a,b]) \neq \emptyset$, 则$\vert c([a,b])\cap \Pi \vert = 1$.

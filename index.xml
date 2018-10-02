@@ -6,10 +6,38 @@
     <description>Recent content on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 24 Sep 2018 16:17:02 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 30 Sep 2018 18:27:05 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note:VisualizingOneManifold</title>
+      <link>https://cielrouge.github.io/post/note-visualizingonemanifold/</link>
+      <pubDate>Sun, 30 Sep 2018 18:27:05 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-visualizingonemanifold/</guid>
+      <description>Geometric Topology &amp;amp; Visualizing 1-Manifolds
+环境同痕逼近 for 几何对象在$R^3$中的嵌入的表示.
+高效可视化算法两个准则:
+1. 逐段线性(PL)逼近，保持模型的拓扑
+2. 动态变化中的拓扑保持
+对参数1-流形的 曲率适应、拓扑保持 的逼近.
+逐段线性(PL)逼近:
+1. 拓扑等价于原来的流形
+2. 最小化线性逼近的数量
+3. 接受用户指定的距离与曲率的误差边界
+为动态分子可视化选择的拓扑等价来自ambient isotopy，保持了时间变化中几何模型的嵌入.
+Definition 1.
+$X$, $Y$是$R^n$的子集. ambient isotopy 是一个连续函数 $H: R^n \times [0,1] \to R^n$ s.t.
+1. $H(\cdot,0)$ 是identity函数
+2. $H(X,1)=Y$
+3. $\forall t \in [0,1]$, $H(\cdot, t)$ 是$R^3$上同胚。
+参数1-流形的曲率和拓扑 记号: $c: [0,1]\to R^3$是$C^3$曲线，记
+$$\mu_c([a,b]) = \int_a^b \parallel c&amp;rdquo;(t)\parallel dt$$
+Theorem 1.
+$c: [0,1]\to R^3$是$C^3$曲线. 对each $\epsilon &amp;gt; 0$, $\exists n \in \mathbb{N}$, $\exists$ partition $X = \lbrace p_1, &amp;hellip;, p_n \rbrace \subset [0,1]$ s.</description>
+    </item>
     
     <item>
       <title>Note: LeafVenation</title>

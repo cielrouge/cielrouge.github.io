@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Note:VisualizingOneManifold - CielRouge</title>
+    <meta property="og:title" content="Note:VisualizingOneManifold - CielRouge">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Geometric Topology &amp;amp; Visualizing 1-Manifolds
+环境同痕逼近 for 几何对象在$R^3$中的嵌入的表示.
+高效可视化算法两个准则： 1. 逐段线性逼近，保持模型的拓扑 2. 动态变化中的拓扑保持
+对参数1-流形的 曲率适应、拓扑保持的 逼近.
+逐段线性(PL)逼近: 1. 拓扑等价于原来的流形 2. 最小化线性逼近的数量 3. 认可用户给定的距离 &amp;hellip;">
+      <meta property="og:description" content="Geometric Topology &amp;amp; Visualizing 1-Manifolds
+环境同痕逼近 for 几何对象在$R^3$中的嵌入的表示.
+高效可视化算法两个准则： 1. 逐段线性逼近，保持模型的拓扑 2. 动态变化中的拓扑保持
+对参数1-流形的 曲率适应、拓扑保持的 逼近.
+逐段线性(PL)逼近: 1. 拓扑等价于原来的流形 2. 最小化线性逼近的数量 3. 认可用户给定的距离 &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+    <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">CielRouge</a></h1>
+
+
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Note:VisualizingOneManifold</h1>
+
+<h3>
+  2018-09-30</h3>
+<hr>
+
+
+      </header>
+
+
+
+
+<p>Geometric Topology &amp; Visualizing 1-Manifolds</p>
+
+<p>环境同痕逼近 for 几何对象在$R^3$中的嵌入的表示.</p>
+
+<p>高效可视化算法两个准则：
+1. 逐段线性逼近，保持模型的拓扑
+2. 动态变化中的拓扑保持</p>
+
+<p>对参数1-流形的 曲率适应、拓扑保持的 逼近.</p>
+
+<p>逐段线性(PL)逼近:
+1. 拓扑等价于原来的流形
+2. 最小化线性逼近的数量
+3. 认可用户给定的距离与曲率的误差边界</p>
+
+<p>为动态分子可视化选择的拓扑等价来自ambient isotopy，保持了时间变化中几何模型的嵌入.</p>
+
+<p>Definition 1. $X$, $Y$是$R^n$的子集. <strong>ambient isotopy</strong> 是一个连续函数 $H: R^n \times [0,1] \to R^n$ s.t.
+1. $H(\cdot,0)$ 是identity函数
+2. $H(X,1)=Y$
+3. $\forall t \in [0,1]$, $H(\cdot, t)$ 是$R^3$上同胚$</p>
+
+<h3 id="参数1-流形的曲率和拓扑">参数1-流形的曲率和拓扑</h3>
+
+<p>记号: $c: [0,1]\to R^3$是$C^3$曲线，记 $$\mu_c([a,b]) = \int_a^b \parallel c&rdquo;(t)\parallel dt$$.</p>
+
+<p>Theorem 1. $c: [0,1]\to R^3$是$C^3$曲线. 对each $\epsilon &gt; 0$, $\exists n \in mathbb{N}$, $\exists partition \space X = \brace p_1, &hellip;, p_n \rbrace \subset [0,1]$ s.t. $p_1=0,p_n=1,p_1&lt;p_2&lt;&hellip;&lt; p_{n-1} &lt; p_n$, and $$\int_{p_i}^{p_{i+1}} \parallel c&rdquo;(z) \parallel dz = \mu _c ([p_i,p_{i+1})&lt;\epsilon$$, 有紧致圆柱$\lbrace C_i \rbrace_{i=1}^n$ s.t. 每个$C_i$的轴都与$c(p_i)$处切线对齐，且有半径$\epsilon$. 依次连接顶点$\lbrace c(p_i): i = 1, &hellip;,n \rbrace$形成的折线和曲线$c$都在$\cup_{i=1}^n C_i$中.</p>
+
+<p>Proof. 对集合$X$中每个点构造一个圆柱$C_i$. $L_i$是包含向量$c&rsquo;(p_i)$的线. 考虑对$c&rsquo;(p_{i+1})$ normal的平面. 这个平面与$L_i$交于一点，记为$q$. 定义$C_i$为半径为$\epsilon$, 轴是$L_i$中连接$p_i$与$q$的部分, 的圆柱. 由泰勒定理，若$t\in [p_i,p_{i+1}]$, 则$$\vert c(t) - c(p_i) - (t - p_i) c&rsquo; (p_i) \vert \leq \int_{p_i}^t \parallel c&rdquo;(z) \parallel (t - z) dz \leq \int_{p_i}^{p_{i+1}} \parallel c&rdquo;(z) \parallel dz &lt; \epsilon$$.
+$c(t)$距离$c(p_i)+(t-p_i)c&rsquo;(p_i)$至多$\epsilon$. 故$c(t)$距离$L_i$至多$\epsilon$. 所以$c(t)$在圆柱$C_i$中. 每个圆柱都是凸的, 逼近线段的端点$c(p_i),c(p_{i+1})$在圆柱$C_i$中.</p>
+
+<p>(定理一可用于创造曲线的PL逼近，但造出的逼近不一定与原曲线拓扑等价. 需要在$\epsilon$的选择上附加更多限制，使生成的逼近与原曲线环境同痕.)</p>
+
+<p>Corollary 1. 记定理一证明中构造的圆柱的数量为$N(\epsilon)$. 若$c$也是$C^3$的, s.t. $\parallel c&rdquo;(t) \parallel &gt; 0, \forall t$, 则 $$ \lim_{\epsilon \to 0} \sqrt{\epsilon} \cdot N(\epsilon) = \int_0^1 \sqrt{\parallel c&rdquo;(u) \parallel } du$$.</p>
+
+<p>Lemma 1. $c: [0,1]\to R^3$是$C^3$曲线, $r,s\in [p_i,p_{i+1}]$, 则 $\parallel c&rsquo;&reg; - c&rsquo;(s) \parallel \leq \sqrt{3} \epsilon$.</p>
+
+<p>Corollary 2. $c: [0,1]\to R^3$是$C^3$曲线, $\epsilon &lt; \sqrt{<sup>2</sup>&frasl;<sub>3</sub>}$. 则对点$r,s\in [p<em>i, p</em>{i+1}]$, $c&rsquo;&reg;$ 与 $c&rsquo;(s)$ 之间的切向差不超过$\pi/2$.</p>
+
+<p>Lemma 2. $c: [0,1]\to R^3$是$C^3$曲线, $[a,b]\subset [0,1]$. 假设子曲线$c([a,b])$的所有切向量对一个特定切向量$c&rsquo;(t)$($t\in [a,b]$)的偏离角$\eta &lt; \pi/2$. 若平面$\Pi$有正则$c&rsquo;(t)$且$\Pi \cap c([a,b]) \neq \emptyset$, 则$\vert c([a,b])\cap \Pi \vert = 1$.</p>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

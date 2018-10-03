@@ -6,45 +6,10 @@
     <description>Recent content in Math on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 01 Sep 2018 11:40:28 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Aug 2018 10:47:24 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Note180901</title>
-      <link>https://cielrouge.github.io/post/draft/note180901/</link>
-      <pubDate>Sat, 01 Sep 2018 11:40:28 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/draft/note180901/</guid>
-      <description>(以下环均指交换幺环)
-Hibert&amp;rsquo;s Nullstellensatz:
-(几何对象)仿射簇 $\leftrightarrow$ (代数对象)一个多项式环的根理想
-坐标环:
-被assign到一个仿射簇的仿射代数
-代数 有限生成 iff
-同构于$R[x_1,\cdots ,x_n]/I$.
-仿射K-代数:
-域K上的有限生成代数
-(A是域K上的一个代数)
-A是整环，且在域K上algebraic =&amp;gt; A是域.
-A是域，且在一个仿射K-整环中 =&amp;gt; A is algebraic.
- $A\cong K[x]/I$
-$A$是整环 =&amp;gt; $I$是素理想, $A$在$K$上algebraic =&amp;gt; $I$非零.
-$K[x]$是主理想整环, $I=(f)$ ($f\in K[x]$不可约), $I$是最大理想.
- 
-(A-&amp;gt;B是域K上的代数同态)
-若B 有限生成,
-则B中最大理想在A中的 原像也是最大理想.
-($K$是域, $P=(\xi_1,&amp;hellip;,\xi_n)\in K^n$)
-$\mathfrak{m}_P:=(x_1 -\xi_1,&amp;hellip;,x_n-\xi_n)$
-是$K[x_1,&amp;hellip;,x_n]$的一个最大理想.
- $\forall f\in K[x_1,&amp;hellip;,x_n]$ 同余$f(\xi_1,&amp;hellip;,\xi_n)$ modulo $\mathfrak{m}_P$ =&amp;gt;
-$\mathfrak{m}_P$是$\phi:K[x_1,&amp;hellip;,x_n]\to K, f\mapsto f(\xi_1,&amp;hellip;,\xi_n)$的核 =&amp;gt;
-$K[x_1,&amp;hellip;,x_n]/\mathfrak{m}_P\cong K$.
- 
-(一个代数闭域上的 一个多项式环的 所有最大理想:)</description>
-    </item>
     
     <item>
       <title>RT-AHAPoV-Ch1</title>

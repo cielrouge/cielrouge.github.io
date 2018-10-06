@@ -174,7 +174,7 @@ $c: [0,1]\to R^3$是$C^3$曲线, $r,s\in [p_i,p_{i+1}]$, 则 $\parallel c&rsquo;
 $c: [0,1]\to R^3$是$C^3$曲线, $\epsilon &lt; \sqrt{2 / 3}$. 则对点$r,s\in [p_i, p_{i+1}]$, $c&rsquo;( r )$ 与 $c&rsquo;(s)$ 之间的切向差不超过$\pi/2$.</p>
 
 <p>Lemma 2.<br />
-$c: [0,1]\to R^3$是$C^3$曲线, $[a,b]\subset [0,1]$. 假设子曲线$c([a,b])$的所有切向量对一个特定切向量$c&rsquo;(t)$($t\in [a,b]$)的偏离角$\eta &lt; \pi/2$. 若平面$\Pi$有正则$c&rsquo;(t)$且$\Pi \cap c([a,b]) \neq \emptyset$, 则$\vert c([a,b])\cap \Pi \vert = 1$.</p>
+$c: [0,1]\to R^3$是$C^3$曲线, $[a,b]\subset [0,1]$. 假设子曲线$c([a,b])$的所有切向量对一个特定切向量$c&rsquo;(t)$($t\in [a,b]$)的偏离角$\eta &lt; \pi/2$. 若平面$\Pi$有法向量$c&rsquo;(t)$且$\Pi \cap c([a,b]) \neq \emptyset$, 则$\vert c([a,b])\cap \Pi \vert = 1$.</p>
 
 <p>下一步: 构造集合, 在集合上可构建曲线与逼近之间的局部同痕.</p>
 
@@ -224,7 +224,7 @@ Cross Section for bounding volume</p>
 
 <p>先构造 $c_i$ 上的局部同态，再构造全 $c$ 上的环境同痕.</p>
 
-<p>记 $N_w$ 为 $c_i$ 在 $w$ 处的正则平面 (for each $w \in c_i$).<br />
+<p>记 $N_w$ 为 $c_i$ 在 $w$ 处的法平面 (for each $w \in c_i$).<br />
 根据推论2确保$c_i$上的切线偏离小于$\pi / 2$.<br />
 定义 $h_i : c_i \to a_{i,i+1}$ by $h_i(w)$ 是 $N_w \cap a_{i,i+1}$ 上的单点.</p>
 
@@ -232,10 +232,10 @@ Cross Section for bounding volume</p>
 $h_i$ 是固定了 $c(p_i)$ 和 $c(p_{i+1})$ 的同态.<br />
 Proof.<br />
 假设 $a_{i,i+1}$ 是 $N_w$ 的子集，$a_{i,i+1}$ 的两个端点都在 $N_w$ 中.<br />
-但这两个端点也是 $c_i$ 中的点， 与引理2矛盾.<br />
+但这两个端点也是 $c_i$ 中的点，与引理2矛盾.<br />
 若 $w$ 是 $c_i$ 端点之一，则 $w$ 也是 $a_{i,i+1}$ 中的点.<br />
 但由引理2，这个端点是 $N_w \cap a_{i,i+1}$ 中唯一的元.<br />
-故假定 $w$ 不是端点，则由引理2， $c(p_i)$ 也不在 $N_w$ 中. 同理 $c(p_{i+1})$ 也不在 $N_w$ 中.<br />
+故假定 $w$ 不是端点，则由引理2，$c(p_i)$ 也不在 $N_w$ 中. 同理 $c(p_{i+1})$ 也不在 $N_w$ 中.<br />
 但因为 $\pi / 2$ 是 $c_i$ 上切向的上界，$c(p_i)$ 和 $c(p_{i+1})$ 必在 $N_w$ 的异侧.<br />
 所以 $a_{i,i+1}$ 与 $N_w$ 必定相交.<br />
 $a_{i,i+1}$ 与 $N_w$ 交于单独的一点.<br />

@@ -6,10 +6,22 @@
     <description>Recent content in Posts on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 30 Sep 2018 18:27:05 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Oct 2018 23:19:48 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018-10-06</title>
+      <link>https://cielrouge.github.io/post/181006/</link>
+      <pubDate>Sat, 06 Oct 2018 23:19:48 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/181006/</guid>
+      <description>证明什么证明？定理在搞什么都不知道证明什么证明？ 理解符号指意就是理解定理了？不晓得定理的适用场景你能知道这一套复杂符号系统能作为什么的解决工具？ 完美无缺的纯洁符号系统告诉你范畴里有对象和态射，完美无缺的符号系统能告诉你干嘛要从一个范畴的对象用函子射到另一个范畴的对象上？换个范畴，对象射对象，干啥呢？？ 知晓每一步的精巧算计，在每一步都不管上一步的线索与动机。明明应该用链表，非要用数组。 思考问题是不可替代的。没有一种动机可以从阅读中获得。 没有一种理解可以先于思考，解答与问题之间有着空白断裂的工具索引与场景。
+很长时间只读完一篇文章，但自己动手实现了一遍，也好过不留痕迹地标记读过许多文章。 没有创造的读解，没有索引的工具，没有问题的解答，没有动机的优化。 时间的空白洗去记忆，而索引与作品留下了。
+我又不是学数学的，什么证明，什么误差，什么解答，去它的。
+2018-10-06</description>
+    </item>
     
     <item>
       <title>Note: VisualizingOneManifold</title>

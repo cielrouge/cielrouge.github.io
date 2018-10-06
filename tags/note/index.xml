@@ -33,24 +33,5 @@ fmap f x = &amp;lt;*&amp;gt; (pure f) x
 -- pure f :: Applicative (a -&amp;gt; b)</description>
     </item>
     
-    <item>
-      <title>RT-AHAPoV-Ch1</title>
-      <link>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
-      <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
-      <description>K-代数：
-一个 环结构(A)
-一个 交换环(K)到 环结构的中心 的环同态
-代数同态:
-环同态:A -&amp;gt; B, 结构同态:(K -&amp;gt; A) -&amp;gt; (K -&amp;gt; B)
-$\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (a)$)
-(left A-module M:
-an abelian group with a mapping $\mu: A\times M\to M$)
-M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
-给定K-代数同态$\nu: A\to End_K(M)$ =&amp;gt; M上有唯一A-模结构，使$A\to End_K(M)$是$\nu$.
- 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由A是$K$-代数，$K\to Z(A)$，证得$\lambda$的K-线性.）</description>
-    </item>
-    
   </channel>
 </rss>

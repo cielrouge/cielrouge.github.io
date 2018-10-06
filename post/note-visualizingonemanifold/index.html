@@ -158,7 +158,7 @@ $$\int_{p_i}^{p_{i+1}} \parallel c&rdquo;(z) \parallel dz = \mu_c ([p_i,p_{i+1}]
 有紧致圆柱$\lbrace C_i \rbrace_{i=1}^n$ s.t. 每个$C_i$的轴都与$c(p_i)$处切线对齐, 且有半径$\epsilon$.  依次连接顶点$\lbrace c(p_i): i = 1, &hellip;,n \rbrace$形成的折线和曲线$c$都在$\bigcup_{i=1}^n C_i$中.</p>
 
 <p>Proof.<br />
-对集合$X$中每个点构造一个圆柱$C_i$. $L_i$是包含向量$c&rsquo;(p_i)$的线. 考虑对$c&rsquo;(p_{i+1})$ normal的平面. 这个平面与$L_i$交于一点，记为$q$. 定义$C_i$为半径为$\epsilon$, 轴是$L_i$中连接$p_i$与$q$的部分, 的圆柱. 由泰勒定理，若$t\in [p_i,p_{i+1}]$, 则
+对集合$X$中每个点构造一个圆柱$C_i$. $L_i$是包含向量$c&rsquo;(p_i)$的线. 考虑以 $c&rsquo;(p_{i+1})$ 为法向量的平面. 这个平面与$L_i$交于一点，记为$q$. 定义$C_i$为半径为$\epsilon$, 轴是$L_i$中连接$p_i$与$q$的部分, 的圆柱. 由泰勒定理，若$t\in [p_i,p_{i+1}]$, 则
 $$\vert c(t) - c(p_i) - (t - p_i) c&rsquo; (p_i) \vert \leq \int_{p_i}^t \parallel c&rdquo;(z) \parallel (t - z) dz \leq \int_{p_i}^{p_{i+1}} \parallel c&rdquo;(z) \parallel dz &lt; \epsilon$$
 $c(t)$距离$c(p_i)+(t-p_i)c&rsquo;(p_i)$至多$\epsilon$. 故$c(t)$距离$L_i$至多$\epsilon$. 所以$c(t)$在圆柱$C_i$中. 每个圆柱都是凸的, 逼近线段的端点$c(p_i),c(p_{i+1})$在圆柱$C_i$中.</p>
 

@@ -17,9 +17,16 @@
       <pubDate>Sat, 06 Oct 2018 23:19:48 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/181006/</guid>
-      <description>证明什么证明？定理在搞什么都不知道证明什么证明？ 理解符号指意就是理解定理了？不晓得定理的适用场景你能知道这一套复杂符号系统能作为什么的解决工具？ 完美无缺的纯洁符号系统告诉你范畴里有对象和态射，完美无缺的符号系统能告诉你干嘛要从一个范畴的对象用函子射到另一个范畴的对象上？换个范畴，对象射对象，干啥呢？？ 知晓每一步的精巧算计，在每一步都不管上一步的线索与动机。明明应该用链表，非要用数组。 思考问题是不可替代的。没有一种动机可以从阅读中获得。 没有一种理解可以先于思考，解答与问题之间有着空白断裂的工具索引与场景。
-很长时间只读完一篇文章，但自己动手实现了一遍，也好过不留痕迹地标记读过许多文章。 没有创造的读解，没有索引的工具，没有问题的解答，没有动机的优化。 时间的空白洗去记忆，而索引与作品留下了。
-我又不是学数学的，什么证明，什么误差，什么解答，去它的。
+      <description>证明什么证明？定理在搞什么都不知道证明什么证明？
+理解符号指意就是理解定理了？不晓得定理的适用场景你能知道这一套复杂符号系统能作为什么的解决工具？
+完美无缺的纯洁符号系统告诉你范畴里有对象和态射，完美无缺的符号系统能告诉你干嘛要从一个范畴的对象用函子射到另一个范畴的对象上？换个范畴，对象射对象，干啥呢？？
+知晓每一步的精巧算计，在每一步都不管上一步的线索与动机。明明应该用链表，非要用数组。
+思考问题是不可替代的。没有一种动机可以从阅读中获得。
+没有一种理解可以先于思考，解答与问题之间有着空白断裂的工具索引与场景。
+很长时间只读完一篇文章，但自己动手实现了一遍，也好过不留痕迹地标记读过许多文章。
+没有创造的读解，没有索引的工具，没有问题的解答，没有动机的优化。
+时间的空白洗去记忆，而索引与作品留下了。
+我又不是学数学的，什么证明，什么误差，什么解答，管它呢。
 2018-10-06</description>
     </item>
     
@@ -119,17 +126,18 @@ fmap f x = &amp;lt;*&amp;gt; (pure f) x
       <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
-      <description>K-代数：
-一个 环结构(A)
-一个 交换环(K)到 环结构的中心 的环同态
+      <description>$K$-代数：
+一个环结构($A$)
+一个交换环($K$)到环结构中心($Z(A)$)的环同态
 代数同态:
-环同态:A -&amp;gt; B, 结构同态:(K -&amp;gt; A) -&amp;gt; (K -&amp;gt; B)
+环同态:$A$ -&amp;gt; $B$, 结构同态:($K$ -&amp;gt; $A$) -&amp;gt; ($K$ -&amp;gt; $B$)
 $\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (a)$)
-(left A-module M:
+(left $A$-module $M$:
 an abelian group with a mapping $\mu: A\times M\to M$)
-M是A-模 =&amp;gt; 有K-代数同态 $\lambda :A\to End_K (M)$.
-给定K-代数同态$\nu: A\to End_K(M)$ =&amp;gt; M上有唯一A-模结构，使$A\to End_K(M)$是$\nu$.
- 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由A是$K$-代数，$K\to Z(A)$，证得$\lambda$的K-线性.）</description>
+$M$是$A$-模 =&amp;gt; 有$K$-代数同态 $\lambda :A\to End_K (M)$.
+给定$K$-代数同态$\nu: A\to End_K(M)$ =&amp;gt; $M$上有唯一$A$-模结构，使$A\to End_K(M)$是$\nu$.
+ 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由A是$K$-代数，$K\to Z(A)$，证得$\lambda$的K-线性.）
+对$\nu: A\to End_K(M)$, 定义$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$</description>
     </item>
     
   </channel>

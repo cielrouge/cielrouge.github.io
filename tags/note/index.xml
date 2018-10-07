@@ -17,7 +17,8 @@
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</guid>
-      <description>Functor Functors: uniform action over a parameterized type
+      <description>map an element to an action. 元左乘 -&amp;gt; 一个自同态. 这样就好理解了.
+Functor Functors: uniform action over a parameterized type
 在「参数化的type」上的「一致action」
 在「列表」上的「map函数」的一般化
 Functor: 可被map-over的types的class
@@ -28,9 +29,7 @@ fmap (f . g) == fmap f . fmap g
 Applicative a functor with application
 对type 可被 有sequential application的uniform action 做map 的形容
 fmap f x = pure f &amp;lt;*&amp;gt; x
-fmap f x = &amp;lt;*&amp;gt; (pure f) x
--- f :: a -&amp;gt; b
--- pure f :: Applicative (a -&amp;gt; b)</description>
+fmap f x = &amp;lt;*&amp;gt; (pure f) x</description>
     </item>
     
   </channel>

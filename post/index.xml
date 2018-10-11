@@ -19,7 +19,7 @@
       <guid>https://cielrouge.github.io/post/noteacicach1/</guid>
       <description>1.1 Maximal Ideals 记号: $(S)_R = (S)$.
 $M$ 是 $R$ 模，$S$ 是 $M$ 子集，$(S)$ 是 $M$ 的子模，$(S)$ 是 $S$ 的 $R$-线性组合全体.
-algebraic: $a$ 在 $K$ 上algebraic, if $\exists f \in K[X]$ s.t $f(a) = 0$.
+algebraic: $a$ 在 $K$ 上algebraic, if $\exists f \in K[x]$ s.t $f(a) = 0$.
 lemma 1.1
 域 $K$ 上代数 $A$.
 $A$ 是整环，且在 $K$ 上algebraic，则 $A$ 是域.

@@ -17,7 +17,9 @@
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</guid>
-      <description>map an element to an action. 元左乘 -&amp;gt; 一个自同态. 这样就好理解了.
+      <description>map an element to an action.
+元左乘 -&amp;gt; 一个自同态.
+这样就好理解了.
 Functor Functors: uniform action over a parameterized type
 在「参数化的type」上的「一致action」
 在「列表」上的「map函数」的一般化

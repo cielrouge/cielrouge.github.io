@@ -6,10 +6,29 @@
     <description>Recent content on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 06 Oct 2018 23:19:48 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Oct 2018 23:08:34 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note-ACiCA-Ch1</title>
+      <link>https://cielrouge.github.io/post/noteacicach1/</link>
+      <pubDate>Wed, 10 Oct 2018 23:08:34 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/noteacicach1/</guid>
+      <description>1.1 Maximal Ideals 记号: $(S)_R = (S)$.
+$M$ 是 $R$ 模，$S$ 是 $M$ 子集，$(S)$ 是 $M$ 的子模，$(S)$ 是 $S$ 的 $R$-线性组合全体.
+algebraic: $a$ 在 $K$ 上algebraic, if $\exists f \in K[X]$ s.t $f(a) = 0$.
+lemma 1.1
+域 $K$ 上代数 $A$.
+$A$ 是整环，且在 $K$ 上algebraic，则 $A$ 是域.
+$A$ 是域，且含于仿射 $K$-整环，则 $A$ algebraic.
+proposition 1.2
+仿射代数中的最大理想的代数同态原像也是最大理想.
+proposition 1.5
+$K$ 是代数闭域, 对最大理想 $m \subset K[x_1, &amp;hellip; ,x_n]$，存在点 $P = (\xi_1 &amp;hellip; \xi_n) \in K^n$, s.</description>
+    </item>
     
     <item>
       <title>2018-10-06</title>
@@ -20,7 +39,7 @@
       <description>证明什么证明？定理在搞什么都不知道证明什么证明？
 理解符号指意就是理解定理了？不知道定理的适用场景你能知道这一套复杂符号系统是作为什么的解决工具？
 完美无缺的纯洁符号系统告诉你范畴里有对象和态射，完美无缺的符号系统能告诉你做什么要从一个范畴的对象用函子射到另一个范畴的对象上？换个范畴，对象射对象，干啥呢？？
-知晓每一步的精巧算计，在每一步都不管上一步的线索与动机。明明应该用链表，非要用数组。
+知晓每一步的精巧算计，在每一步都不管上一步的线索与动机。
 思考问题是不可替代的。没有一种动机可以从阅读中获得。
 没有一种理解可以先于思考，解答与问题之间有着空白断裂的工具索引与场景。
 没有创造的读解，没有索引的工具，没有问题的解答，没有动机的优化。
@@ -28,7 +47,15 @@
 &amp;ldquo;the first is that we have not felt compelled to give the proofs of all the theorems.&amp;rdquo;
 &amp;ldquo;the second is that we have not always stated results in the maximum generality.&amp;rdquo;
 &amp;ldquo;the third is that we have hewed to the axiomatic foundations of the subject.&amp;rdquo;
-2018-10-06</description>
+2018-10-06
+从中学到大学，总是在强调证明。
+刚意识到，忽视结论 的问题。
+在将所有结论（定义定理体系）联系起来时，产生了一些猜测、想法，想要动手去尝试、验证。在证明结论中遇到阻碍后再去看给出的证明，才能理解technique出现的动机。
+“先手工证明再看证明”会被强调，“将结论体系联系起来时产生一些猜测”却没有。
+这样会遇到难以为继的困难。没有关于走向的直觉。
+整体感 - 注意力变焦 - 对重要性的敏感
+关注细节并不等于理解细节。
+2018-10-10</description>
     </item>
     
     <item>
@@ -82,7 +109,7 @@ uniform: growth tensor is the same at all points of the surface</description>
     </item>
     
     <item>
-      <title>整理: fold,traverse</title>
+      <title>整理: Foldable,Traversable</title>
       <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldtraverse/</link>
       <pubDate>Tue, 11 Sep 2018 13:07:50 +0800</pubDate>
       
@@ -105,7 +132,9 @@ uniform: growth tensor is the same at all points of the surface</description>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</guid>
-      <description>map an element to an action. 元左乘 -&amp;gt; 一个自同态. 这样就好理解了.
+      <description>map an element to an action.
+元左乘 -&amp;gt; 一个自同态.
+这样就好理解了.
 Functor Functors: uniform action over a parameterized type
 在「参数化的type」上的「一致action」
 在「列表」上的「map函数」的一般化
@@ -121,7 +150,7 @@ fmap f x = &amp;lt;*&amp;gt; (pure f) x</description>
     </item>
     
     <item>
-      <title>mathjax..</title>
+      <title>untitled</title>
       <link>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
       <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
       

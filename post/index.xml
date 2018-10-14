@@ -31,6 +31,24 @@ $K$ 是代数闭域, 对最大理想 $m \subset K[x_1, &amp;hellip; ,x_n]$，存
     </item>
     
     <item>
+      <title>2018-10-06</title>
+      <link>https://cielrouge.github.io/post/181006/</link>
+      <pubDate>Sat, 06 Oct 2018 23:19:48 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/181006/</guid>
+      <description>&amp;ldquo;the first is that we have not felt compelled to give the proofs of all the theorems.&amp;rdquo;
+&amp;ldquo;the second is that we have not always stated results in the maximum generality.&amp;rdquo;
+&amp;ldquo;the third is that we have hewed to the axiomatic foundations of the subject.&amp;rdquo;
+2018-10-06
+在将所有结论（定义定理体系）联系起来时，产生了一些猜测、想法，想要动手去尝试、验证。在证明结论中遇到阻碍后再去看给出的证明，才能理解technique出现的动机。
+“先手工证明再看证明”会被强调，“将结论体系联系起来时产生一些猜测”却没有。
+这样会遇到难以为继的困难。没有关于走向的直觉。
+整体感 - 注意力变焦 - 对重要性的敏感
+关注细节并不等于理解细节。
+2018-10-10</description>
+    </item>
+    
+    <item>
       <title>Note: VisualizingOneManifold</title>
       <link>https://cielrouge.github.io/post/note-visualizingonemanifold/</link>
       <pubDate>Sun, 30 Sep 2018 18:27:05 +0800</pubDate>

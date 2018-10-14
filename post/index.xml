@@ -31,34 +31,6 @@ $K$ 是代数闭域, 对最大理想 $m \subset K[x_1, &amp;hellip; ,x_n]$，存
     </item>
     
     <item>
-      <title>2018-10-06</title>
-      <link>https://cielrouge.github.io/post/181006/</link>
-      <pubDate>Sat, 06 Oct 2018 23:19:48 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/181006/</guid>
-      <description>证明什么证明？定理在搞什么都不知道证明什么证明？
-理解符号指意就是理解定理了？不知道定理的适用场景你能知道这一套复杂符号系统是作为什么的解决工具？
-完美无缺的纯洁符号系统告诉你范畴里有对象和态射，完美无缺的符号系统能告诉你做什么要从一个范畴的对象用函子射到另一个范畴的对象上？换个范畴，对象射对象，干啥呢？？
-知晓每一步的精巧算计，在每一步都不管上一步的线索与动机。
-思考问题是不可替代的。没有一种动机可以从阅读中获得。
-没有一种理解可以先于思考，解答与问题之间有着空白断裂的工具索引与场景。
-没有创造的读解，没有索引的工具，没有问题的解答，没有动机的优化。
-时间的空白洗去记忆，而索引与作品留下了。
-&amp;ldquo;the first is that we have not felt compelled to give the proofs of all the theorems.&amp;rdquo;
-&amp;ldquo;the second is that we have not always stated results in the maximum generality.&amp;rdquo;
-&amp;ldquo;the third is that we have hewed to the axiomatic foundations of the subject.&amp;rdquo;
-2018-10-06
-从中学到大学，总是在强调证明。
-刚意识到，忽视结论 的问题。
-在将所有结论（定义定理体系）联系起来时，产生了一些猜测、想法，想要动手去尝试、验证。在证明结论中遇到阻碍后再去看给出的证明，才能理解technique出现的动机。
-“先手工证明再看证明”会被强调，“将结论体系联系起来时产生一些猜测”却没有。
-这样会遇到难以为继的困难。没有关于走向的直觉。
-整体感 - 注意力变焦 - 对重要性的敏感
-关注细节并不等于理解细节。
-2018-10-10</description>
-    </item>
-    
-    <item>
       <title>Note: VisualizingOneManifold</title>
       <link>https://cielrouge.github.io/post/note-visualizingonemanifold/</link>
       <pubDate>Sun, 30 Sep 2018 18:27:05 +0800</pubDate>

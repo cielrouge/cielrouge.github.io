@@ -379,8 +379,8 @@ $S$ be a simple left $A$-submodule of $ _{A}A$ i.e. a minimal left ideal of $A$.
 left ideal $J:=\sum_{a\in A} S\cdot a$, by definition $J$ is a non-zero two-sided ideal of $A$,<br />
 $\because$ $A$ simple, $\therefore$ $J=A$.<br />
 show $J$ is semisimple:<br />
-let $B_1 \subseteq A$ s.t. $L_1:=\sum_{b\in B_1} S\cdot b \neq A$<br />
-but so that: $\forall a\in A$, either $S\cdot a\subseteq L_1$ or $L_1 + S\cdot a = A$. then either $S\cdot a=0$ or $S\cdot a \simeq S$. (right multiplication gives $S\to S\cdot a$, since S is simple, ker = S or 0.)<br />
+let $B_1 \subseteq A$ s.t. 1.$L_1:=\sum_{b\in B_1} S\cdot b \neq A$, 2.$\forall a\in A$, either $S\cdot a\subseteq L_1$ or $L_1 + S\cdot a = A$.<br />
+then either $S\cdot a=0$ or $S\cdot a \simeq S$. (right multiplication gives $S\to S\cdot a$, since S is simple, ker = S or 0.)<br />
 let $a\in A$ s.t. $L_1 + S\cdot a = A$. then $S\cdot a \neq 0$, $L_1\cap S\cdot a\leq S\cdot a$, since $S\cdot a$ is simple, $L_1\cap S\cdot a=0$. $\therefore$ $A=L_1 \oplus S\cdot a$.<br />
 let $b\in B_1$ s.t. $S\cdot b\neq 0$, let $B_2\subseteq B_1$ s.t. $L_2 := \sum_{b\in B_2} S\cdot b$ satisfies: $\forall b_2 \in B_1\backslash B_2$, $S\cdot b=0$ or $L_2 \oplus S\cdot b_2 = L_1$.<br />
 recursively construct submodules $L_i$ s.t. $L_i \oplus S\cdot b_i = L_{i-1}$, by induction on dimension of $L_i$, $A=J=\bigoplus_{j=1}^m S\cdot b_j$ for certain $b_j\in A$. hence, regular $A$-module is semisimple.<br />
@@ -415,16 +415,16 @@ $u_{i,j}^k \in K$</p>
 
 <p>definition 1.4.34<br />
 域$K$是有限维$K$-代数$A$的<em>splitting field</em>, 若每个简单$A$-模的自同态环同构于$K$.<br />
-有限维$K$-代数$A$是<em>split semisimple</em>, 若$A$ semisimple且$K$是$A$的splitting fiel.<br />
+有限维$K$-代数$A$是<em>split semisimple</em>, 若$A$ semisimple且$K$是$A$的splitting field.<br />
 $A$-模$M$是<em>absolutely simple</em>, 若模$M_L$对$K$上所有扩域$L$, 是$A_L$-模.</p>
 
 <p>proposition 1.4.36<br />
 $A$是有限维半简单$K$-代数, 则有$K$的扩域$L$, s.t. $dim_K(L)&lt;\infty$ and s.t. $A_L$ is split semisimple.</p>
 
-<p>$G$是有限群, $K$是$G$的阶数在其中可逆的域. to determine the data of Wedderburn&rsquo;s theorem entirely in terms of data of the group G and the field K.</p>
+<p>$G$是有限群, $K$是$G$的阶数在其中可逆的域. to determine the data of Wedderburn&rsquo;s theorem entirely in terms of data of the group $G$ and the field $K$.</p>
 
 <p>lemma 1.5.1<br />
-$Z(Mat_n\times n(A)) = \lbrace z \cdots I_n \vert z \in Z(A)$ for any algebra $A$, where<br />
+$Z(Mat_{n\times n} (A)) = \lbrace z \cdots I_n \vert z \in Z(A)$ for any algebra $A$, where<br />
 $$I_n =
 \begin{pmatrix}
 1 &amp; \dots &amp; 0 \\<br />
@@ -454,7 +454,7 @@ $$x\in Z(RG) \Leftrightarrow e_h \cdot x \cdot e_h^{-1} = x \Leftrightarrow x_g 
 
 <p>lemma 1.6.3 $A$是环, $rad(A)$是$A$的双边理想.<br />
 proof.<br />
-S是任意简单A-模. $\forall s \in S\setminus \lbrace 0 \rbrace$, $S=A\cdot s$, $S\simeq A/ann(s)$,<br />
+S是任意简单$A$-模. $\forall s \in S\setminus \lbrace 0 \rbrace$, $S=A\cdot s$, $S\simeq A/ann(s)$,<br />
 $ann(s) := \lbrace a\in A \vert a\cdot s = 0 \rbrace$.<br />
 $ann(S) := \bigcap_{s\in S\setminus {0}} ann(s)$.<br />
 $\bigcap_{simple A-module S} ann(S) = rad(A)$.</p>

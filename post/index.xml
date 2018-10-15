@@ -6,29 +6,10 @@
     <description>Recent content in Posts on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 10 Oct 2018 23:08:34 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Oct 2018 23:19:48 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Note-ACiCA-Ch1</title>
-      <link>https://cielrouge.github.io/post/noteacicach1/</link>
-      <pubDate>Wed, 10 Oct 2018 23:08:34 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/noteacicach1/</guid>
-      <description>1.1 Maximal Ideals 记号: $(S)_R = (S)$.
-$M$ 是 $R$ 模，$S$ 是 $M$ 子集，$(S)$ 是 $M$ 的子模，$(S)$ 是 $S$ 的 $R$-线性组合全体.
-algebraic: $a$ 在 $K$ 上algebraic, if $\exists f \in K[x]$ s.t $f(a) = 0$.
-lemma 1.1
-域 $K$ 上代数 $A$.
-$A$ 是整环，且在 $K$ 上algebraic，则 $A$ 是域.
-$A$ 是域，且含于仿射 $K$-整环，则 $A$ algebraic.
-proposition 1.2
-仿射代数中的最大理想的代数同态原像也是最大理想.
-proposition 1.5
-$K$ 是代数闭域, 对最大理想 $m \subset K[x_1, &amp;hellip; ,x_n]$，存在点 $P = (\xi_1 &amp;hellip; \xi_n) \in K^n$, s.</description>
-    </item>
     
     <item>
       <title>2018-10-06</title>
@@ -64,7 +45,6 @@ $K$ 是代数闭域, 对最大理想 $m \subset K[x_1, &amp;hellip; ,x_n]$，存
 1. 拓扑等价于原来的流形
 2. 最小化线性逼近的数量
 3. 接受用户指定的距离与曲率的误差边界
-为动态分子可视化选择的拓扑等价来自ambient isotopy，保持了时间变化中几何模型的嵌入.
 Definition 1.
 $X$, $Y$是$R^n$的子集. ambient isotopy 是一个连续函数 $H: R^n \times [0,1] \to R^n$ s.t.
 1. $H(\cdot,0)$ 是identity函数
@@ -145,18 +125,18 @@ fmap f x = &amp;lt;*&amp;gt; (pure f) x</description>
       <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
-      <description>$K$-代数：
-一个环结构($A$)
-一个交换环($K$)到环结构中心($Z(A)$)的环同态
-代数同态:
-环同态:$A$ -&amp;gt; $B$, 结构同态:($K$ -&amp;gt; $A$) -&amp;gt; ($K$ -&amp;gt; $B$)
-$\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (a)$)
-(left $A$-module $M$:
-an abelian group with a mapping $\mu: A\times M\to M$)
+      <description>$K$-代数: 环结构$A$, 交换环$K$到环结构中心$Z(A)$的环同态.
 $M$是$A$-模 =&amp;gt; 有$K$-代数同态 $\lambda :A\to End_K (M)$.
-给定$K$-代数同态$\nu: A\to End_K(M)$ =&amp;gt; $M$上有唯一$A$-模结构，使$A\to End_K(M)$是$\nu$.
- 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由A是$K$-代数，$K\to Z(A)$，证得$\lambda$的K-线性.）
-对$\nu: A\to End_K(M)$, 定义$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$</description>
+给定$K$-代数同态$\nu: A\to End_K(M)$ =&amp;gt; $M$上有唯一$A$-模结构, 使$A\to End_K(M)$是$\nu$.
+ 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由$A$是$K$-代数, $K\to Z(A)$, 证得$\lambda$的$K$-线性.）
+对$\nu: A\to End_K(M)$, 定义$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$
+ 
+一个表示是, 通过一个RealWorldObject上的作用, 一个抽象群的具体实现.
+群在域上的一个$n$阶表示: $G \to GL_n(K)$
+用 相同形状的可逆矩阵的 线性组合 形成 方阵；
+用 群元的 $K$-线性组合 形成 $K$-代数.
+(=&amp;gt; 群环的概念)
+群环$RG$: copies of $R$ as $R$-modules, direct sum $\coprod_{g\in G} R$</description>
     </item>
     
   </channel>

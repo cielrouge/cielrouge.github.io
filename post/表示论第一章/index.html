@@ -15,18 +15,14 @@
 
     
       
-      <meta property="description" content="$K$-代数：
-一个环结构($A$)
-一个交换环($K$)到环结构中心($Z(A)$)的环同态
-代数同态:
-环同态:$A$ -&amp;gt; $B$, 结构同态:($K$ -&amp;gt; $A$) -&amp;gt; ($K$ -&amp;gt; $B$)
-$\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (a)$) &amp;hellip;">
-      <meta property="og:description" content="$K$-代数：
-一个环结构($A$)
-一个交换环($K$)到环结构中心($Z(A)$)的环同态
-代数同态:
-环同态:$A$ -&amp;gt; $B$, 结构同态:($K$ -&amp;gt; $A$) -&amp;gt; ($K$ -&amp;gt; $B$)
-$\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (a)$) &amp;hellip;">
+      <meta property="description" content="$K$-代数: 环结构$A$, 交换环$K$到环结构中心$Z(A)$的环同态.
+$M$是$A$-模 =&amp;gt; 有$K$-代数同态 $\lambda :A\to End_K (M)$.
+给定$K$-代数同态$\nu: A\to End_K(M)$ =&amp;gt; $M$上有唯一$A$-模结构, 使$A\to End_K(M)$是$\nu$.
+[&amp;hellip;] 对each $a\in A$, 定 &amp;hellip;">
+      <meta property="og:description" content="$K$-代数: 环结构$A$, 交换环$K$到环结构中心$Z(A)$的环同态.
+$M$是$A$-模 =&amp;gt; 有$K$-代数同态 $\lambda :A\to End_K (M)$.
+给定$K$-代数同态$\nu: A\to End_K(M)$ =&amp;gt; $M$上有唯一$A$-模结构, 使$A\to End_K(M)$是$\nu$.
+[&amp;hellip;] 对each $a\in A$, 定 &amp;hellip;">
       
     
 
@@ -114,35 +110,26 @@ code.has-jax {
       </header>
 
 
-
-
-<p>$K$-代数：<br />
-一个环结构($A$)<br />
-一个交换环($K$)到环结构中心($Z(A)$)的环同态</p>
-
-<p>代数同态:<br />
-环同态:$A$ -&gt; $B$, 结构同态:($K$ -&gt; $A$) -&gt; ($K$ -&gt; $B$)<br />
-$\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (a)$)</p>
-
-<p>(left $A$-module $M$:<br />
-an abelian group with a mapping $\mu: A\times M\to M$)</p>
+<p>$K$-代数: 环结构$A$, 交换环$K$到环结构中心$Z(A)$的环同态.</p>
 
 <p>$M$是$A$-模 =&gt; 有$K$-代数同态 $\lambda :A\to End_K (M)$.<br />
-给定$K$-代数同态$\nu: A\to End_K(M)$ =&gt; $M$上有唯一$A$-模结构，使$A\to End_K(M)$是$\nu$.</p>
+给定$K$-代数同态$\nu: A\to End_K(M)$ =&gt; $M$上有唯一$A$-模结构, 使$A\to End_K(M)$是$\nu$.</p>
 
 <blockquote>
-<p>对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由A是$K$-代数，$K\to Z(A)$，证得$\lambda$的K-线性.）<br />
+<p>对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由$A$是$K$-代数, $K\to Z(A)$, 证得$\lambda$的$K$-线性.）<br />
 对$\nu: A\to End_K(M)$, <em>定义</em>$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$</p>
 </blockquote>
 
 <p><br>
 一个表示是, 通过一个RealWorldObject上的作用, 一个抽象群的具体实现.</p>
 
-<p>群在域上的一个n阶表示: $G \to GL_n(K)$</p>
+<p>群在域上的一个$n$阶表示: $G \to GL_n(K)$</p>
 
 <p>用 相同形状的可逆矩阵的 线性组合 形成 方阵；<br />
 用 群元的 $K$-线性组合 形成 $K$-代数.<br />
 (=&gt; 群环的概念)</p>
+
+<p>群环$RG$: copies of $R$ as $R$-modules, direct sum $\coprod_{g\in G} R$</p>
 
 <div>
 $$RG := \bigoplus_{g\in G} R\cdot e_g \mid R \cdot e_g = R , \forall g \in G$$  
@@ -151,7 +138,7 @@ $$G\to (RG)^\times, g\mapsto 1\cdot e_g$$
 </div>  
 
 <p><br>
-群-&gt;代数的单位群 开拓到 群环-&gt;代数</p>
+群$\rightarrow$代数的单位群 开拓到 群环$\rightarrow$代数</p>
 
 <div>
 $$\alpha : G \to A^{\times}, \beta : RG \to A, \alpha = \beta\mid_{G}$$
@@ -159,32 +146,21 @@ $$\beta(\sum_{g\in G} r_ge_g):=\sum_{g\in G}r_g\alpha (g)$$
 </div>
 
 <p><br>
-每个 $\phi: G \to GL_n( R)$可唯一开拓到<br />
-$R^n$上 RG-模结构$\widehat{\phi}: RG \to End_R(R^n)$</p>
+每个 $\phi: G \to GL_n( R)$可唯一开拓到  $R^n$上 $RG$-模结构$\widehat{\phi}: RG \to End_R(R^n)$</p>
 
-<div>
-$$G \to GL_n(R)\quad (= Mat_{n\times n}(R)^{\times})$$  
-$$RG \to End_R(R^n)\quad (=Mat_{n\times n}(R))$$
-$$\phi: G\to GL_n(R)$$
-$$\widehat{\phi}:RG\ni \sum_{g\in G} r_g e_g\mapsto \sum_{g\in G} r_g\phi (g)\in End_R(R^n)$$
-</div>
-
-<p><br></p>
-
-<blockquote>
-<p>群环上的模 (等同) 群的$K$-表示:<br />
-群的表示 开拓到 代数同态<br />
-代数同态 uncurry到 模的结构(态射)</p>
-</blockquote>
+<p>$$G \to GL_n( R)\quad (= Mat_{n\times n}( R)^{\times})$$
+$$RG \to End_R(R^n)\quad (=Mat_{n\times n}( R))$$
+$$\phi: G\to GL_n( R)$$
+$$\widehat{\phi}:RG\ni \sum_{g\in G} r_g e_g\mapsto \sum_{g\in G} r_g\phi (g)\in End_R(R^n)$$</p>
 
 <p><br>
 若$\phi$是$G$的$R$-表示, 则$RG$-模$\widehat{\phi}$称为:module <strong>afforded</strong> by $\phi$</p>
 
-<p>(若同维的两个群表示相似，则诱导的两个模同构;<br />
-若同维的两个群表示诱导的两个模作为$KG$-模同构，则两个群表示相似.)<br />
+<p>(若同维的两个群表示相似, 则诱导的两个模同构;<br />
+若同维的两个群表示诱导的两个模作为$KG$-模同构, 则两个群表示相似.)<br />
 $\phi$,$\psi$是 域$K$上同维的两个群表示,若有可逆矩阵$T$, $T\cdot \phi (g)=\psi (g)\cdot T$,<br />
 则两个表示$\phi$,$\psi$诱导的两个模$M_{\phi}$, $M_{\psi}$同构.<br />
-若$\phi$,$\psi$诱导的模$M_{\phi}$,$M_{\psi}$作为KG-模同构，<br />
+若$\phi$,$\psi$诱导的模$M_{\phi}$,$M_{\psi}$作为$KG$-模同构,<br />
 则存在可逆矩阵$T$, $T\cdot \phi (g)=\psi (g)\cdot T$.</p>
 
 <p>(模有限生成: 模有有限子集, 使模是模中含此有限子集的最小子模)</p>
@@ -246,9 +222,9 @@ if $\exists M\supseteq M_1 \supseteq M_2 \supseteq &hellip;$ then $\exists n_0\i
 
 <blockquote>
 <p>1=&gt;2:<br />
-设$N$是$M$的子模, $N$的生成集: <code>$\lbrace m_i \vert i\in I\rbrace$</code> ($I$ is not finite)<br />
-对每一个$n\in N$, 找到<code>$m(n)\in \lbrace m_i \vert i\in I\rbrace$</code> (inductively)<br />
-s.t. <code>$m(n)\notin \sum_{j=1}^{n-1} A\cdot m(j)$</code><br />
+设$N$是$M$的子模, $N$的生成集: $\lbrace m_i \vert i\in I\rbrace$ ($I$ is not finite)<br />
+对每一个$n\in N$, 找到$m(n)\in \lbrace m_i \vert i\in I\rbrace$ (inductively)<br />
+s.t. $m(n)\notin \sum_{j=1}^{n-1} A\cdot m(j)$<br />
 由此构造了$M$的$A$-子模: $M(n):=\sum_{j=1}^{n} A\cdot m(j)$<br />
 $M(n-1) \subsetneqq M(n), \forall n\in \mathbb{N}$,<br />
 与$M$ is Noetherian相悖.</p>
@@ -259,14 +235,11 @@ $M(n-1) \subsetneqq M(n), \forall n\in \mathbb{N}$,<br />
 1. $M$ is artinian<br />
 2. 对$M$的任意子模$N$, $N$与$M/N$ are artinian</p>
 
-<p>$M$ Noetherian iff. 每个非空的 $M$的子模 的集合, 都有最大元.<br />
-$M$ artinian iff. 每个非空的 $M$的子模 的集合, 都有最小元.</p>
-
 <p>Noetherian模: 满的自同态是单的 (即是自同构)</p>
 
 <blockquote>
 <p>$\phi ^n := \phi \circ \phi^{n-1}$<br />
-M的递增子模序列: $(ker(\phi ^n))_{n\in \mathbb{N}}$<br />
+$M$的递增子模序列: $(ker(\phi ^n))_{n\in \mathbb{N}}$<br />
 Noetherian =&gt; becomes stationary<br />
 $n_0 : ker(\phi ^n)=ker(\phi ^{n_0}),\forall n\geq n_0$<br />
 <font style="color:purple">
@@ -280,12 +253,12 @@ $m=\phi^{n_0}(x)=0$, $\phi$ injective.</p>
 <p><br></p>
 
 <p>(Krull-Schimidt)<br />
-($K$是域，$A$是$K$-代数，$M$是Noetherian且artinian的$A$-模.)<br />
-若有不可分解的A-模：$M_1,M_2,&hellip;,M_m$ 与 $N_1,N_2,&hellip;,N_n$ s.t. $\bigoplus_{j=1}^m M_j = M = \bigoplus_{i=1}^n N_i$<br />
+($K$是域, $A$是$K$-代数, $M$是Noetherian且artinian的$A$-模.)<br />
+若有不可分解的$A$-模：$M_1,M_2,&hellip;,M_m$ 与 $N_1,N_2,&hellip;,N_n$ s.t. $\bigoplus_{j=1}^m M_j = M = \bigoplus_{i=1}^n N_i$<br />
 则 $\exists \sigma \in \mathfrak{S}_n$, s.t. $M_j \simeq N_{\sigma(j)}$</p>
 
 <p>(Fitting)<br />
-($M$是Noetherian且artinian的$A$-模.)   对每一个自同态，存在一个模的分解，使这个自同态限制在一部分上是幂零自同态，限制在在另一部份上是自同构.<br />
+($M$是Noetherian且artinian的$A$-模.)   对每一个自同态, 存在一个模的分解, 使这个自同态限制在一部分上是幂零自同态, 限制在在另一部份上是自同构.<br />
 $\forall u$ (endomorphism of M), $\exists M\simeq N\oplus S$ s.t.<br />
 $u\vert N$ is nilpotent endomorphism of N. $u\vert S$ is automorphism of S.<br />
 may take $N=ker(u^m), S=im(u^m)$ (for m large enough)</p>
@@ -301,7 +274,7 @@ $End_A(M)$是一个局部环. (if $u\in End_A(M)$ not invertible, then $\forall 
 
 <p>$\varphi: U\oplus V\to X\oplus Y$<br />
 $$ \varphi =\begin{pmatrix} \varphi_{U,X} &amp; \varphi_{V,X} \\ \varphi_{U,Y} &amp; \varphi_{V,Y} \end{pmatrix} $$<br />
-若$\varphi_{U,X}$是同构，则<br />
+若$\varphi_{U,X}$是同构, 则<br />
 $$ \tau =\begin{pmatrix} id_U &amp; -\varphi_{U,X}^{-1}\circ \varphi_{V,X} \\ 0 &amp; id_V \end{pmatrix} \in Aut_A(U\oplus V)$$<br />
 $\varphi \circ \tau: V\to Y$也是同构.<br />
 得到同构:$$\bigoplus_{j=2}^n M_i \simeq M/M_1 \to M/N_{j_0} \simeq \bigoplus_{j\neq j_0} N_j$$<br />
@@ -310,13 +283,13 @@ Krull-Schmidt theorem得证.</p>
 <p><br></p>
 
 <p>lemma 1.4.9 (Schur)<br />
-简单A-模的自同态环是含K的skew-field.</p>
+简单$A$-模的自同态环是含$K$的skew-field.</p>
 
 <blockquote>
-<p>V是简单模，所以V的子模只有0和V. 所以im(u), ker(u)只能取0或V,<br />
+<p>$V$是简单模, 所以$V$的子模只有$0$和$V$. 所以$im(u)$, $ker(u)$只能取$0$或$V$,<br />
 $\therefore$ $u\in End_A(V)$ either 0 or automorphism,<br />
-(remark 1.1.12: $End_A(M)$是K-代数，$Aut_A(M)$是它的单位群.)<br />
-$End_A(V)$是一个所有非零元都可逆的K-代数.</p>
+(remark 1.1.12: $End_A(M)$是$K$-代数, $Aut_A(M)$是它的单位群.)<br />
+$End_A(V)$是一个所有非零元都可逆的$K$-代数.</p>
 </blockquote>
 
 <p><br>
@@ -326,22 +299,21 @@ brauer群的schur子群：是简单$KG$-模的自同态的skew-field<br />
 skew-field以域为中心</p>
 
 <p>lemma 1.4.13<br />
-V，W是两个不同构的简单A-模，则$Hom_A(V,W)=0$.</p>
+$V$, $W$是两个不同构的简单$A$-模, 则$Hom_A(V,W)=0$.</p>
 
 <p>lemma 1.4.14<br />
-regular A-模的自同态环同构于A的反对代数.<br />
+regular $A$-模的自同态环同构于$A$的反对代数.<br />
 proof. $\forall \phi \in End_A( _{A}A)$, 令$\phi(1_A) =: a_{\phi}$,<br />
 则 $\forall b\in A$, $\phi(b)=b\cdot a_{\phi}$.<br />
-(自同态 -&gt; 右乘)<br />
+(自同态 $\rightarrow$ 右乘)<br />
 $b a_{\phi \circ \psi} = (\phi \circ \psi)(b) = \phi(\psi(b)) = (b a_{\psi})a_{\phi} = b(a_{\psi} a_{\phi})$<br />
 $a_{\psi}a_{\phi} = a_{\phi \circ \psi}$<br />
 $\therefore$ $End_A ( _{A}A)\simeq A^{op}$</p>
 
-<p>notation: $Mat_{n\times n}(R)$: matrix ring of square matrices with coefficients in R.</p>
+<p>notation: $Mat_{n\times n}(R)$: matrix ring of square matrices with coefficients in $R$.</p>
 
-<h3 id="theorem-1-4-16-wedderburn">theorem 1.4.16 (Wedderburn)</h3>
-
-<p>$K$ be a field, $A$ be a finite dimensional semisimple $K$-algebra.<br />
+<p><strong>theorem 1.4.16 (Wedderburn)</strong><br />
+$K$ be a field, $A$ be a finite dimensional semisimple $K$-algebra.<br />
 $\exists D_i$: skew-fields with centres containing $K$.
 ($D_i$, $n_i$: completely determined by $A$)<br />
 $$A \simeq \prod_{i=1}^m Mat_{n_i\times n_i}(D_i)$$</p>
@@ -366,43 +338,42 @@ krull-schmidt theorem implies: the unicity of decomposition of regular module in
 $n_i$: simple modules(同构等价类) 作为direct factor of the regular representation的重数.</p>
 
 <p>corollary 1.4.17<br />
-这样的skew-field是交换的：代数闭域上的有限维向量空间.<br />
-若$A$是有限维半简单$K$-代数，且$K$是代数闭域，则存在$n_i$ s.t.<br />
-$$A\simeq \prod_{j=1}^m Mat_{n_j\times n_j} (K)$$<br />
+这样的skew-field是交换的: 代数闭域上的有限维向量空间.<br />
+若$A$是有限维半简单$K$-代数, 且$K$是代数闭域, 则存在$n_i$ s.t. $$A\simeq \prod_{j=1}^m Mat_{n_j\times n_j} (K)$$
 proof.<br />
-使$D$是$K$上的有限维skew-field，$d\in D$.<br />
-因为$D$是有限维$K$-向量空间，由cayley-hamilton定理，d有最小多项式$P_d(X)\in K[X]$<br />
-因为$K$是代数闭域，所以$P$的次数是1，所以$d\in K$，所以$D=K$.</p>
+使$D$是$K$上的有限维skew-field, $d\in D$.<br />
+因为$D$是有限维$K$-向量空间, 由cayley-hamilton定理, $d$有最小多项式$P_d(X)\in K[X]$<br />
+因为$K$是代数闭域, 所以$P$的次数是$1$, 所以$d\in K$, 所以$D=K$.</p>
 
 <p>corollary 1.4.18<br />
-$G$是有限群，则$\exists m, n_i \in \mathbb{N}$ s.t. $\vert G \vert = n_1^2 + n_2^2 + &hellip; + n_m^2$. $n_i$是simple $KG$-module的维数，$K$是$\vert G \vert$在其中可逆的任意代数闭域.</p>
+$G$是有限群, 则$\exists m, n_i \in \mathbb{N}$ s.t. $\vert G \vert = n_1^2 + n_2^2 + &hellip; + n_m^2$. $n_i$是simple $KG$-module的维数, $K$是$\vert G \vert$在其中可逆的任意代数闭域.</p>
 
 <p>corollary 1.4.19<br />
-若$A$在$K$上: 半简单，交换，有限维，则存在$K$上有限维扩张$K_i$, s.t. $A \simeq \prod_{j=1}^m K_i$.</p>
+若$A$在$K$上:半简单,交换,有限维, 则存在$K$上有限维扩张$K_i$, s.t. $A \simeq \prod_{j=1}^m K_i$.</p>
 
 <p>corollary 1.4.20<br />
-若$A$是半简单有限维$K$-代数，$S$是简单$A$-模，则$\exists i$ s.t.<br />
+若$A$是半简单有限维$K$-代数, $S$是简单$A$-模, 则 $\exists i$ s.t.<br />
 $$ S\simeq S_i \simeq \begin{pmatrix} D_i \\ \vdots\\ D_i\end{pmatrix}_{n_i} $$<br />
 proof.<br />
-take $s\in S\backslash \lbrace 0 \rbrace$, $A\cdot s$是$S$非零子模，
+take $s\in S\backslash \lbrace 0 \rbrace$, $A\cdot s$是$S$非零子模,<br />
 $\because$ $S$ simple, $\therefore$ $S=As$, $\therefore$ $S$是$ _{A}A$商模.<br />
 $\because$ $ _{A}A$ semisimple, $\therefore$ $\exists i$ s.t. $S\simeq S_i$.<br />
 $$S_i \simeq Hom_A( _{A}A, S_i) \simeq Hom_A(\bigoplus_{l=1}^m \bigoplus_{j=1}^{n_i} S_l,S_i) \simeq \begin{pmatrix} D_i \\ \vdots \\D_i\end{pmatrix}_{n_i}$$</p>
 
-<p>by remark 1.4.12, every simple A-module S is a vector space over the skew field $End_A(S)$.</p>
+<p>by remark 1.4.12, every simple $A$-module $S$ is a vector space over the skew field $End_A(S)$.</p>
 
 <p>corollary 1.4.21<br />
-$A$是有限维$K$-代数，$S$是简单$A$-模，则excatly $dim_{End_A(S)}(S)$ copies of $S$ are dirct factors of $ _{A}A$.<br />
+$A$是有限维$K$-代数, $S$是简单$A$-模, 则excatly $dim_{End_A(S)}(S)$ copies of $S$ are dirct factors of $ _{A}A$.<br />
 proof. in $Mat_{n\times n}(D)$ a simple direct factor corresponds to a column.</p>
 
 <p>corollary 1.4.23<br />
-若$A$是半简单阿廷代数，则$A$同构于skew-fields上的矩阵环的一个有限直积.</p>
+若$A$是semisimple artinian algebra, 则$A$同构于skew-fields上的矩阵环的一个有限直积.</p>
 
 <p>definition 1.4.24<br />
-$K$-代数$A$ is simple, if for each 双边理想 $I$, $I=0$ or $I=A$.</p>
+$K$-代数$A$是简单的, 若任一双边理想 $I=0$ or $I=A$.</p>
 
 <p>proposition 1.4.27<br />
-域上有限维简单$K$-代数is semisimple.<br />
+域上有限维简单$K$-代数是半简单的.<br />
 proof.<br />
 $S$ be a simple left $A$-submodule of $ _{A}A$ i.e. a minimal left ideal of $A$.<br />
 left ideal $J:=\sum_{a\in A} S\cdot a$, by definition $J$ is a non-zero two-sided ideal of $A$,<br />
@@ -427,7 +398,7 @@ $D$是skew-field, 则$Mat_{n\times n}(D)$是simple algebra.</p>
 <p>definition 1.4.30<br />
 $X$ be a set, $K$ be a commutative ring.<br />
 free $K$-algebra $K\langle X\rangle $ on $X$ is<br />
-the algebra which has a K-basis consisting of words of elements of X.</p>
+the algebra which has a $K$-basis consisting of words of elements of $X$.</p>
 
 <p>$(\frac{\partial }{\partial X} X - X \frac{\partial}{\partial X})(X^n) = (n+1)X^n - nX^n = X^n$<br />
 Weyl algebra: $W_1(K):=K\langle X,Y\rangle /(YX-XY-1)$</p>
@@ -448,9 +419,9 @@ $u_{i,j}^k \in K$</p>
 $A$-模$M$是<em>absolutely simple</em>, 若模$M_L$对$K$上所有扩域$L$, 是$A_L$-模.</p>
 
 <p>proposition 1.4.36<br />
-$A$是有限维半简单$K$-代数，则有$K$的扩域$L$，s.t. $dim_K(L)&lt;\infty$ and s.t. $A_L$ is split semisimple.</p>
+$A$是有限维半简单$K$-代数, 则有$K$的扩域$L$, s.t. $dim_K(L)&lt;\infty$ and s.t. $A_L$ is split semisimple.</p>
 
-<p>$G$是有限群，$K$是$G$的阶数在其中可逆的域. to determine the data of Wedderburn&rsquo;s theorem entirely in terms of data of the group G and the field K.</p>
+<p>$G$是有限群, $K$是$G$的阶数在其中可逆的域. to determine the data of Wedderburn&rsquo;s theorem entirely in terms of data of the group G and the field K.</p>
 
 <p>lemma 1.5.1<br />
 $Z(Mat_n\times n(A)) = \lbrace z \cdots I_n \vert z \in Z(A)$ for any algebra $A$, where<br />
@@ -463,25 +434,25 @@ $$I_n =
 $$</p>
 
 <p>corollary 1.5.2<br />
-$K$是有限维半简单$K$-代数$A$的分裂域，则$dim_K (Z(A))$是简单$A$-模同构类的数目.</p>
+$K$是有限维半简单$K$-代数$A$的分裂域, 则$dim_K (Z(A))$是简单$A$-模同构类的数目.</p>
 
 <p>$g\in G$, 记$G$共轭类为$C_g:=\lbrace hgh^{-1}\vert h\in G \rbrace$</p>
 
 <p>lemma 1.5.3<br />
-$R$是交换环，$G$是有限群，则$\lbrace \sum_{h\in C_g} e_h \vert g\in G \rbrace$ 是$Z(RG)$的一个$R$-basis.<br />
+$R$是交换环, $G$是有限群, 则$\lbrace \sum_{h\in C_g} e_h \vert g\in G \rbrace$ 是$Z(RG)$的一个$R$-basis.<br />
 proof. $RG$是一个有基$\lbrace e_g \vert g\in G \rbrace$的自由$R$-模.<br />
 $$ x = \sum_{g\in G} x_g e_g \in Z(RG) \Leftrightarrow \forall h\in G : e_h \cdot x \cdot e_h^{-1} = x $$<br />
 $$ e_h \cdot x \cdot e_{h^{-1}} = \sum_{g\in G} x_g e_h e_g e_{h^{-1}} = \sum_{g\in G} x_g e_{hgh^{-1}} = \sum_{g\in G} x_{h^{-1}gh} e_g $$<br />
 $$x\in Z(RG) \Leftrightarrow e_h \cdot x \cdot e_h^{-1} = x \Leftrightarrow x_g = x_{h^{-1}gh}$$</p>
 
 <p>theorem 1.5.4<br />
-设$G$是有限群，$K$是$G$的阶数在其中可逆的域. 假设$K$是$KG$的分裂域. 则简单$KG$-模同构等价类的数目等于$G$共轭类的数目.</p>
+设$G$是有限群, $K$是$G$的阶数在其中可逆的域. 假设$K$是$KG$的分裂域. 则简单$KG$-模同构等价类的数目等于$G$共轭类的数目.</p>
 
-<p>特征为零的域上的有限群表示论, 三个基本定理：1. Maschke: 域上有限群的群环是半简单的，当群阶数在域中可逆. 2. Wedderburn: 确定了域上的半简单有限维代数的结构. 3. Krull-Schmidt: 有限维模的不可约直和分解唯一(unique up to permutation and isomorphism of factors).</p>
+<p>特征为零的域上的有限群表示论, 三个基本定理：1. Maschke: 域上有限群的群环是半简单的, 当群阶数在域中可逆. 2. Wedderburn: 确定了域上的半简单有限维代数的结构. 3. Krull-Schmidt: 有限维模的不可约直和分解唯一(unique up to permutation and isomorphism of factors).</p>
 
-<p>definition 1.6.1 $A$是代数，$M$是$A$-模. $rad(M)$是$M$的所有最大$A$-子模的交.</p>
+<p>definition 1.6.1 $A$是代数, $M$是$A$-模. $rad(M)$是$M$的所有最大$A$-子模的交.</p>
 
-<p>lemma 1.6.3 $A$是环，$rad(A)$是$A$的双边理想.<br />
+<p>lemma 1.6.3 $A$是环, $rad(A)$是$A$的双边理想.<br />
 proof.<br />
 S是任意简单A-模. $\forall s \in S\setminus \lbrace 0 \rbrace$, $S=A\cdot s$, $S\simeq A/ann(s)$,<br />
 $ann(s) := \lbrace a\in A \vert a\cdot s = 0 \rbrace$.<br />
@@ -491,14 +462,14 @@ $\bigcap_{simple A-module S} ann(S) = rad(A)$.</p>
 <p>proposition 1.6.4 $A$是代数, $M$是Noetherian $A$-模. 则 $rad(A)M = M$ $\Rightarrow $ $M=0$.</p>
 
 <p>proposition 1.6.5<br />
-$A$是代数，$M$是Noetherian $A$-模，$N$是$M$的$A$-子模. 则
+$A$是代数, $M$是Noetherian $A$-模, $N$是$M$的$A$-子模. 则
 $$ (N + rad(A)M = M) \Rightarrow (N=M) $$</p>
 
 <p>lemma 1.6.6 $A$是Noetherian, artinian代数. 则$rad(A)$是$A$的一个幂零双边理想.</p>
 
-<p>lemma 1.6.8 $A$是代数，$M$是$artinian$ $A$-模，则$rad(M)$是$M$的 使$M/rad(M)$半简单 的最小子模.</p>
+<p>lemma 1.6.8 $A$是代数, $M$是$artinian$ $A$-模, 则$rad(M)$是$M$的 使$M/rad(M)$半简单 的最小子模.</p>
 
-<p>lemma 1.6.9 $A$是代数，$M$,$N$是$A$-模，令$f\in Hom_A(M,N)$，则$f(rad(M))\leq rad(N)$.</p>
+<p>lemma 1.6.9 $A$是代数, $M$,$N$是$A$-模, 令$f\in Hom_A(M,N)$, 则$f(rad(M))\leq rad(N)$.</p>
 
 
   <footer>

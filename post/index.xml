@@ -12,19 +12,21 @@
     
     
     <item>
-      <title>dnote-htt</title>
+      <title>note-1017</title>
       <link>https://cielrouge.github.io/post/dnote-htt/</link>
       <pubDate>Wed, 17 Oct 2018 15:13:33 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/dnote-htt/</guid>
-      <description>1.1 a dependent type over a type $P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
+      <description>dependent type over a type
+$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
 $Q(a,u)$ is a type for every $a:A$ and $u:P(a)$
 a dependent type is a map of a type into a universe
-1.1.1 Dependent products
+dependent products
 terms of $\prod (a:A), P(a)$ :=
 sections of $P$ :=
 functions from a term of $A$ to a term of type $P(a)$.
-each judgement defines a term:</description>
+each judgement defines a term:
+$a:A \vdash g(a):P(a)$ defines $\lambda a.</description>
     </item>
     
     <item>

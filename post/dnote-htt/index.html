@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>dnote-htt - CielRouge</title>
-    <meta property="og:title" content="dnote-htt - CielRouge">
+    <title>note-1017 - CielRouge</title>
+    <meta property="og:title" content="note-1017 - CielRouge">
     
     <meta name="twitter:card" content="summary">
 
@@ -15,16 +15,14 @@
 
     
       
-      <meta property="description" content="$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
+      <meta property="description" content="dependent type over a type
+$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
 $Q(a,u)$ is a type for every $a:A$ and $u:P(a)$
-a dependent type is a map of a type into a universe
-1.1.1 Dependent products
-terms of &amp;hellip;">
-      <meta property="og:description" content="$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
+a dependent type is a map of a type into a universe &amp;hellip;">
+      <meta property="og:description" content="dependent type over a type
+$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
 $Q(a,u)$ is a type for every $a:A$ and $u:P(a)$
-a dependent type is a map of a type into a universe
-1.1.1 Dependent products
-terms of &amp;hellip;">
+a dependent type is a map of a type into a universe &amp;hellip;">
       
     
 
@@ -102,7 +100,7 @@ code.has-jax {
     <article class="main">
       <header class="title">
       
-<h1>dnote-htt</h1>
+<h1>note-1017</h1>
 
 <h3>
   2018-10-17</h3>
@@ -112,16 +110,13 @@ code.has-jax {
       </header>
 
 
-
-
-<h3 id="1-1-a-dependent-type-over-a-type">1.1 a dependent type over a type</h3>
-
-<p>$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$<br />
+<p><strong>dependent type over a type</strong><br />
+$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$<br />
 $Q(a,u)$ is a type for every $a:A$ and $u:P(a)$</p>
 
 <p>a dependent type is a map of a type into a universe</p>
 
-<p><strong>1.1.1 Dependent products</strong><br />
+<p><strong>dependent products</strong><br />
 terms of $\prod (a:A), P(a)$ :=<br />
 sections of $P$ :=<br />
 functions from a term of $A$ to <font color="steelblue">a term of type</font> $P(a)$.</p>
@@ -137,17 +132,41 @@ $\lambda a.evaluate(f,a) = f$</p>
 <p>$Q$ be a dependent type over a dependent type $P$ over $A$.<br />
 $\prod (a:A)(u:P(a)),Q(a,u) := \prod (a:A), (\prod(u:P(a)),Q(a,u))$</p>
 
-<p><strong>1.1.2 Dependent sums</strong><br />
+<p><strong>dependent sums</strong><br />
 $\langle -, -\rangle : \prod (a:A), (P(a) \to \sum (x:A),P(x))$<br />
 includes every $a:A$ and $u:P(a)$ as the pair $\langle a,u \rangle$ in $\sum (a:A),P(a)$.</p>
 
-<p>-- a dependent type over $\sum(a:A),P(a)$,<br />
+<p>the <strong>minimality priciple</strong> for dependent sum:<br />
+-- whenever we have:<br />
+-- a dependent type over $\sum(a:A),P(a)$,<br />
 $Q:(\sum(a:A),P(a)) \to Type$<br />
 -- a dependent function maps each pair $a:A$ and $u:P(a)$ <font color="steelblue">a term of type</font> $Q(\langle a, u \rangle)$,<br />
 $q:\prod(a:A)(u:P(a)),Q(\langle a,u \rangle)$<br />
+-- then there is<br />
 -- a section of $Q$,<br />
 $\sigma (Q,q):\prod (w:\sum(a:A),P(a)),Q(w)$<br />
+-- such that:<br />
 $\sigma (\langle a,u \rangle) = q(a,u)$</p>
+
+<p>for any $P$ over $A$ exists functions<br />
+$proj_1 : (\sum (a:A),P(a))\to A$<br />
+$proj_2 : \prod (w: \sum (a:A),P(a)),P(proj_1(w))$<br />
+such that for every $a:A$ and $u:P(u)$:<br />
+$\langle a,u \rangle = \langle proj_1 \langle a,u \rangle,proj_2 \langle a,u \rangle \rangle$</p>
+
+<p>minimality principle of dependent sum ensures an equivalence for every type $B$:<br />
+$((\sum(a:A),P(a)) \to B) \cong \prod (a:A),(P(a) \to B)$</p>
+
+<p><strong>defining types inductively</strong><br />
+term $zero$ and a successor function $S:\mathbb{N} \to \mathbb{N}$<br />
+induction principle for type theory:<br />
+-- whenever we have:<br />
+$p:P(zero)$<br />
+$f:\prod(n:\mathbb{N}), P(n) \to P(S(n))$<br />
+-- then there is a section:<br />
+$\sigma :\prod(n:N), P(n)$<br />
+-- such that for all $n:\mathbb{N}$<br />
+$\sigma(zero) = p$, $f(n)(\sigma(n))=\sigma(S(n))$</p>
 
 
   <footer>

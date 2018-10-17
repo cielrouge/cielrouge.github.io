@@ -17,11 +17,14 @@
       <pubDate>Wed, 17 Oct 2018 15:13:33 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/dnote-htt/</guid>
-      <description>terms of $\prod (a:A), P(a)$ are sections of $P$ := functions from term of $A$ to term of type $P(a)$.
-each judgement defines a term:
-$a:A \vdash g(a):P(a)$ defines $\lambda a.g(a):\prod(a:A),P(a)$
-$g(a):P(a)$, $x:A$, ($\beta$-rule) $evaluate(\lambda a.g(a),x)=g(x)$
-$f:\prod(a:A),P(a)$, $P(a)$ be a section of $P$, ($\eta$-rule) $\lambda a.evaluate(f,a) = f$</description>
+      <description>1.1 a dependent type over a type $P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
+$Q(a,u)$ is a type for every $a:A$ and $u:P(a)$
+a dependent type is a map of a type into a universe
+1.1.1 Dependent products
+terms of $\prod (a:A), P(a)$ :=
+sections of $P$ :=
+functions from a term of $A$ to a term of type $P(a)$.
+each judgement defines a term:</description>
     </item>
     
     <item>

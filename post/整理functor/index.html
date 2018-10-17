@@ -90,7 +90,7 @@ code.has-jax {
     <header class="masthead">
       <h1><a href="/">CielRouge</a></h1>
 
-
+<p class="tagline">还是需要一点可见的感觉.</p>
 
       <nav class="menu">
   <input id="menu-check" type="checkbox" />
@@ -127,7 +127,7 @@ code.has-jax {
 元左乘 -&gt; 一个自同态.<br />
 这样就好理解了.</p>
 
-<h3 id="functor">Functor</h3>
+<h4 id="functor">Functor</h4>
 
 <p>Functors: uniform <font color="forestgreen">action</font> over a parameterized type<br />
 在「参数化的type」上的「一致action」<br />
@@ -141,7 +141,7 @@ code.has-jax {
 <p><code>(&lt;$&gt;)</code> -- fmap<br />
 <code>(&lt;&amp;&gt;)</code> -- flip fmap</p>
 
-<h3 id="applicative">Applicative</h3>
+<h4 id="applicative">Applicative</h4>
 
 <p>a functor with <font color="forestgreen">application</font></p>
 
@@ -162,22 +162,18 @@ code.has-jax {
 <code>liftA2 :: (a -&gt; b -&gt; c) -&gt; f a -&gt; f b -&gt; f c</code><br />
 -- 将二元函数提升至 <font color="forestgreen">actions</font><br />
 -- sequence computations, combine results</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-haskell" data-lang="haskell"><span style="color:#080;font-weight:bold">instance</span> <span style="color:#339;font-weight:bold">Applicative</span> <span style="color:#339;font-weight:bold">[]</span> <span style="color:#080;font-weight:bold">where</span>  
+<span style="color:#06b;font-weight:bold">pure</span> <span style="color:#06b;font-weight:bold">x</span> <span style="color:#000;font-weight:bold">=</span> [<span style="color:#06b;font-weight:bold">x</span>]  
+<span style="color:#06b;font-weight:bold">fs</span> <span style="color:#333">&lt;*&gt;</span> <span style="color:#06b;font-weight:bold">xs</span> <span style="color:#000;font-weight:bold">=</span> [<span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">x</span> <span style="color:#333">|</span> <span style="color:#06b;font-weight:bold">f</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">fs</span>, <span style="color:#06b;font-weight:bold">x</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">xs</span>]  
+<span style="color:#06b;font-weight:bold">liftA2</span> <span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">xs</span> <span style="color:#06b;font-weight:bold">ys</span> <span style="color:#000;font-weight:bold">=</span> [<span style="color:#06b;font-weight:bold">f</span> <span style="color:#06b;font-weight:bold">x</span> <span style="color:#06b;font-weight:bold">y</span> <span style="color:#333">|</span> <span style="color:#06b;font-weight:bold">x</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">xs</span>, <span style="color:#06b;font-weight:bold">y</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">ys</span>]  
+<span style="color:#06b;font-weight:bold">xs</span> <span style="color:#333">*&gt;</span> <span style="color:#06b;font-weight:bold">ys</span> <span style="color:#000;font-weight:bold">=</span> [<span style="color:#06b;font-weight:bold">y</span> <span style="color:#333">|</span> <span style="color:#080;font-weight:bold">_</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">xs</span>, <span style="color:#06b;font-weight:bold">y</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#06b;font-weight:bold">ys</span>]  
 
-<pre><code>instance Applicative [] where  
-pure x = [x]  
-fs &lt;*&gt; xs = [f x | f &lt;- fs, x &lt;- xs]  
-liftA2 f xs ys = [f x y | x &lt;- xs, y &lt;- ys]  
-xs *&gt; ys = [y | _ &lt;- xs, y &lt;- ys]  
-
-&lt;*&gt; :: [a -&gt; b] -&gt; [a] -&gt; [b]
-</code></pre>
-
+<span style="color:#333">&lt;*&gt;</span> <span style="color:#000;font-weight:bold">::</span> [<span style="color:#06b;font-weight:bold">a</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#06b;font-weight:bold">b</span>] <span style="color:#000;font-weight:bold">-&gt;</span> [<span style="color:#06b;font-weight:bold">a</span>] <span style="color:#000;font-weight:bold">-&gt;</span> [<span style="color:#06b;font-weight:bold">b</span>]</code></pre></div>
 <p><code>(*&gt;)</code>  -- sequence actions, 丢弃第一个argument<br />
 <code>(&lt;*)</code>  -- sequence actions, 丢弃第二个argument</p>
 
-<h3 id="monad">Monad</h3>
-
-<p>Functor =&gt; Applicative =&gt; Monad<br />
+<p>#### Monad
+Functor =&gt; Applicative =&gt; Monad<br />
 将 monad 理解为 <font color="forestgreen">actions</font> 的 abstract data<font color="forestgreen">type</font>.</p>
 
 <p><code>(&gt;&gt;=) :: m a -&gt; (a -&gt; m b) -&gt; m b</code><br />
@@ -202,14 +198,14 @@ sequentially compose two <font color="forestgreen">actions</font>,<br />
 <p><code>fmap f xs = xs &gt;&gt;= return . f</code><br />
 <code>(&gt;&gt;) = (*&gt;)</code></p>
 
-<h3 id="monadplus">MonadPlus</h3>
+<h4 id="monadplus">MonadPlus</h4>
 
 <p>Monads that also support <font color="forestgreen">choice and failure</font></p>
 
 <p><code>mzero = empty</code><br />
 <code>mplus = (&lt;|&gt;)  -- an associative operation</code></p>
 
-<h3 id="naming-conventions">Naming conventions</h3>
+<h4 id="naming-conventions">Naming conventions</h4>
 
 <blockquote>
 <ol>

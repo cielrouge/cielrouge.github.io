@@ -15,12 +15,16 @@
 
     
       
-      <meta property="description" content="terms of $\prod (a:A), P(a)$ are sections of $P$ := functions from term of $A$ to term of type $P(a)$.
-each judgement defines a term:
-$a:A \vdash g(a):P(a)$ defines $\lambda a.g(a):\prod(a:A),P(a)$ &amp;hellip;">
-      <meta property="og:description" content="terms of $\prod (a:A), P(a)$ are sections of $P$ := functions from term of $A$ to term of type $P(a)$.
-each judgement defines a term:
-$a:A \vdash g(a):P(a)$ defines $\lambda a.g(a):\prod(a:A),P(a)$ &amp;hellip;">
+      <meta property="description" content="$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
+$Q(a,u)$ is a type for every $a:A$ and $u:P(a)$
+a dependent type is a map of a type into a universe
+1.1.1 Dependent products
+terms of &amp;hellip;">
+      <meta property="og:description" content="$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
+$Q(a,u)$ is a type for every $a:A$ and $u:P(a)$
+a dependent type is a map of a type into a universe
+1.1.1 Dependent products
+terms of &amp;hellip;">
       
     
 
@@ -77,7 +81,7 @@ code.has-jax {
     <header class="masthead">
       <h1><a href="/">CielRouge</a></h1>
 
-
+<p class="tagline">还是需要一点可见的感觉.</p>
 
       <nav class="menu">
   <input id="menu-check" type="checkbox" />
@@ -108,13 +112,42 @@ code.has-jax {
       </header>
 
 
-<p>terms of $\prod (a:A), P(a)$ are sections of $P$ := functions from term of $A$ to term of type $P(a)$.</p>
+
+
+<h3 id="1-1-a-dependent-type-over-a-type">1.1 a dependent type over a type</h3>
+
+<p>$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$<br />
+$Q(a,u)$ is a type for every $a:A$ and $u:P(a)$</p>
+
+<p>a dependent type is a map of a type into a universe</p>
+
+<p><strong>1.1.1 Dependent products</strong><br />
+terms of $\prod (a:A), P(a)$ :=<br />
+sections of $P$ :=<br />
+functions from a term of $A$ to <font color="steelblue">a term of type</font> $P(a)$.</p>
 
 <p>each judgement defines a term:<br />
 $a:A \vdash g(a):P(a)$ defines $\lambda a.g(a):\prod(a:A),P(a)$</p>
 
-<p>$g(a):P(a)$, $x:A$, ($\beta$-rule) $evaluate(\lambda a.g(a),x)=g(x)$<br />
-$f:\prod(a:A),P(a)$, $P(a)$ be a section of $P$, ($\eta$-rule) $\lambda a.evaluate(f,a) = f$</p>
+<p>$g(a):P(a)$, $x:A$, $\beta$-rule:<br />
+$evaluate(\lambda a.g(a),x)=g(x)$<br />
+$f:\prod(a:A),P(a)$, $P(a)$ be a section of $P$, $\eta$-rule<br />
+$\lambda a.evaluate(f,a) = f$</p>
+
+<p>$Q$ be a dependent type over a dependent type $P$ over $A$.<br />
+$\prod (a:A)(u:P(a)),Q(a,u) := \prod (a:A), (\prod(u:P(a)),Q(a,u))$</p>
+
+<p><strong>1.1.2 Dependent sums</strong><br />
+$\langle -, -\rangle : \prod (a:A), (P(a) \to \sum (x:A),P(x))$<br />
+includes every $a:A$ and $u:P(a)$ as the pair $\langle a,u \rangle$ in $\sum (a:A),P(a)$.</p>
+
+<p>-- a dependent type over $\sum(a:A),P(a)$,<br />
+$Q:(\sum(a:A),P(a)) \to Type$<br />
+-- a dependent function maps each pair $a:A$ and $u:P(a)$ <font color="steelblue">a term of type</font> $Q(\langle a, u \rangle)$,<br />
+$q:\prod(a:A)(u:P(a)),Q(\langle a,u \rangle)$<br />
+-- a section of $Q$,<br />
+$\sigma (Q,q):\prod (w:\sum(a:A),P(a)),Q(w)$<br />
+$\sigma (\langle a,u \rangle) = q(a,u)$</p>
 
 
   <footer>

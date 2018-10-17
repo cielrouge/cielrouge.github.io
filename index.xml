@@ -6,27 +6,22 @@
     <description>Recent content on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 06 Oct 2018 23:19:48 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Oct 2018 15:13:33 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>2018-10-06</title>
-      <link>https://cielrouge.github.io/post/181006/</link>
-      <pubDate>Sat, 06 Oct 2018 23:19:48 +0800</pubDate>
+      <title>dnote-htt</title>
+      <link>https://cielrouge.github.io/post/dnote-htt/</link>
+      <pubDate>Wed, 17 Oct 2018 15:13:33 +0800</pubDate>
       
-      <guid>https://cielrouge.github.io/post/181006/</guid>
-      <description>&amp;ldquo;the first is that we have not felt compelled to give the proofs of all the theorems.&amp;rdquo;
-&amp;ldquo;the second is that we have not always stated results in the maximum generality.&amp;rdquo;
-&amp;ldquo;the third is that we have hewed to the axiomatic foundations of the subject.&amp;rdquo;
-2018-10-06
-在将所有结论（定义定理体系）联系起来时，产生了一些猜测、想法，想要动手去尝试、验证。在证明结论中遇到阻碍后再去看给出的证明，才能理解technique出现的动机。
-“先手工证明再看证明”会被强调，“将结论体系联系起来时产生一些猜测”却没有。
-这样会遇到难以为继的困难。没有关于走向的直觉。
-整体感 - 注意力变焦 - 对重要性的敏感
-关注细节并不等于理解细节。
-2018-10-10</description>
+      <guid>https://cielrouge.github.io/post/dnote-htt/</guid>
+      <description>terms of $\prod (a:A), P(a)$ are sections of $P$ := functions from term of $A$ to term of type $P(a)$.
+each judgement defines a term:
+$a:A \vdash g(a):P(a)$ defines $\lambda a.g(a):\prod(a:A),P(a)$
+$g(a):P(a)$, $x:A$, ($\beta$-rule) $evaluate(\lambda a.g(a),x)=g(x)$
+$f:\prod(a:A),P(a)$, $P(a)$ be a section of $P$, ($\eta$-rule) $\lambda a.evaluate(f,a) = f$</description>
     </item>
     
     <item>

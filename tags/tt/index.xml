@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tt on CielRouge</title>
+    <link>https://cielrouge.github.io/tags/tt/</link>
+    <description>Recent content in Tt on CielRouge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 17 Oct 2018 15:13:33 +0800</lastBuildDate>
+    
+	<atom:link href="https://cielrouge.github.io/tags/tt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>note-1017</title>
+      <link>https://cielrouge.github.io/post/dnote-htt/</link>
+      <pubDate>Wed, 17 Oct 2018 15:13:33 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/dnote-htt/</guid>
+      <description>dependent type over a type
+$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
+$Q(a,u)$ is a type for every $a:A$ and $u:P(a)$
+a dependent type is a map of a type into a universe
+dependent products
+terms of $\prod (a:A), P(a)$ :=
+sections of $P$ :=
+functions from a term of $A$ to a term of type $P(a)$.
+each judgement defines a term:
+$a:A \vdash g(a):P(a)$ defines $\lambda a.</description>
+    </item>
+    
+  </channel>
+</rss>

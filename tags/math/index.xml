@@ -12,23 +12,23 @@
     
     
     <item>
-      <title>RT-AHAPoV-Ch1</title>
+      <title>untitled</title>
       <link>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
       <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
-      <description>$K$-代数：
-一个环结构($A$)
-一个交换环($K$)到环结构的中心的环同态
-代数同态:
-环同态:$A$ -&amp;gt; $B$, 结构同态:($K$ -&amp;gt; $A$) -&amp;gt; ($K$ -&amp;gt; $B$)
-$\forall \lambda \in K,\forall a \in A,\phi (\lambda \cdot a)=\lambda\cdot\phi (a)$)
-(left $A$-module $M$:
-an abelian group with a mapping $\mu: A\times M\to M$)
+      <description>$K$-代数: 环结构$A$, 交换环$K$到环结构中心$Z(A)$的环同态.
 $M$是$A$-模 =&amp;gt; 有$K$-代数同态 $\lambda :A\to End_K (M)$.
-给定$K$-代数同态$\nu: A\to End_K(M)$ =&amp;gt; $M$上有唯一$A$-模结构，使$A\to End_K(M)$是$\nu$.
- 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由A是$K$-代数，$K\to Z(A)$，证得$\lambda$的K-线性.）
-对$\nu: A\to End_K(M)$, 定义$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$</description>
+给定$K$-代数同态$\nu: A\to End_K(M)$ =&amp;gt; $M$上有唯一$A$-模结构, 使$A\to End_K(M)$是$\nu$.
+ 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由$A$是$K$-代数, $K\to Z(A)$, 证得$\lambda$的$K$-线性.）
+对$\nu: A\to End_K(M)$, 定义$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$
+ 
+一个表示是, 通过一个RealWorldObject上的作用, 一个抽象群的具体实现.
+群在域上的一个$n$阶表示: $G \to GL_n(K)$
+用 相同形状的可逆矩阵的 线性组合 形成 方阵；
+用 群元的 $K$-线性组合 形成 $K$-代数.
+(=&amp;gt; 群环的概念)
+群环$RG$: copies of $R$ as $R$-modules, direct sum $\coprod_{g\in G} R$</description>
     </item>
     
   </channel>

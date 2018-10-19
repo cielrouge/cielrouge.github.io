@@ -6,32 +6,69 @@
     <description>Recent content in Note on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Oct 2018 15:13:33 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>整理: Functor</title>
-      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</link>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      <title>note-1017</title>
+      <link>https://cielrouge.github.io/post/dnote-htt/</link>
+      <pubDate>Wed, 17 Oct 2018 15:13:33 +0800</pubDate>
       
-      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</guid>
-      <description>map an element to an action.
-元左乘 -&amp;gt; 一个自同态.
-这样就好理解了.
-Functor Functors: uniform action over a parameterized type
-在「参数化的type」上的「一致action」
-在「列表」上的「map函数」的一般化
-Functor: 可被map-over的types的class
-“对type 可被action做map 的形容”
-fmap (f . g) == fmap f . fmap g
-(&amp;lt;$&amp;gt;) -- fmap
-(&amp;lt;&amp;amp;&amp;gt;) -- flip fmap
-Applicative a functor with application
-对type 可被 有sequential application的uniform action 做map 的形容
-fmap f x = pure f &amp;lt;*&amp;gt; x
-fmap f x = &amp;lt;*&amp;gt; (pure f) x</description>
+      <guid>https://cielrouge.github.io/post/dnote-htt/</guid>
+      <description>dependent type over a type
+$P$ be a dependent type over $A$, $Q$ be a dependent type over $P$
+$Q(a,u)$ is a type for every $a:A$ and $u:P(a)$
+a dependent type is a map of a type into a universe
+dependent products
+terms of $\prod (a:A), P(a)$ :=
+sections of $P$ :=
+functions from a term of $A$ to a term of type $P(a)$.
+each judgement defines a term:
+$a:A \vdash g(a):P(a)$ defines $\lambda a.</description>
+    </item>
+    
+    <item>
+      <title>Note: LeafVenation</title>
+      <link>https://cielrouge.github.io/post/note-leafvenation/</link>
+      <pubDate>Mon, 24 Sep 2018 16:17:02 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-leafvenation/</guid>
+      <description>Adam Runions, Martin Fuhrer, Brendan Lane, Pavol Federl, Anne−Gaëlle Rolland−Lagan, and Przemyslaw Prusinkiewicz. Modeling and visualization of leaf venation patterns. ACM Transactions on Graphics 24(3), pp. 702−711.
+过程：1.叶脉向叶片的生长素源的发展. 2.根据与叶脉的近邻程度，调节生长素源分布. 3.根据叶片的生长，调节叶脉模式与源分布.
+代表叶脉节点与生长素源的点集上，迭代几何运算.
+保存一个叶脉连接图，以决定叶脉宽度.
+生长的特征：growth tensor
+极小曲面区域在各方向展开的量级，可能包含各区域的一个可能的旋转.
+生长张量是 相对初等生长率(RERG) 的一般化.
+RERG: 生长对象上$p$点处，线$l$的方向上测得的，极小距离随时间增长的速率.
+此速率依据极小距离$\Delta s$正规化得:
+$RERG_l(p) = (1/\Delta s)(d \Delta /dt)$
+marginal: concentrated on the border
+diffuse: spread throught the surface
+isotropic: diffuse growth, expansion equal in all directions
+uniform: growth tensor is the same at all points of the surface</description>
+    </item>
+    
+    <item>
+      <title>untitled</title>
+      <link>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
+      <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
+      <description>$K$-代数: 环结构$A$, 交换环$K$到环结构中心$Z(A)$的环同态.
+$M$是$A$-模 =&amp;gt; 有$K$-代数同态 $\lambda :A\to End_K (M)$.
+给定$K$-代数同态$\nu: A\to End_K(M)$ =&amp;gt; $M$上有唯一$A$-模结构, 使$A\to End_K(M)$是$\nu$.
+ 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由$A$是$K$-代数, $K\to Z(A)$, 证得$\lambda$的$K$-线性.）
+对$\nu: A\to End_K(M)$, 定义$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$
+ 
+一个表示是, 通过一个RealWorldObject上的作用, 一个抽象群的具体实现.
+群在域上的一个$n$阶表示: $G \to GL_n(K)$
+用 相同形状的可逆矩阵的 线性组合 形成 方阵；
+用 群元的 $K$-线性组合 形成 $K$-代数.
+(=&amp;gt; 群环的概念)
+群环$RG$: copies of $R$ as $R$-modules, direct sum $\coprod_{g\in G} R$</description>
     </item>
     
   </channel>

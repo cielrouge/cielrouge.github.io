@@ -6,7 +6,7 @@
     <description>Recent content in Tags on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 10 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Sep 2018 13:07:50 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,18 +14,36 @@
     <item>
       <title>Hs</title>
       <link>https://cielrouge.github.io/tags/hs/</link>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Sep 2018 13:07:50 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/tags/hs/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Math</title>
+      <link>https://cielrouge.github.io/tags/math/</link>
+      <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Note</title>
       <link>https://cielrouge.github.io/tags/note/</link>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Oct 2018 15:13:33 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/tags/note/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tt</title>
+      <link>https://cielrouge.github.io/tags/tt/</link>
+      <pubDate>Wed, 17 Oct 2018 15:13:33 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/tags/tt/</guid>
       <description></description>
     </item>
     

@@ -46,14 +46,14 @@ $a:A \vdash g(a):P(a)$ defines $\lambda a.</description>
     </item>
     
     <item>
-      <title>Note: VisualizingOneManifold</title>
+      <title>Note: 同痕逐段线性逼近</title>
       <link>https://cielrouge.github.io/post/note-visualizingonemanifold/</link>
       <pubDate>Sun, 30 Sep 2018 18:27:05 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/note-visualizingonemanifold/</guid>
       <description>Geometric Topology &amp;amp; Visualizing 1-Manifolds
-环境同痕逼近 for 几何对象在$R^3$中的嵌入的表示.
-高效可视化算法两个准则:
+环境同痕逼近, 几何对象在$R^3$中的嵌入的表示.
+两个准则:
 1. 逐段线性(PL)逼近，保持模型的拓扑
 2. 动态变化中的拓扑保持
 对参数1-流形的 曲率适应、拓扑保持 的逼近.
@@ -73,7 +73,7 @@ $c: [0,1]\to R^3$是$C^3$曲线. 对each $\epsilon &amp;gt; 0$, $\exists n \in \
     </item>
     
     <item>
-      <title>Note: LeafVenation</title>
+      <title>Note: 叶脉生成</title>
       <link>https://cielrouge.github.io/post/note-leafvenation/</link>
       <pubDate>Mon, 24 Sep 2018 16:17:02 +0800</pubDate>
       

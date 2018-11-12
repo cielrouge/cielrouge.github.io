@@ -17,13 +17,15 @@
       <pubDate>Mon, 12 Nov 2018 16:11:16 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/note-fdg/</guid>
-      <description>$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$ , 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.
-基本群 $\pi _1 (X,x_0)$ $f$ 是 $f$的同伦类的集合.
+      <description>$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$, 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.
+基本群 $\pi _1 (X,x_0)$ 是 $f$的同伦类的集合.
 基本群是群:
 群元: $f$ 的同伦类
 群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq \theta \leq \pi
 g(e^{2i(\theta - \pi)}) &amp;amp;\pi \leq \theta \leq 2\pi \end{cases}$$ id元: $i:S^1 \to \lbrace x_0 \rbrace$
-逆元: $f\in \pi _1 (X,x_0)$ 的逆元 $g \in \pi _1 (X,x_0)$, $g(e^{i\theta }) = f(e^{-i\theta })$</description>
+逆元: $f\in \pi _1 (X,x_0)$ 的逆元 $g \in \pi _1 (X,x_0)$, $g(e^{i\theta }) = f(e^{-i\theta })$
+空间之间的映射诱导其基本群之间的映射:
+$f:X\to Y$, $f(x_0) = y_0$</description>
     </item>
     
     <item>

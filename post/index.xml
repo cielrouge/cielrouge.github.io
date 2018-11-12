@@ -6,10 +6,25 @@
     <description>Recent content in Posts on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Nov 2018 10:56:27 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Nov 2018 16:11:16 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note: fdg</title>
+      <link>https://cielrouge.github.io/post/note-fdg/</link>
+      <pubDate>Mon, 12 Nov 2018 16:11:16 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-fdg/</guid>
+      <description>$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$ , 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.
+基本群 $\pi _1 (X,x_0)$ $f$ 是 $f$的同伦类的集合.
+基本群是群:
+群元: $f$ 的同伦类
+群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq \theta \leq \pi
+g(e^{2i(\theta - \pi)}) &amp;amp;\pi \leq \theta \leq 2\pi \end{cases}$$ id元: $i:S^1 \to \lbrace x_0 \rbrace$
+逆元: $f\in \pi _1 (X,x_0)$ 的逆元 $g \in \pi _1 (X,x_0)$, $g(e^{i\theta }) = f(e^{-i\theta })$</description>
+    </item>
     
     <item>
       <title>Lyric: 羽生まゐご 浮世巡り</title>
@@ -167,10 +182,10 @@ uniform: growth tensor is the same at all points of the surface</description>
     
     <item>
       <title>整理: Foldable,Traversable</title>
-      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldtraverse/</link>
+      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldable/</link>
       <pubDate>Tue, 11 Sep 2018 13:07:50 +0800</pubDate>
       
-      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldtraverse/</guid>
+      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldable/</guid>
       <description>Foldable data Tree a = Empty | Leaf a | Node (Tree a) a (Tree a) instance Foldable Tree where foldMap f Empty = mempty foldMap f (Leaf x) = f x foldMap f (Node l k r) = foldMap f l `mappend` f k `mappend` foldMap f rclass Foldable t where foldMap :: Monoid m =&amp;gt; (a -&amp;gt; m) -&amp;gt; t a -&amp;gt; m foldMap f = foldr (mappend .</description>
     </item>
     

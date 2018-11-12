@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Note: fdg - CielRouge</title>
+    <meta property="og:title" content="Note: fdg - CielRouge">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$ , 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.
+基本群 $\pi _1 (X,x_0)$ $f$ 是 $f$的同伦类的集合.
+基本群是群:
+群元: $f$ 的同伦类
+群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq &amp;hellip;">
+      <meta property="og:description" content="$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$ , 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.
+基本群 $\pi _1 (X,x_0)$ $f$ 是 $f$的同伦类的集合.
+基本群是群:
+群元: $f$ 的同伦类
+群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script src="https://use.typekit.net/fya1swr.js"></script>
+<script>
+try {
+    Typekit.load({async: true});
+  } catch (e) {
+  }
+</script>
+    <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">CielRouge</a></h1>
+
+
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">Home</a></li>
+  
+  <li><a href="/tags/">Tags</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Note: fdg</h1>
+
+<h3>
+  2018-11-12</h3>
+<hr>
+
+
+      </header>
+
+
+<p>$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$ , 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.<br />
+基本群 $\pi _1 (X,x_0)$ $f$ 是 $f$的同伦类的集合.</p>
+
+<p>基本群是群:<br />
+群元: $f$ 的同伦类<br />
+群元运算: $h = f g$,
+$$h(e^{i\theta }) =
+\begin{cases}
+f(e^{2i\theta }) &amp;0\leq \theta \leq \pi<br />
+g(e^{2i(\theta - \pi)}) &amp;\pi \leq \theta \leq 2\pi
+\end{cases}$$
+id元: $i:S^1 \to \lbrace x_0 \rbrace$<br />
+逆元: $f\in \pi _1 (X,x_0)$ 的逆元 $g \in \pi _1 (X,x_0)$, $g(e^{i\theta }) = f(e^{-i\theta })$</p>
+
+<p>空间之间的映射诱导其基本群之间的映射:<br />
+$f:X\to Y$, $f(x_0) = y_0$<br />
+$g\in \pi _1 (X,x_0)$, $g:(S^1,1)\to (X,x_0)$<br />
+$f_*: \pi _1 (X,x_0) \to \pi _1 (Y,y_0)$<br />
+$f_* (g) = f \circ g$</p>
+
+<p>空间之间的同伦等价(映射)诱导其基本群之间的同构(映射).</p>
+
+<p>覆盖投射 $p:Y\to X$, 每个 $x\in X$ 都有一个开领域 $U$ , $p^{-1} U = \lbrace V_i \rbrace$ 是覆盖空间 $Y$ 中的一些开集, 且 for each $V_i$, $p\vert V_i : V_i \to U$ 是同胚.
+性质:<br />
+对每个$x\in X$, $\lbrace p^{-1} (x) \rbrace$ 是 $Y$ 的一个离散子集.
+$p$ 是局部同胚.<br />
+$X$ 上的拓扑是通过映射 $p$ 从 $Y$ 继承的商拓扑.</p>
+
+<p>$G$ acts freely on $Y$, i.e. 若 $g(y) = y ,\forall y$ 则 $g = id_G$.<br />
+$G$ acts properly discontinuously on $Y$, i.e. $Y$ 上的每一点都有一个领域 $U$, 当 $g\neq id_G$ 则 $g(U)\cap U = \emptyset $. (such must be free)<br />
+拓扑空间 $Y \to G \setminus Y$(在群的纯不连续作用下的商空间) 是一个覆盖投射.</p>
+
+<p>$p: (Y,y_0) \to (X,x_0)$, $f: (I,0) \to (X,x_0)$, unique lifting $\tilde{f} : (I,0) \to (Y,y_0)$.</p>
+
+<p>$Y$ 是道路连通的简单连通空间，$G$ 纯不连续左作用于 $Y$, $\forall x_0 \in X, \pi _1 (G\setminus Y,x_0)\cong G$.</p>
+
+<p>$p: Y\to X, x_0\mapsto y_0$, $E$ 是任意连通且道路连通的空间, $e_0 \in E$. $f:(E,e_0)\to (X,x_0)$, 则 lifting $\tilde{f}: (E,e_0)\to (Y,y_0)$ 存在, iff. $f_*(\pi _1(E,e_0)) \subset p_*(\pi _1(Y,y_0))$.</p>
+
+<p>覆盖变换群$G_p$: $X$ 的道路连通覆盖空间之间的同胚构成的群</p>
+
+<p>正则覆盖:<br />
+$p:Y\to X$, $Y$ 道路连通, $f: I\to X, \lbrace 0,1\rbrace \mapsto x_0$, 提升 $\tilde{f}_y: I\to Y, 0\mapsto y_0$.<br />
+$Y$ 是 $X$ 的正则覆盖, 若 each $f$ 满足: either $\tilde{f}_y(1)=y$ for every $y \in p^{-1}(x_0)$, or $\tilde{f}_y(1)\neq y$ for every $y \in p^{-1}(x_0)$.<br />
+(either every lift of a loop is a loop, or no lift of a loop is a loop)</p>
+
+<p>覆盖的次数等于 $p^{-1}(x_0)$ 的基数.</p>
+
+<p>$X$ 的基本群的每个子群对应于一个 $X$ 的覆盖投射, $H\subset \pi_1(X,x_0)$ $\to$ $p:Y\to X$.<br />
+$p_*(\pi _1 (Y,y_0)) = H$.</p>
+
+<p>$p^{-1}$中的点与$\pi_1(X,x_0)$中$H$的右陪集一一对应.<br />
+覆盖的次数等于$\lbrack \pi _1(X,x_0) : H\rbrack $.</p>
+
+<p>$H$ 是正规子群当且仅当 $Y$ 是正则覆盖.<br />
+覆盖变换群同构于 $\pi_1(X,x_0) / H$.</p>
+
+<p>从子空间的基本群计算空间的基本群(van Kampen&rsquo;s theorem)<br />
+$X=X_1\cup X_2$, $X_1,X_2,A=X_1\cap X_2$ 开且道路连通. $x_0\in A$, $$\pi _1 (X,x_0) = \pi _1 (X_1,x_0) *_{\pi _1 (A,x_0)} \pi _1 (X_2,x_0)$$
+i.e. free product modulo relation $(i_1)_{*} (\alpha ) = (i_2)_* (\alpha )$ $(i_1:A\to X_1,\alpha \in \pi _1 (A,x_0))$.</p>
+
+<p>example. $R_n$: $n$-leafed rose, disjoint copies of $S^1$ identified at point $1$.</p>
+
+<p>$g_k$ 是 $\pi _1((S^1)_k,(1)_k$ 的生成元，则 $\pi _1(R_n,r_0)$ 是 $\alpha _k = (i_k)_* (g_k)$ 生成的自由群.</p>
+
+<p>$1$-复形: $C = (V,E) / ~ $<br />
+$n$-叶玫瑰是$1$顶点$n$边的$1$-复形, $n$-边形是$n$顶点$n$边的$1$-复形.<br />
+树: 可缩$1$-复形<br />
+$n$-叶玫瑰的最大树是单顶点, $n$-边形的最大树是$n$-边形删去一条边.</p>
+
+<p>$C$ 是连通$1$-复形, $T$ 是 $C$ 中最大树, $v$ 是 $C$ 的顶点, $\pi _1 (C,v)$ 的自由群生成元 一一对应于 $C$ 的不在 $T$ 中的边.<br />
+边 $E$ 以 $v_{i_0}$ 和 $v_{i_1}$ 为顶点, 对应生成元: 闭路 $\alpha _{E}$: $T$ 中从$v$ 到 $v_{i_0}$, $E$ 中从 $v_{i_0}$ 到 $v_{i_1}$, $T$ 中从 $v_{i_1}$ 到 $v$.</p>
+
+<p>$G$ 是 $k$ 元生成的自由群, $H$ 是指数为 $n$ 的 $G$ 子群, 则 $H$ 是 $(k-1)n+1$ 元生成的自由群.<br />
+proof. 考虑 $k$ 元生成自由群 $G$ 是基本群 $\pi_1(R,v)$, $R$ 是$k$-叶玫瑰. 考虑 $\lbrack G:H \rbrack$ = n 的子群 $H$ 是 $n$ 重覆盖的基本群 $\pi _1(\tilde{R},\tilde{v})$. $R$ 有 $1$ 顶点 $k$ 边, 故 $\tilde{R}$ 有 $n$ 顶点 $kn$ 边. 故 $\tilde{R}$ 的最大树 $T$ 有 $n-1$ 边, $\tilde{R}$ 中不在 $T$ 中的边有 $kn-(n-1) = (k-1)n+1$ 条.</p>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

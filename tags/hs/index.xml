@@ -13,10 +13,10 @@
     
     <item>
       <title>整理: Foldable,Traversable</title>
-      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldtraverse/</link>
+      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldable/</link>
       <pubDate>Tue, 11 Sep 2018 13:07:50 +0800</pubDate>
       
-      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldtraverse/</guid>
+      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldable/</guid>
       <description>Foldable data Tree a = Empty | Leaf a | Node (Tree a) a (Tree a) instance Foldable Tree where foldMap f Empty = mempty foldMap f (Leaf x) = f x foldMap f (Node l k r) = foldMap f l `mappend` f k `mappend` foldMap f rclass Foldable t where foldMap :: Monoid m =&amp;gt; (a -&amp;gt; m) -&amp;gt; t a -&amp;gt; m foldMap f = foldr (mappend .</description>
     </item>
     

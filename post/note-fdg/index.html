@@ -16,15 +16,15 @@
     
       
       <meta property="description" content="$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$, 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.
-基本群 $\pi _1 (X,x_0)$ 是 $f$的同伦类的集合.
+基本群 $\pi _1 (X,x_0)$ 是 $f$ 的同伦类的集合.
 基本群是群:
 群元: $f$ 的同伦类
-群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq \theta &amp;hellip;">
+群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq &amp;hellip;">
       <meta property="og:description" content="$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$, 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.
-基本群 $\pi _1 (X,x_0)$ 是 $f$的同伦类的集合.
+基本群 $\pi _1 (X,x_0)$ 是 $f$ 的同伦类的集合.
 基本群是群:
 群元: $f$ 的同伦类
-群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq \theta &amp;hellip;">
+群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq &amp;hellip;">
       
     
 
@@ -123,7 +123,7 @@ code.has-jax {
 
 
 <p>$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$, 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.<br />
-基本群 $\pi _1 (X,x_0)$ 是 $f$的同伦类的集合.</p>
+基本群 $\pi _1 (X,x_0)$ 是 $f$ 的同伦类的集合.</p>
 
 <p>基本群是群:<br />
 群元: $f$ 的同伦类<br />
@@ -144,6 +144,10 @@ $f_* (g) = f \circ g$</p>
 
 <p>空间之间的同伦等价(映射)诱导其基本群之间的同构(映射).</p>
 
+<p>简单连通: $\pi _1 (X,x_0)$ 平凡的道路连通空间.<br />
+局部道路连通: 空间中任意点的任意邻域有开子邻域是道路连通的.<br />
+半局部简单连通: 空间中任意点的任意邻域有开子邻域使 $\i_*: \pi _1(V,x) \to \pi _1 (U,x)$ 是平凡映射.</p>
+
 <p>覆盖投射 $p:Y\to X$, 每个 $x\in X$ 都有一个开领域 $U$ , $p^{-1} U = \lbrace V_i \rbrace$ 是覆盖空间 $Y$ 中的一些开集, 且 for each $V_i$, $p\vert V_i : V_i \to U$ 是同胚.<br />
 性质:<br />
 对每个 $x\in X$, $\lbrace p^{-1} (x) \rbrace$ 是 $Y$ 的一个离散子集.
@@ -159,6 +163,9 @@ $G$ acts properly discontinuously on $Y$, i.e. $Y$ 上的每一点都有一个�
 <p>$Y$ 是道路连通的简单连通空间，$G$ 纯不连续左作用于 $Y$, $\forall x_0 \in X, \pi _1 (G\setminus Y,x_0)\cong G$.</p>
 
 <p>$p: Y\to X, x_0\mapsto y_0$, $E$ 是任意连通且道路连通的空间, $e_0 \in E$. $f:(E,e_0)\to (X,x_0)$, 则 lifting $\tilde{f}: (E,e_0)\to (Y,y_0)$ 存在, iff. $f_*(\pi _1(E,e_0)) \subset p_*(\pi _1(Y,y_0))$.</p>
+
+<p>泛覆盖: $\tilde{p}: \tilde{X} \to X$ 是泛覆盖, 若 $\forall p: Y\to X$, $\tilde{p}$ 提升至 $q: \tilde{X} \to Y$.<br />
+假设 $X$ 有简单连通的覆盖空间 $\tilde{X}$, 则 $\tilde{p}: \tilde{X} \to X$ 是泛覆盖.</p>
 
 <p>覆盖变换群$G_p$: $X$ 的道路连通覆盖空间之间的同胚构成的群</p>
 
@@ -196,6 +203,14 @@ $n$-叶玫瑰的最大树是单顶点, $n$-边形的最大树是$n$-边形删去
 
 <p>$G$ 是 $k$ 元生成的自由群, $H$ 是指数为 $n$ 的 $G$ 子群, 则 $H$ 是 $(k-1)n+1$ 元生成的自由群.<br />
 proof. 考虑 $k$ 元生成自由群 $G$ 是基本群 $\pi_1(R,v)$, $R$ 是$k$-叶玫瑰. 考虑 $\lbrack G:H \rbrack$ = n 的子群 $H$ 是 $n$ 重覆盖的基本群 $\pi _1(\tilde{R},\tilde{v})$. $R$ 有 $1$ 顶点 $k$ 边, 故 $\tilde{R}$ 有 $n$ 顶点 $kn$ 边. 故 $\tilde{R}$ 的最大树 $T$ 有 $n-1$ 边, $\tilde{R}$ 中不在 $T$ 中的边有 $kn-(n-1) = (k-1)n+1$ 条.</p>
+
+<p>$k$-叶玫瑰的基本群( $k$ 元生成自由群), 它的 $n$ 重覆盖的基本群(指数为 $n$ 的子群, i.e. $(k-1)*n+1$ 元生成自由群)</p>
+
+<p>基本群: $(S^1,1)\to (X,x_0)$ 的同伦类.<br />
+自由同伦类: $S^1 \to X$ 的同伦类.</p>
+
+<p>考虑道路连通空间, 基本群中的同伦类的共轭类与自由同伦类一一对应.<br />
+共轭的同伦类(闭路)之间存在相对基点同伦, 忘记基点, 自由同伦.</p>
 
 
   <footer>

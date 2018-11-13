@@ -6,10 +6,22 @@
     <description>Recent content in Hs on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Sep 2018 13:07:50 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Nov 2018 13:26:40 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/tags/hs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note: pofad</title>
+      <link>https://cielrouge.github.io/post/note-pofad/</link>
+      <pubDate>Tue, 13 Nov 2018 13:26:40 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-pofad/</guid>
+      <description>1 The smallest free number accumArray :: Ix i =&amp;gt; (e -&amp;gt; v -&amp;gt; e) -&amp;gt; e -&amp;gt; (i,i) -&amp;gt; [(i,v)] -&amp;gt; Array i e $\lbrack (i,v)\rbrack$ 是 associating list, v 是 value, 不同于 entry.
+e 是 initial entry. (i,i) 是 index 的上下界. 对上下界之间的所有 index 初始化 entry.
+不是所有 index 都在 associating list $\lbrack(i,v)\rbrack$ 中出现过.
+有的 index 从 associating list 中得到了 value, 这个 value 不是在 array 中 index 对应的 entry.</description>
+    </item>
     
     <item>
       <title>整理: Foldable,Traversable</title>

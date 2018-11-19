@@ -6,10 +6,24 @@
     <description>Recent content on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 13 Nov 2018 13:26:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Nov 2018 18:23:37 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note: aart</title>
+      <link>https://cielrouge.github.io/post/note-aart-1-2/</link>
+      <pubDate>Mon, 19 Nov 2018 18:23:37 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-aart-1-2/</guid>
+      <description>$K$-代数: 环 $A$, 环加法, 环乘法, $A$ 是 $K$ 上的向量空间, 加法是环加法, 标量乘法满足 condition (Alg): scalars commute with everything.
+$K$-代数 $A$ 的维数是 $A$ 作为 $K$ 向量空间的维数.
+将 $K$ 等同于 $A$ 的一个子集: $K \to A$, $\lambda \mapsto \lambda \centerdot 1_A$.
+群代数 $KG$: $G$ 是群, $K$ 是域, 以 $\lbrace g \in G \rbrace$ 为基的 $K$ 上向量空间, 定义基上的乘积为群乘法, 拓展至线性组合.
+$KG$ 中任意元有有限线性组合形式: $\sum_{g\in G} \alpha _{g} g$, $\alpha _{g} \in K$.
+$KG$ 中乘法: $\alpha = \sum_{g\in G} \alpha _{g} g$, $\beta = \sum_{h\in G} \beta _{h} h$, $\alpha \beta = \sum_{x\in G} (\sum_{gh = x} \alpha_g \beta_h )x$.</description>
+    </item>
     
     <item>
       <title>Note: pofad</title>

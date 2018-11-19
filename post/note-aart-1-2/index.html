@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Note: aart - CielRouge</title>
+    <meta property="og:title" content="Note: aart - CielRouge">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="$K$-代数: 环 $A$, 环加法, 环乘法, $A$ 是 $K$ 上的向量空间, 加法是环加法, 标量乘法满足 condition (Alg): scalars commute with everything.
+$K$-代数 $A$ 的维数是 $A$ 作为 $K$ 向量空间的维数.
+将 $K$ 等同于 $A$ 的一个子集: $K \to A$, $\lambda \mapsto \lambda &amp;hellip;">
+      <meta property="og:description" content="$K$-代数: 环 $A$, 环加法, 环乘法, $A$ 是 $K$ 上的向量空间, 加法是环加法, 标量乘法满足 condition (Alg): scalars commute with everything.
+$K$-代数 $A$ 的维数是 $A$ 作为 $K$ 向量空间的维数.
+将 $K$ 等同于 $A$ 的一个子集: $K \to A$, $\lambda \mapsto \lambda &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script src="https://use.typekit.net/fya1swr.js"></script>
+<script>
+try {
+    Typekit.load({async: true});
+  } catch (e) {
+  }
+</script>
+    <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">CielRouge</a></h1>
+
+
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">Home</a></li>
+  
+  <li><a href="/tags/">Tags</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Note: aart</h1>
+
+<h3>
+  2018-11-19</h3>
+<hr>
+
+
+      </header>
+
+
+<p>$K$-代数: 环 $A$, 环加法, 环乘法, $A$ 是 $K$ 上的向量空间, 加法是环加法, 标量乘法满足 condition (Alg): scalars commute with everything.<br />
+$K$-代数 $A$ 的维数是 $A$ 作为 $K$ 向量空间的维数.<br />
+将 $K$ 等同于 $A$ 的一个子集: $K \to A$, $\lambda \mapsto \lambda \centerdot 1_A$.</p>
+
+<p>群代数 $KG$: $G$ 是群, $K$ 是域, 以 $\lbrace g \in G \rbrace$ 为基的 $K$ 上向量空间, 定义基上的乘积为群乘法, 拓展至线性组合.<br />
+$KG$ 中任意元有有限线性组合形式: $\sum_{g\in G} \alpha _{g} g$, $\alpha _{g} \in K$.<br />
+$KG$ 中乘法: $\alpha = \sum_{g\in G} \alpha _{g} g$, $\beta = \sum_{h\in G} \beta _{h} h$, $\alpha \beta = \sum_{x\in G} (\sum_{gh = x} \alpha_g \beta_h )x$.<br />
+$KG$ 中幺元: $G$ 中幺元.</p>
+
+<p>箙 $Q$: 有限有向图, $Q = (Q_0, Q_1)$.<br />
+$Q_0$: 顶点集, $Q_1$: 箭矢集. 道路从右往左读. 箭矢的数量称为道路的长度. 长度为零的平凡道路记为$e_i$. $1_{KQ} = \sum _{i\in Q_0} e_i$.<br />
+道路代数 $KQ$: 以 $Q$ 中所有道路作为其基礎(underlying)向量空间的基.</p>
+
+<p>代数同态: $K$-线性, 保乘法, 保幺元.</p>
+
+<p>结构的本质是定义运算.
+<font color = "red"> $A$</font> -模 M: <font color = "red">$A \times$</font> $M \to M$</p>
+
+<p>$B$-模 $M$ 成为 $A$-模: $\varphi : A \to B$ 是代数同态, $A \times M \to M$, $(a,m) \mapsto a \centerdot m := \varphi (a) m$.</p>
+
+<p>$K$ 是域, $A$ 是 $K$ 代数, 则 $A$-模 $V$ 都是 $K$-向量空间.</p>
+
+<p>$K$-线性映射 $\alpha : V \to V$, 使 $V$ 成为 $K \lbrack X \rbrack$ -模 $V_{\alpha }$.<br />
+($X \centerdot v := \alpha (v)$).<br />
+($\alpha$ :: V -&gt; V, $g \centerdot v$ :: $K \lbrack X \rbrack \times V$ -&gt; V)<br />
+$g \in K \lbrack x \rbrack$, $g = \sum _i \lambda _i X^i$,
+$$g \centerdot v := g(\alpha )(v)$$</p>
+
+<p>每个 $K \lbrack X \rbrack$ -模都等于一个 $V_{\alpha }$, $\alpha (v) := X \centerdot v$.</p>
+
+<p>剩余代数(factor algebra) $A = K \lbrack X \rbrack / (f)$.<br />
+$A$ -模与 $V_{\alpha }$ ($f(\alpha )=0$) 一一对应.<br />
+$(g+I)\centerdot v := g(\alpha )(v)$</p>
+
+<p>$A$ 的表示: $K$ -向量空间, $K$ -代数同态 $\theta : A \to End_K (V)$.</p>
+
+<p>$\theta : K \lbrack X \rbrack \to End_K (V), \theta (f) = f (\alpha )$</p>
+
+<p>$A$ -模等同于 $A$ 的表示.<br />
+curry. $A \times V \to V$, $A \to (V \to V)$<br />
+$a \centerdot v := \theta(a) (v)$</p>
+
+<p>等价表示: $\theta _1 : A \to End_K (V_1)$, $\theta _2: A \to End_K (V_2)$, $\theta _1$ 与 $\theta _2$ 等价, 若有向量空间同构 $\psi : V_1 \to V_2$, s.t. $\theta _1 (a) = \psi ^{-1} \circ \theta_2 (a) \circ \psi$ for all $a\in A$.</p>
+
+<p>$A / I$ 的表示与 $A$ 的表示(I\subset Ker), 一一对应.<br />
+$\pi : A \to A / I$, $\psi : A / I \to End_K(V)$, $\psi \circ \pi : A \to End_K (V)$.<br />
+$A / I$ -模与$A$ -模 $V$ (xv=0,\forall x\in I,\forall v\in V)一一对应.</p>
+
+<p>$G$ 的表示等同于 $KG$ -模.</p>
+
+<p>$\rho : G \to GL(V)$ 开拓到 $\theta _{\rho }: KG \to End_K (V)$, $\sum_{g\in G} \alpha_g g \mapsto \sum _{g\in G} \alpha _{g} \rho (g)$</p>
+
+<p>箙 $Q$ 的表示 $\mathcal{V} = ((V(i))_{i\in Q_0} ,(V(\alpha ))_{\alpha in Q_1} )$<br />
+$K$ -向量空间: $\lbrace V(i) \vert i \in Q_0$, $K$ -线性映射 $V(\alpha ) : V(i) \to V(j)$.</p>
+
+<p>考虑 $Q = 1\xrightarrow [\alpha ] 2$.<br />
+道代数 $KQ$ -模 = span$\lbrace e_1, e_2, \alpha \rbrace$.<br />
+基礎向量空间 $V := V(1) \times V(2)$.<br />
+$e_i$ 作用: 投射到 $V(i)$, $Ker = V(j)$.<br />
+$\alpha $ 作用:$ \alpha ((v_1,v_2)):= V(\alpha )(v_1)$ :: V(1) -&gt; V(1) -&gt; V(2).<br />
+将 $KQ$ -模 $V$ 转变为 $Q$ 的表示. ($KQ \times V \to V \Rightarrow Q\to End_K(V)$)<br />
+$V(1) := e_1 V$, $V(2) := e_2 V$, $V(\alpha ): e_1 V\to e_2 V$ (左乘by $\alpha$).</p>
+
+<p>箙 $Q$ 的表示等同于道代数 $KQ$ -模.</p>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

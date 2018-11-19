@@ -6,10 +6,27 @@
     <description>Recent content on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 19 Nov 2018 18:23:37 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Nov 2018 22:27:59 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note: ght</title>
+      <link>https://cielrouge.github.io/post/note-ght/</link>
+      <pubDate>Mon, 19 Nov 2018 22:27:59 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-ght/</guid>
+      <description>pair $(X,A)$: 空间 $X$, 子空间$A$.
+$X = (X,\emptyset )$.
+$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to H_{i-1}(A,\emptyset) \rbrace _{i\in \mathbb{Z}}$
+$f:(X,A) \to (Y,B)$, $\lbrace f_i : H_i (X,A) \to H_i(Y,B) \rbrace _{i\in \mathbb{Z}}$
+Eilenberg-Steenrod Axioms
+1.(identity map) $f=id$, 则 $f_i = id$
+2.(composition) $h = g \circ f$, 则 $h_i = g_i \circ f_i$
+3.(commutative diagram) $$\require{AMScd} \begin{CD} H_i(X,A) @&amp;gt;f_i&amp;gt;&amp;gt; H_i(Y,B)\\
+@V\partial_i VV @V\partial_i VV\\</description>
+    </item>
     
     <item>
       <title>Note: aart</title>

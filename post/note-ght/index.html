@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Note: ght - CielRouge</title>
+    <meta property="og:title" content="Note: ght - CielRouge">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="pair $(X,A)$: 空间 $X$, 子空间$A$.
+$X = (X,\emptyset )$.
+$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to H_{i-1}(A,\emptyset) \rbrace _{i\in \mathbb{Z}}$ &amp;hellip;">
+      <meta property="og:description" content="pair $(X,A)$: 空间 $X$, 子空间$A$.
+$X = (X,\emptyset )$.
+$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to H_{i-1}(A,\emptyset) \rbrace _{i\in \mathbb{Z}}$ &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script src="https://use.typekit.net/fya1swr.js"></script>
+<script>
+try {
+    Typekit.load({async: true});
+  } catch (e) {
+  }
+</script>
+    <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">CielRouge</a></h1>
+
+
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">Home</a></li>
+  
+  <li><a href="/tags/">Tags</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Note: ght</h1>
+
+<h3>
+  2018-11-19</h3>
+<hr>
+
+
+      </header>
+
+
+<p>pair $(X,A)$: 空间 $X$, 子空间$A$.<br />
+$X = (X,\emptyset )$.</p>
+
+<p>$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to H_{i-1}(A,\emptyset) \rbrace _{i\in \mathbb{Z}}$<br />
+$f:(X,A) \to (Y,B)$, $\lbrace f_i : H_i (X,A) \to H_i(Y,B) \rbrace _{i\in \mathbb{Z}}$</p>
+
+<p>Eilenberg-Steenrod Axioms<br />
+1.(identity map) $f=id$, 则 $f_i = id$<br />
+2.(composition) $h = g \circ f$, 则 $h_i = g_i \circ f_i$<br />
+3.(commutative diagram) $$\require{AMScd}
+     \begin{CD}
+      H_i(X,A) @&gt;f_i&gt;&gt; H_i(Y,B)\\<br />
+      @V\partial_i VV @V\partial_i VV\\<br />
+      H_{i-1}(A) @&gt;(f\vert A)_{i-1}&gt;&gt;H_{i-1}(B)
+     \end{CD}$$<br />
+4.(exact sequence) inclusion $A \hookrightarrow X$ induce $H_i (a) \to H_i (X)$,<br />
+   inclusion $(X,\emptyset )\hookrightarrow (X,A)$ induce $H_i(X) \to H_i(X,A)$,<br />
+   同调序列正合:<br />
+   $&hellip; \to H_i (a) \to H_i (X) \to H_i(X,A) \xrightarrow{\partial _i} H_{i-1} (A) \to &hellip;$<br />
+5.(homotopic $\Rightarrow$ equal) 若 $f, g : (X,A) \to (Y,B)$ 同伦, 则 $f_i , g_i : H_i (X,A) \to H_i(Y,B)$ 相等.<br />
+6.(ordinary excision) 若 $U$ 的闭包在 $A$ 的内部, 则 $f_i : H_i (X-U,A-U) \to H_i (X,A)$ 是同构.<br />
+7.(dimension) $X$ 是单点空间, 则 $H_i (X) = 0$ for $i\neq 0$.</p>
+
+<p>Axiom 1-6: generalized homology theory</p>
+
+<p>excisive map: $f: (X-U,A-U) \to (X,A)$ 是切除映射, 若诱导的同调群同态 $f_i : H_i (X-U,A-U) \to H_i (X,A)$ 是同构.<br />
+couple $(A,B)$: $X$的子空间 $A,B$.<br />
+(A,B) 是 excisive couple, 若 $(A,A\cap B) \to (A\cup B,B)$ 是 excisive map.</p>
+
+<p>coefficient group: $G=H_0(*)$</p>
+
+
+  <footer>
+  
+  
+
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

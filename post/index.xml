@@ -17,7 +17,8 @@
       <pubDate>Mon, 19 Nov 2018 22:27:59 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/note-ght/</guid>
-      <description>pair $(X,A)$: 空间 $X$, 子空间$A$.
+      <description>名词中译参考了: data.gov.tw/國家教育研究院-數學學術名詞
+pair $(X,A)$: 空间 $X$, 子空间$A$.
 $X = (X,\emptyset )$.
 $(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to H_{i-1}(A,\emptyset) \rbrace _{i\in \mathbb{Z}}$
 $f:(X,A) \to (Y,B)$, $\lbrace f_i : H_i (X,A) \to H_i(Y,B) \rbrace _{i\in \mathbb{Z}}$

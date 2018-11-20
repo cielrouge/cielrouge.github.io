@@ -15,12 +15,14 @@
 
     
       
-      <meta property="description" content="pair $(X,A)$: 空间 $X$, 子空间$A$.
+      <meta property="description" content="名词中译参考了: data.gov.tw/國家教育研究院-數學學術名詞
+pair $(X,A)$: 空间 $X$, 子空间$A$.
 $X = (X,\emptyset )$.
-$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to H_{i-1}(A,\emptyset) \rbrace _{i\in \mathbb{Z}}$ &amp;hellip;">
-      <meta property="og:description" content="pair $(X,A)$: 空间 $X$, 子空间$A$.
+$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to &amp;hellip;">
+      <meta property="og:description" content="名词中译参考了: data.gov.tw/國家教育研究院-數學學術名詞
+pair $(X,A)$: 空间 $X$, 子空间$A$.
 $X = (X,\emptyset )$.
-$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to H_{i-1}(A,\emptyset) \rbrace _{i\in \mathbb{Z}}$ &amp;hellip;">
+$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to &amp;hellip;">
       
     
 
@@ -118,6 +120,8 @@ code.has-jax {
       </header>
 
 
+<p>名词中译参考了: data.gov.tw/國家教育研究院-數學學術名詞</p>
+
 <p>pair $(X,A)$: 空间 $X$, 子空间$A$.<br />
 $X = (X,\emptyset )$.</p>
 
@@ -133,21 +137,59 @@ $f:(X,A) \to (Y,B)$, $\lbrace f_i : H_i (X,A) \to H_i(Y,B) \rbrace _{i\in \mathb
       @V\partial_i VV @V\partial_i VV\\<br />
       H_{i-1}(A) @&gt;(f\vert A)_{i-1}&gt;&gt;H_{i-1}(B)
      \end{CD}$$<br />
-4.(exact sequence) inclusion $A \hookrightarrow X$ induce $H_i (a) \to H_i (X)$,<br />
+4.(exact sequence) inclusion $A \hookrightarrow X$ induce $H_i (A) \to H_i (X)$,<br />
    inclusion $(X,\emptyset )\hookrightarrow (X,A)$ induce $H_i(X) \to H_i(X,A)$,<br />
    同调序列正合:<br />
-   $&hellip; \to H_i (a) \to H_i (X) \to H_i(X,A) \xrightarrow{\partial _i} H_{i-1} (A) \to &hellip;$<br />
+   $&hellip; \to H_i (A) \to H_i (X) \to H_i(X,A) \xrightarrow{\partial _i} H_{i-1} (A) \to &hellip;$<br />
 5.(homotopic $\Rightarrow$ equal) 若 $f, g : (X,A) \to (Y,B)$ 同伦, 则 $f_i , g_i : H_i (X,A) \to H_i(Y,B)$ 相等.<br />
-6.(ordinary excision) 若 $U$ 的闭包在 $A$ 的内部, 则 $f_i : H_i (X-U,A-U) \to H_i (X,A)$ 是同构.<br />
+6.(ordinary excision) 若 $U$ 的闭包在 $A$ 的内部, 则包含映射诱导的 $f_i : H_i (X-U,A-U) \to H_i (X,A)$ 是同构.<br />
 7.(dimension) $X$ 是单点空间, 则 $H_i (X) = 0$ for $i\neq 0$.</p>
 
-<p>Axiom 1-6: generalized homology theory</p>
+<p>Axiom 1-6: generalized homology theory<br />
+Axiom 1-7: ordinary homology theory</p>
 
 <p>excisive map: $f: (X-U,A-U) \to (X,A)$ 是切除映射, 若诱导的同调群同态 $f_i : H_i (X-U,A-U) \to H_i (X,A)$ 是同构.<br />
 couple $(A,B)$: $X$的子空间 $A,B$.<br />
 (A,B) 是 excisive couple, 若 $(A,A\cap B) \to (A\cup B,B)$ 是 excisive map.</p>
 
-<p>coefficient group: $G=H_0(*)$</p>
+<p>系数群: $G=H_0(*)$</p>
+
+<p>lemma 3.2.1 (ii) 若 $f:(X,A) \to (Y,B)$ 是同伦等价, 则诱导的同调群同态是同构.</p>
+
+<p>设 $A$ 是 $X$ 的收缩. $j:A\to X$ 是包含映射, $r:X\to A$ 是收缩映射.<br />
+则 $j_i : H_i (A) \to H_i(X)$ 是单射, $r_i: H_i(X) \to H_i(A)$ 是满射.<br />
+且 $H_i(X) \cong H_i(A) \oplus H_i(X,A)$, $H_i(X,A)\cong Ker(r_i)$.</p>
+
+<p>theorem 3.2.2 若空间对的映射满足 $f:X\to Y$, $f\vert A: A \to B$ 都是同伦等价, 则诱导的 $f_i$ 是同构 for all $i$.</p>
+
+<p>约化同调群: $f: X \to *$, $\tilde{H}_i(X) = Ker (f_i: H_i(X) \to H_i(*))$</p>
+
+<p>$\tilde{H}_i (X) \cong H_i (X,x_0)$<br />
+$H_i(X) \cong H_i (x_0) \oplus \tilde{H}_i(X)$</p>
+
+<p>$f:X\to Y$ 诱导良定映射$\tilde{f}_i:\tilde{H}_i (X) \to \tilde{H}_i (Y)$, $\tilde{f}_i = f_i \vert \tilde{H}_i (X)$.</p>
+
+<p>theorem 3.2.7<br />
+(1) 非空 $A\subset X$ 是闭的. $C$ 是 $\partial A$ 在 $A$ 中的开邻域, 包含映射 $(X-A) \cup C \to X - int(A)$, $\partial A \to C$ 都是同伦等价. 则 $(X - int(A),\partial A) \to (X,A)$ 是切除映射.<br />
+(2) 非空 $A\subset X$ 是闭的. $C$ 是 $\partial A$ 在 $X-int(A)$ 中的开邻域, 包含映射 $A\to C\cup A$, $\partial A \to C$ 都是同伦等价. 则 $(X - int(A),\partial A) \to (X,A)$ 是切除映射.</p>
+
+<p>常见于: $\partial A$ 是 $C$ 的强收缩形变; $C$ 在 $A$ 外，$A$ 是 $C\cup A$ 的强收缩形变.</p>
+
+<p>$cA = A \times I / A \times \lbrace 1 \rbrace$<br />
+$X \cup _A cA = X \cup cA / a\in A \sim (a,0)\in cA$</p>
+
+<p>theorem 3.2.9<br />
+(1) A闭. $H_i(X,A) \cong \tilde{H}_i (X\cup cA)$<br />
+(2) A闭. $A$ 是自身某邻域的强收缩形变. $H_i(X,A) \cong \tilde{H}_i (X / A)$</p>
+
+<p>Mayer-Vietoris 长正合序列<br />
+$X=X_1 \cup X_2$, $A=X_1\cap X_2$, $(X_1,A) \to (X,X_2)$ inclusion is excisive.<br />
+$&hellip; \to H_i (A) \xrightarrow{\alpha } H_i(X_1) \oplus H_i(X_2) \xrightarrow{\beta } H_i (X) \xrightarrow{\Delta } H_{i-1} (A) \to &hellip;$</p>
+
+<p>suspension $\Sigma X$: $X \times \lbrack -1,1 \rbrack / X\times \lbrace 1 \rbrace \sim c_+, x\times \lbrace -1\rbrace \sim c_-$<br />
+$c_+ X = \lbrace (x,s) \in \Sigma X \mid s \geq 0 \rbrace$, $c_- X = \lbrace (x,s) \in \Sigma X \mid s \leq 0 \rbrace$, 二者同胚于 $cX$.</p>
+
+<p>对任意空间 $X$, 存在一个同构, $\forall i$, $\Sigma : \tilde{H}_{i+1} (\Sigma X) \to \tilde{H}_i(X)$.</p>
 
 
   <footer>

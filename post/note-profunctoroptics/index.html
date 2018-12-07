@@ -139,7 +139,7 @@ $fmap_{List}$ is the List instance of fmap.<br />
 - collection of objects: $\vert \mathbb{C} \vert$;<br />
 - set of arrows from $A$ to $B$ for each $(A,B)$: $\mathbb{C}(A,B)$;<br />
 - identity arrow;<br />
-- composition for arrwos.<br />
+- composition for arrows.<br />
 laws:<br />
 - composition is associative;<br />
 - identity arrow as neutral elements for composition.</p>
@@ -188,8 +188,7 @@ natural transformation $\phi: F \to G$ is<br />
 <font color='steelblue'>a family of arrows in $\mathbb{D}$</font>, <font color='steelblue'>indexed by objects in $\mathbb{C}$</font>.<br />
 an arrow $\phi _A \in \mathbb{D} (F(A), G(A))$, for each object $A \in \vert \mathbb{C} \vert$,<br />
 satisfying the naturality condition:<br />
-$\phi _B \circ F(f) = G (f) \circ \phi _A$, for each $f \in \mathbb{C} (A,B)$.<br />
--- watch out for the determinate categories in lines above.</p>
+$\phi _B \circ F(f) = G (f) \circ \phi _A$, for each $f \in \mathbb{C} (A,B)$.</p>
 
 <p>for any two categories $\mathbb{C}, \mathbb{D}$,<br />
 functor category $\lbrack \mathbb{C}, \mathbb{D} \rbrack $<br />
@@ -203,17 +202,17 @@ $\lceil - \rceil ^{A,F} : \lbrack \mathbb{C}, \mathbb{Set} \rbrack (\mathbb{C}(A
 take a natural transformation $\phi : \mathbb{C} (A,-) \to F$, yield an element of the set $F(A)$.<br />
 applying a component of the family $\phi$ to identity arrow,<br />
 $\phi _A : \mathbb{C} (A,A) \to F(A)$, $id_A \in \mathbb{C}(A,A)$,<br />
-$\lceil \phi \rceil ^{A,F} = \phi _A (id_A)$.</p>
+<font color='steelblue'>$\lceil \phi \rceil ^{A,F} = \phi _A (id_A)$</font>.</p>
 
 <p>$\lfloor - \rfloor ^{A,F}$,<br />
 take an element $x$ of the set $F(A)$, yield a natural transformation $\mathbb{C} (A,-) \to F$<br />
 object $B \in \mathbb{C}$,
 $\phi_B$ is an arrow in $\mathbb{Set}$, a function from $\mathbb{C}(A,B)$ to $F(B)$.<br />
 giving an $f\in \mathbb{C} (A,B)$, map $f$ over $x$ using the functorial action of $F$,<br />
-$\lfloor x \rfloor _B ^{A,F} (f) = F(f)(x)$.</p>
+<font color='steelblue'>$\lfloor x \rfloor _B ^{A,F} (f) = F(f)(x)$</font>.</p>
 
-<p>$\lceil - \rceil$ direction, application to the identity arrow<br />
-$\lfloor - \rfloor$ direction, use of the functorial action</p>
+<p>$\lceil - \rceil$ direction, <font color='steelblue'>application to the identity arrow</font><br />
+$\lfloor - \rfloor$ direction, <font color='steelblue'>use of the functorial action</font></p>
 
 <p>dual version of the yoneda lemma:<br />
 $\lbrack \mathbb{C} ^{op}, \mathbb{Set} \rbrack (\mathbb{C} (-,B),F) \simeq F(B)$</p>

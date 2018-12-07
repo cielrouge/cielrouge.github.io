@@ -6,10 +6,22 @@
     <description>Recent content in Posts on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 01 Dec 2018 14:58:16 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 06 Dec 2018 20:11:32 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note: ProfunctorOptics</title>
+      <link>https://cielrouge.github.io/post/note-profunctoroptics/</link>
+      <pubDate>Thu, 06 Dec 2018 20:11:32 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-profunctoroptics/</guid>
+      <description>Guillaume Boisseau and Jeremy Gibbons. 2018. What You Needa Know about Yoneda: Profunctor Optics and the Yoneda Lemma (Functional Pearl). Proc. ACM Program. Lang. 2, ICFP, Article 84 (September 2018), 27 pages. https://doi.org/10.1145/3236779
+profunctor optics: higher-order datatype-generic representation of data accessors.
+access a component of type A within a composite structure of type S.
+component A can be replaced by one of type B, yielding a new composite of type T.</description>
+    </item>
     
     <item>
       <title>狗丽斯的黑盒等效</title>
@@ -164,7 +176,7 @@ g(e^{2i(\theta - \pi)}) &amp;amp;\pi \leq \theta \leq 2\pi \end{cases}$$ id元: 
     </item>
     
     <item>
-      <title>note-1017</title>
+      <title>Note: 1017</title>
       <link>https://cielrouge.github.io/post/dnote-htt/</link>
       <pubDate>Wed, 17 Oct 2018 15:13:33 +0800</pubDate>
       
@@ -267,8 +279,7 @@ uniform: growth tensor is the same at all points of the surface</description>
       <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</guid>
-      <description>map an element to an action.
-元左乘 -&amp;gt; 一个自同态.
+      <description>map an element to an action. 元左乘 $\to $ 一个自同态.
 这样就好理解了.
 Functor Functors: uniform action over a parameterized type
 在「参数化的type」上的「一致action」

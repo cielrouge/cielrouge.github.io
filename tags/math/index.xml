@@ -6,10 +6,56 @@
     <description>Recent content in Math on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 30 Aug 2018 10:47:24 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Nov 2018 22:27:59 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Note: ght</title>
+      <link>https://cielrouge.github.io/post/note-ght/</link>
+      <pubDate>Mon, 19 Nov 2018 22:27:59 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-ght/</guid>
+      <description>名词中译参考了: data.gov.tw/國家教育研究院-數學學術名詞
+pair $(X,A)$: 空间 $X$, 子空间$A$.
+$X = (X,\emptyset )$.
+$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to H_{i-1}(A,\emptyset) \rbrace _{i\in \mathbb{Z}}$
+$f:(X,A) \to (Y,B)$, $\lbrace f_i : H_i (X,A) \to H_i(Y,B) \rbrace _{i\in \mathbb{Z}}$
+Eilenberg-Steenrod Axioms
+1.(identity map) $f=id$, 则 $f_i = id$
+2.(composition) $h = g \circ f$, 则 $h_i = g_i \circ f_i$
+3.(commutative diagram) $$\require{AMScd} \begin{CD} H_i(X,A) @&amp;gt;f_i&amp;gt;&amp;gt; H_i(Y,B)\\
+@V\partial_i VV @V\partial_i VV\\</description>
+    </item>
+    
+    <item>
+      <title>Note: aart</title>
+      <link>https://cielrouge.github.io/post/note-aart-1-2/</link>
+      <pubDate>Mon, 19 Nov 2018 18:23:37 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-aart-1-2/</guid>
+      <description>$K$-代数: 环 $A$, 环加法, 环乘法, $A$ 是 $K$ 上的向量空间, 加法是环加法, 标量乘法: $$(\lambda , a) \mapsto \lambda \cdot a , \ \lambda \in K, a \in A$$ 标量乘法满足 condition (Alg): scalars commute with everything.
+$A$ 是 $K$ 上向量空间: $\forall a,b \in A, \lambda , \mu \in K$
+(1) $\lambda \cdot (a+b) = \lambda \cdot a + \lambda \cdot b$
+(2) $(\lambda + \mu) \cdot a = \lambda \cdot a + \mu \cdot a$</description>
+    </item>
+    
+    <item>
+      <title>Note: fdg</title>
+      <link>https://cielrouge.github.io/post/note-fdg/</link>
+      <pubDate>Mon, 12 Nov 2018 16:11:16 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/note-fdg/</guid>
+      <description>$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$, 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.
+基本群 $\pi _1 (X,x_0)$ 是 $f$ 的同伦类的集合.
+基本群是群:
+群元: $f$ 的同伦类
+群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq \theta \leq \pi
+g(e^{2i(\theta - \pi)}) &amp;amp;\pi \leq \theta \leq 2\pi \end{cases}$$ id元: $i:S^1 \to \lbrace x_0 \rbrace$
+逆元: $f\in \pi _1 (X,x_0)$ 的逆元 $g \in \pi _1 (X,x_0)$, $g(e^{i\theta }) = f(e^{-i\theta })$
+空间之间的映射诱导其基本群之间的映射:</description>
+    </item>
     
     <item>
       <title>untitled</title>

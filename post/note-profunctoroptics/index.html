@@ -308,7 +308,7 @@ for profunctor $P$, <font color='steelblue'>a transformer of type $P\ A\ B$</fon
 <p>profunctor $P$ is cartesian (strong) if it is coherent with products.</p>
 
 <p>there is an operator second that for any type $C$,<br />
-lifts a transformer of type $P\ A\ B$, to a transformer of type $P (C × A) (C × B)$,<br />
+lifts a transformer of type $P\ A\ B$, to a transformer of type $P\ (C × A)\ (C × B)$,<br />
 that acts on pairs, transforming $A$s into $B$s but passing $C$s around unchanged.</p>
 
 <p>profunctor $P$ is co-cartesian (choice) if it is coherent with the structure of sums.</p>
@@ -324,7 +324,7 @@ $(b \leq a) \Leftrightarrow (\forall c.(a \leq c) \Rightarrow (b \leq c))$</p>
 
 <p>full and faithful functors both preserve and reflect isomorphisms.</p>
 
-<p>any functor preserces isomorphisms.<br />
+<p>any functor preserves isomorphisms.<br />
 i.e. if $f$ and $g$ form an isomorphism, so do $F(f)$ and $G(f)$.<br />
 $F(f) \circ F(g) = id$<br />
 $\Leftrightarrow [[ F\ is\ a\ functor ]]$<br />
@@ -346,7 +346,7 @@ $\mathbb{Set} (A \times C, B) \simeq \mathbb{Set} (A,B^C)$</p>
 <p>a function from a sum type is equivalent to a pair of functions with a common target.<br />
 $\mathbb{Set} (A+B,C) \simeq \mathbb{Set}(A,C) \times \mathbb{Set}(B,C)$</p>
 
-<p>$\mathbb{Set} (A+B \times C , X)$<br />
+<p>$\mathbb{Set} ((A + B) \times C , X)$<br />
 $\simeq [[ currying ]]$<br />
 $\mathbb{Set} (A+B,X^C)$<br />
 $\simeq [[ sum ]]$<br />

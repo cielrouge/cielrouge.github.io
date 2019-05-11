@@ -69,18 +69,6 @@ https://m.weibo.cn/1809213720/4310928159459258
     </item>
     
     <item>
-      <title>Note: aart</title>
-      <link>https://cielrouge.github.io/post/note-aart-1-2/</link>
-      <pubDate>Mon, 19 Nov 2018 18:23:37 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/note-aart-1-2/</guid>
-      <description>$K$-代数: 环 $A$, 环加法, 环乘法, $A$ 是 $K$ 上的向量空间, 加法是环加法, 标量乘法: $$(\lambda , a) \mapsto \lambda \cdot a , \ \lambda \in K, a \in A$$ 标量乘法满足 condition (Alg): scalars commute with everything.
-$A$ 是 $K$ 上向量空间: $\forall a,b \in A, \lambda , \mu \in K$
-(1) $\lambda \cdot (a+b) = \lambda \cdot a + \lambda \cdot b$
-(2) $(\lambda + \mu) \cdot a = \lambda \cdot a + \mu \cdot a$</description>
-    </item>
-    
-    <item>
       <title>Note: pofad</title>
       <link>https://cielrouge.github.io/post/note-pofad/</link>
       <pubDate>Tue, 13 Nov 2018 13:26:40 +0800</pubDate>

@@ -6,28 +6,10 @@
     <description>Recent content in Math on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 19 Nov 2018 22:27:59 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Nov 2018 18:23:37 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Note: ght</title>
-      <link>https://cielrouge.github.io/post/note-ght/</link>
-      <pubDate>Mon, 19 Nov 2018 22:27:59 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/note-ght/</guid>
-      <description>名词中译参考了: data.gov.tw/國家教育研究院-數學學術名詞
-pair $(X,A)$: 空间 $X$, 子空间$A$.
-$X = (X,\emptyset )$.
-$(X,A)$, $\lbrace H_i (X,A) \rbrace _{i\in \mathbb{Z}}$, $\lbrace \partial _i : H_i(X,A) \to H_{i-1}(A,\emptyset) \rbrace _{i\in \mathbb{Z}}$
-$f:(X,A) \to (Y,B)$, $\lbrace f_i : H_i (X,A) \to H_i(Y,B) \rbrace _{i\in \mathbb{Z}}$
-Eilenberg-Steenrod Axioms
-1.(identity map) $f=id$, 则 $f_i = id$
-2.(composition) $h = g \circ f$, 则 $h_i = g_i \circ f_i$
-3.(commutative diagram) $$\require{AMScd} \begin{CD} H_i(X,A) @&amp;gt;f_i&amp;gt;&amp;gt; H_i(Y,B)\\
-@V\partial_i VV @V\partial_i VV\\</description>
-    </item>
     
     <item>
       <title>Note: aart</title>
@@ -39,42 +21,6 @@ Eilenberg-Steenrod Axioms
 $A$ 是 $K$ 上向量空间: $\forall a,b \in A, \lambda , \mu \in K$
 (1) $\lambda \cdot (a+b) = \lambda \cdot a + \lambda \cdot b$
 (2) $(\lambda + \mu) \cdot a = \lambda \cdot a + \mu \cdot a$</description>
-    </item>
-    
-    <item>
-      <title>Note: fdg</title>
-      <link>https://cielrouge.github.io/post/note-fdg/</link>
-      <pubDate>Mon, 12 Nov 2018 16:11:16 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/note-fdg/</guid>
-      <description>$f$ 是从复平面上单位圆 $S^1$ 到空间 $X$, 复平面的 $1$ 对应 $X$ 的基点 $x_0$ 的映射.
-基本群 $\pi _1 (X,x_0)$ 是 $f$ 的同伦类的集合.
-基本群是群:
-群元: $f$ 的同伦类
-群元运算: $h = f g$, $$h(e^{i\theta }) = \begin{cases} f(e^{2i\theta }) &amp;amp;0\leq \theta \leq \pi
-g(e^{2i(\theta - \pi)}) &amp;amp;\pi \leq \theta \leq 2\pi \end{cases}$$ id元: $i:S^1 \to \lbrace x_0 \rbrace$
-逆元: $f\in \pi _1 (X,x_0)$ 的逆元 $g \in \pi _1 (X,x_0)$, $g(e^{i\theta }) = f(e^{-i\theta })$
-空间之间的映射诱导其基本群之间的映射:</description>
-    </item>
-    
-    <item>
-      <title>untitled</title>
-      <link>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
-      <pubDate>Thu, 30 Aug 2018 10:47:24 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
-      <description>$K$-代数: 环结构$A$, 交换环$K$到环结构中心$Z(A)$的环同态.
-$M$是$A$-模 =&amp;gt; 有$K$-代数同态 $\lambda :A\to End_K (M)$.
-给定$K$-代数同态$\nu: A\to End_K(M)$ =&amp;gt; $M$上有唯一$A$-模结构, 使$A\to End_K(M)$是$\nu$.
- 对each $a\in A$, 定义$\underline{\lambda_a:M\to M}$, $\lambda_a:m\mapsto \mu (a,m) =: a\cdot m$. （由$A$是$K$-代数, $K\to Z(A)$, 证得$\lambda$的$K$-线性.）
-对$\nu: A\to End_K(M)$, 定义$\mu:A\times M\to M$, $\mu (a,m):=\underline{\nu (a)(m)}$
- 
-一个表示是, 通过一个RealWorldObject上的作用, 一个抽象群的具体实现.
-群在域上的一个$n$阶表示: $G \to GL_n(K)$
-用 相同形状的可逆矩阵的 线性组合 形成 方阵；
-用 群元的 $K$-线性组合 形成 $K$-代数.
-(=&amp;gt; 群环的概念)
-群环$RG$: copies of $R$ as $R$-modules, direct sum $\coprod_{g\in G} R$</description>
     </item>
     
   </channel>

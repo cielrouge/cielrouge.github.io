@@ -24,43 +24,12 @@ e 是 initial entry. (i,i) 是 index 的上下界. 对上下界之间的所有 i
     </item>
     
     <item>
-      <title>整理: Foldable,Traversable</title>
-      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldable/</link>
-      <pubDate>Tue, 11 Sep 2018 13:07:50 +0800</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86foldable/</guid>
-      <description>Foldable data Tree a = Empty | Leaf a | Node (Tree a) a (Tree a) instance Foldable Tree where foldMap f Empty = mempty foldMap f (Leaf x) = f x foldMap f (Node l k r) = foldMap f l `mappend` f k `mappend` foldMap f rclass Foldable t where foldMap :: Monoid m =&amp;gt; (a -&amp;gt; m) -&amp;gt; t a -&amp;gt; m foldMap f = foldr (mappend .</description>
-    </item>
-    
-    <item>
       <title>整理: State, Reader</title>
       <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86state/</link>
       <pubDate>Mon, 10 Sep 2018 10:09:19 +0800</pubDate>
       
       <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86state/</guid>
       <description>State newtype State s a = State {runState :: s -&amp;gt; (a , s)} newtype (State s) a = State {runState :: s -&amp;gt; (a , s)} -- runState :: State s a -&amp;gt; s -&amp;gt; (a , s) -- State $ \s -&amp;gt; (a , s) = (State s) ainstance Functor (State s) where fmap f m = State $ \s -&amp;gt; case runState m s of (r , s) -&amp;gt; (f r , s)instance Applicative (State s) where pure x = State $ \s -&amp;gt; (x , s) m &amp;lt;*&amp;gt; n = State $ \s -&amp;gt; case runState m s of (f , s&amp;#39;) -&amp;gt; case runState n s&amp;#39; of (x , s&amp;#39;&amp;#39;) -&amp;gt; (f x , s&amp;#39;&amp;#39;) instance Monad (State s) where m &amp;gt;&amp;gt; n = State $ \s -&amp;gt; case runState m s of (r , s&amp;#39;) -&amp;gt; runState (n r) s&amp;#39; minimal complete definition:</description>
-    </item>
-    
-    <item>
-      <title>整理: Functor</title>
-      <link>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</link>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cielrouge.github.io/post/%E6%95%B4%E7%90%86functor/</guid>
-      <description>map an element to an action. 元左乘 $\to $ 一个自同态.
-这样就好理解了.
-Functor Functors: uniform action over a parameterized type
-在「参数化的type」上的「一致action」
-在「列表」上的「map函数」的一般化
-Functor: 可被map-over的types的class
-“对type 可被action做map 的形容”
-fmap (f . g) == fmap f . fmap g
-(&amp;lt;$&amp;gt;) -- fmap
-(&amp;lt;&amp;amp;&amp;gt;) -- flip fmap
-Applicative a functor with application
-对type 可被 有sequential application的uniform action 做map 的形容
-fmap f x = pure f &amp;lt;*&amp;gt; x
-fmap f x = &amp;lt;*&amp;gt; (pure f) x</description>
     </item>
     
   </channel>

@@ -6,10 +6,23 @@
     <description>Recent content on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 06 May 2020 17:45:29 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 20:38:09 +0800</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Big-Data-Sammelorgien</title>
+      <link>https://cielrouge.github.io/post/dunklen-daten/</link>
+      <pubDate>Thu, 07 May 2020 20:38:09 +0800</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/dunklen-daten/</guid>
+      <description>Die im Dunkeln sieht man nicht
+VON MIRJAM HAUCK
+ Allerdings wissen die Datensammler nicht immer, ob sie die Informationen auch jemals brauchen können werden. Aber aus Sorge, dass ihnen etwas entgeht, greifen sie immer zu, ob es sich nun um die Haarfarbe des Nutzers handelt oder in welcher Sekunde er morgens das Licht im Bad anschaltet.
+ 
+ Eine Erhebung des US-Netzwerkspezialisten Cisco kam zum Ergebnis, dass eine Stadt mit einer Million Einwohnern im Jahr 2020 bereits 200 Millionen Gigabyte Daten am Tag erzeugt – durch smarte und vernetzte Häuser, Autos und Wettersensoren.</description>
+    </item>
     
     <item>
       <title>Der französische Corona-Archipel</title>
@@ -121,10 +134,10 @@ VON HELENA JANECZEK
     
     <item>
       <title>fracture territoriale</title>
-      <link>https://cielrouge.github.io/post/20200317/</link>
+      <link>https://cielrouge.github.io/post/fracture-territoriale/</link>
       <pubDate>Tue, 17 Mar 2020 14:58:05 +0800</pubDate>
       
-      <guid>https://cielrouge.github.io/post/20200317/</guid>
+      <guid>https://cielrouge.github.io/post/fracture-territoriale/</guid>
       <description>城市与国家 地方与中央
 武汉红十字会 杭州红十字会 大理市政府 江苏联邦
 Quand les grandes villes font sécession

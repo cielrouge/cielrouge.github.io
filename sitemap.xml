@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cielrouge.github.io/post/draeger/</loc>
+    <lastmod>2020-05-20T21:54:58+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cielrouge.github.io/post/fragilites-modele-americain/</loc>
     <lastmod>2020-05-19T23:19:58+08:00</lastmod>
   </url>
@@ -134,7 +139,7 @@
   
   <url>
     <loc>https://cielrouge.github.io/</loc>
-    <lastmod>2020-05-19T23:19:58+08:00</lastmod>
+    <lastmod>2020-05-20T21:54:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -146,13 +151,13 @@
   
   <url>
     <loc>https://cielrouge.github.io/tags/nachrichten/</loc>
-    <lastmod>2020-05-19T23:19:58+08:00</lastmod>
+    <lastmod>2020-05-20T21:54:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cielrouge.github.io/post/</loc>
-    <lastmod>2020-05-19T23:19:58+08:00</lastmod>
+    <lastmod>2020-05-20T21:54:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   

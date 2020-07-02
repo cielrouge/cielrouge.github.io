@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cielrouge.github.io/post/reconfigurations-mondiales/</loc>
+    <lastmod>2020-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cielrouge.github.io/post/le-sahel-la-guerre-entre-djihadistes/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url>
@@ -224,7 +229,7 @@
   
   <url>
     <loc>https://cielrouge.github.io/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -242,7 +247,7 @@
   
   <url>
     <loc>https://cielrouge.github.io/post/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>la Sibérie: chaleurs extrêmes</title>
+      <link>https://cielrouge.github.io/post/siberie-suffoque/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/siberie-suffoque/</guid>
+      <description>Verkhoïansk, dans le nord de la Iakoutie russe, a fait la « une » de l&amp;rsquo;actualité, fin juin, avec un record de chaleur enregistré à 38 °C. L’amplitude est à peine concevable, pour une commune plus habituée aux records négatifs: − 68 °C un jour d’hiver 1933, qui lui vaut de disputer à une autre ville de la région, Oïmiakon, le titre de cité la plus froide du globe, et − 57 °C encore durant ce mois de janvier.</description>
+    </item>
     
     <item>
       <title>Umgang</title>
@@ -19,7 +28,7 @@
       <guid>https://cielrouge.github.io/post/umgang/</guid>
       <description>想 „Umgang“ 这个词要怎么翻译的时候，突然想到，这就是“与君冰雪周旋久”里的“周旋”
 Um·gang
-round·go
+around·go
 contact, dealings</description>
     </item>
     

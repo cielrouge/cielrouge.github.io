@@ -6,10 +6,19 @@
     <description>Recent content in Posts on CielRouge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cielrouge.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>la méritocratie</title>
+      <link>https://cielrouge.github.io/post/meritocratie-hereditaire/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cielrouge.github.io/post/meritocratie-hereditaire/</guid>
+      <description>En France, l’Institut national de la statistique et des études économiques (Insee) les rassemble dans la catégorie « Cadres et professions intellectuelles supérieures ». On y trouve pêle-mêle directeurs des ressources humaines et préfets, notaires et astronomes, journalistes et magistrats, publicitaires et chirurgiens-dentistes. Nulle autre catégorie socioprofessionnelle n’a vu ses effectifs croître aussi vite depuis la parution du livre de Young (L’Ascension de la méritocratie). Incarnations sociologiques des sociétés « postindustrielles » tournées vers le savoir, ils étaient 900 000 en 1962 (4,6 % de la population active française); ils sont aujourd’hui plus de 5 millions (18 %).</description>
+    </item>
     
     <item>
       <title>Jakutien: tauender Permafrost</title>
